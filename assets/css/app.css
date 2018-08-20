@@ -5239,3 +5239,110 @@ body.loaded {
     padding: 0 40px; }
 
 /*# sourceMappingURL=app.css.map */
+
+
+
+
+
+/*=================================| My code |============================*/
+.active-top{border-top: 1px solid white!important;}
+.no-margin-bottom{ margin-bottom: 0px!important; }
+.more-margin-top{ margin-top: 50px!important; }
+.more2-margin-top{ margin-top: 50px!important; }
+.more-padding-top{ padding-top: 50px!important; }
+.more2-padding-top{ padding-top: 100px!important; }
+.color-orange {color: #f3ad49!important;}
+.small-h1{font-size: 24px!important;}
+
+/*************
+*   Header   *
+**************/
+header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #004249; }
+  header.works > .content {
+    z-index: 3;
+    padding-top: 50px;
+    text-align: center; }
+    header.works > .content p {
+      margin-bottom: 40px; }
+      @media (min-width: 768px) {
+        header.works > .content p {
+          margin-bottom: 50px; } }
+  header.works > .bg {
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    display: none; }
+    @media (min-width: 992px) {
+      header.works > .bg {
+        display: block; } }
+    header.works > .bg .content {
+      padding: 50px 65px 0; }
+      header.works > .bg .content img {
+        display: inline-block; }
+  header.works:before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    background-color: #004249;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: url(../img/bg/watermark.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover; }
+    @media (min-width: 992px) {
+      header.works:before {
+        width: 50%; } }
+    @media (min-width: 0) and (max-width: 767px) {
+      header.works:before {
+        background-position: -40px center; } }
+  /* header.works:after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    background-color: #f3ad49;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    display: none; }
+    @media (min-width: 992px) {
+      header.works:after {
+        display: block; } } */
+  header .scroll {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 3; }
+    header .scroll .scroll-to {
+      height: 31px;
+      width: 13px;
+      display: block;
+      background-image: url(../img/icons/secondary-light/arrow-bot.svg);
+      background-size: 13px 31px;
+      z-index: 10;
+      cursor: pointer;
+      -webkit-animation-name: fadeInOut;
+      -moz-animation-name: fadeInOut;
+      -o-animation-name: fadeInOut;
+      animation-name: fadeInOut;
+      -webkit-animation-duration: 1s;
+      -moz-animation-duration: 1s;
+      -o-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+      -o-animation-iteration-count: infinite;
+      animation-iteration-count: infinite; }
