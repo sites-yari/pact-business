@@ -1,0 +1,36 @@
+// Project Fonts **************************
+
+// Apercu - font-face
+@font-face {
+    font-family: 'Apercu';
+    src: url('../fonts/apercu/apercu-light.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Apercu';
+    src: url('../fonts/apercu/apercu-bold.otf');
+	font-weight: bold;
+	font-style: normal;
+}
+
+// Noe - font-face
+@font-face {
+    font-family: 'Noe';
+    src: url('../fonts/noe/noe-text-regular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Noe';
+    src: url('../fonts/noe/noe-text-regular-italic.otf');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+    font-family: 'Noe Display';
+    src: url('../fonts/noe/noe-display-black.otf');
+	font-weight: normal;
+	font-style: normal;
+}

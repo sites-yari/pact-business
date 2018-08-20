@@ -1,0 +1,41 @@
+// Project Variables **************************
+
+/* Typography */
+
+$font-primary   : "Apercu", sans-serif;
+$font-secondary : "Noe", serif;  
+$font-display   : "Noe Display", serif;  
+
+ 
+/* Colors */
+
+$black                : #000000; 
+$gray                 : #666666;
+$gray-light           : #999999;
+$white                : #ffffff;
+
+$brand-primary-dark   : #e59a41;
+$brand-primary        : #f3ad49;
+//$brand-primary        : #ffaa2b;
+$brand-primary-light  : #f5c351;
+
+$brand-secondary-darkest  : #002d32;
+$brand-secondary-darker   : #004249;
+$brand-secondary-dark     : #56868f;
+$brand-secondary          : #4f9ba9;
+$brand-secondary-light    : #58cdca;
+$brand-secondary-lighter  : #9dd5d5;
+$brand-secondary-lightest : #e0e4e5;
+
+
+$brand-secondary-mid: #99c1be;
+$gray-light-bg:       #edeeed;
+    
+/* Breakpoints */
+
+$break-xs  : 0;
+$break-sm  : breakpoint-min(sm);
+$break-md  : breakpoint-min(md);
+$break-lg  : breakpoint-min(lg);
+$break-xl  : breakpoint-min(xl);
+$break-xxl : breakpoint-min(xxl);
