@@ -5251,8 +5251,10 @@ body.loaded {
 .more2-margin-top{ margin-top: 50px!important; }
 .more-padding-top{ padding-top: 50px!important; }
 .more2-padding-top{ padding-top: 100px!important; }
+.top70-empty-space{ top: 70%; }
 .color-orange {color: #f3ad49!important;}
 .small-h1{font-size: 24px!important;}
+.temp-border{width: 100%; border: 2px solid white; text-align: center;}
 
 /*************
 *   Header   *
