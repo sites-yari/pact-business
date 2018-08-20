@@ -5255,10 +5255,13 @@ body.loaded {
 .color-orange {color: #f3ad49!important;}
 .small-h1{font-size: 24px!important;}
 .temp-border{width: 100%; border: 2px solid white; text-align: center;}
+.temp-border-left{border-left: 1px solid white;}
+.text-center{text-align: center;}
 
 /*************
 *   Header   *
 **************/
+/* how_it_works */
 header {
   position: relative;
   width: 100%;
@@ -5319,7 +5322,7 @@ header {
     @media (min-width: 992px) {
       header.works:after {
         display: block; } } */
-  header .scroll {
+  /* header .scroll {
     position: absolute;
     bottom: 40px;
     left: 50%;
@@ -5347,4 +5350,53 @@ header {
       -webkit-animation-iteration-count: infinite;
       -moz-animation-iteration-count: infinite;
       -o-animation-iteration-count: infinite;
-      animation-iteration-count: infinite; }
+      animation-iteration-count: infinite; } */
+
+header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #004249; }
+  header.machines > .content {
+    z-index: 3;
+    padding-top: 50px;
+    text-align: center; }
+    header.machines > .content p {
+      margin-bottom: 40px; }
+      @media (min-width: 768px) {
+        header.machines > .content p {
+          margin-bottom: 50px; } }
+  header.machines > .bg {
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    display: none; }
+    @media (min-width: 992px) {
+      header.machines > .bg {
+        display: block; } }
+    header.machines > .bg .content {
+      padding: 50px 65px 0; }
+      header.machines > .bg .content img {
+        display: inline-block; }
+  header.machines:before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    background-color: #004249;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: url(../img/bg/watermark.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover; }
+    @media (min-width: 992px) {
+      header.machines:before {
+        width: 50%; } }
+    @media (min-width: 0) and (max-width: 767px) {
+      header.machines:before {
+        background-position: -40px center; } }
+    .machine-section header .scroll {left: 90%;}

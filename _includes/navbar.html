@@ -36,20 +36,30 @@
                   {% endif %}
                     <a class="nav-link" href="how_it_works.html"><span>How it Works</span></a>
                   </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#"><span>Our Story</span></a>
+                  {% if page.class == "our_story" %}<li class="nav-item active-top">
+                    {% else %} <li class="nav-item">
+                    {% endif %}
+                    <a class="nav-link" href="our_story.html"><span>Our Story</span></a>
                   </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#"><span>Machines</span></a>
+                  {% if page.class == "machines" %}<li class="nav-item active-top">
+                    {% else %} <li class="nav-item">
+                    {% endif %}
+                    <a class="nav-link" href="machines.html"><span>Machines</span></a>
                   </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#"><span>Pricing</span></a>
+                  {% if page.class == "princing" %}<li class="nav-item active-top">
+                    {% else %} <li class="nav-item">
+                    {% endif %}
+                    <a class="nav-link" href="pricing.html"><span>Pricing</span></a>
                   </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#"><span>Spilling The Beans</span></a>
+                  {% if page.class == "spilling_the_beans" %}<li class="nav-item active-top">
+                    {% else %} <li class="nav-item">
+                    {% endif %}
+                    <a class="nav-link" href="#"><span>Spilling The Beans</span></a>
                   </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#"><span>Contact</span></a>
+                  {% if page.class == "contact" %}<li class="nav-item active-top">
+                    {% else %} <li class="nav-item">
+                    {% endif %}
+                    <a class="nav-link" href="contact.html"><span>Contact</span></a>
                   </li>
               </ul>
           </div>
