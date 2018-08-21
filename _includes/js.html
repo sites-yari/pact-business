@@ -3,3 +3,14 @@
 <script src="assets/js/jquery/jquery.easing.js"></script>
 <script src="assets/js/jquery/jquery.swiper.js"></script>
 <script src="assets/js/app.js?v=<?php echo time(); ?>"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
