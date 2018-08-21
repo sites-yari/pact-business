@@ -1,0 +1,16 @@
+brand: assets/img/brand/brand.png
+text:
+  top: A cost-effective way to facilitate team bonding.
+  bottom: Show your employees that they’re valued.
+facebook:
+  link: #
+  image: assets/img/icons/white/fb.svg
+twitter:
+  link: #
+  image: assets/img/icons/white/tw.svg
+linkedin:
+  link: #
+  image: assets/img/icons/white/ld.svg
+instagram:
+  link: #
+  image: assets/img/icons/white/ig.svg

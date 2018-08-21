@@ -12,14 +12,14 @@ permalink: /home
 		<div class="row">
 			<div class="col-lg-6">
 				<h1 class="text-white">
-					Specialty coffee <br>
-					<span class="text-secondary-lighter">tailored to your team</span>
+					{{site.data.index.header.title.white}}<br>
+					<span class="text-secondary-lighter">{{site.data.index.header.title.blue_light}}</span>
 				</h1>
 				<p class="lg bold text-white">
-					We deliver coffee suitable for all offices, 
-					<br class="d-none d-md-block">in whole bean, ground form as well as in pods.
+					{{site.data.index.header.text.top}}
+					<br class="d-none d-md-block">{{site.data.index.header.text.bottom}}
 				</p>
-				<a href="#" class="btn btn-primary">Treat your team</a>
+				<a href="#" class="btn btn-primary">{{site.data.index.header.button_text}}</a>
 			</div>
 		</div>
 	</div>
@@ -28,7 +28,7 @@ permalink: /home
 		<div class="row">
 			<div class="col-lg-6 offset-lg-6">
 				<div class="content">
-						<img src="assets/img/illustration/01.png" width="700" class="img-fluid">
+						<img src={{site.data.index.header.image}} width="700" class="img-fluid">
 				</div>
 			</div>
 		</div>
@@ -45,7 +45,7 @@ permalink: /home
 			
 		<div class="row">
 			<div class="col text-center">
-				<p class="xs bold text-secondary-lightest no-m-bot">trusted by</p>
+				<p class="xs bold text-secondary-lightest no-m-bot">{{site.data.index.section1.logos.text}}</p>
 			</div>
 		</div>
 		
@@ -56,25 +56,25 @@ permalink: /home
 						<div class="swiper-wrapper">
 							<!--imgs -->
 							<div class="swiper-slide">
-								<img src="assets/img/brands/01.png" width="150" height="80" alt="Zopa" class="img-fluid">
+								<img src={{site.data.index.section1.logos.logo1}} width="150" height="80" alt="Zopa" class="img-fluid">
 							</div>
 							<div class="swiper-slide">
-								<img src="assets/img/brands/02.png" width="150" height="80" alt="Trainline" class="img-fluid">
+								<img src={{site.data.index.section1.logos.logo2}} width="150" height="80" alt="Trainline" class="img-fluid">
 							</div>
 							<div class="swiper-slide">
-								<img src="assets/img/brands/03.png" width="150" height="80" alt="TransferWise" class="img-fluid">
+								<img src={{site.data.index.section1.logos.logo3}} width="150" height="80" alt="TransferWise" class="img-fluid">
 							</div>
 							<div class="swiper-slide">
-								<img src="assets/img/brands/04.png" width="150" height="80" alt="Just Eat" class="img-fluid">
+								<img src={{site.data.index.section1.logos.logo4}} width="150" height="80" alt="Just Eat" class="img-fluid">
 							</div>
 							<div class="swiper-slide">
-								<img src="assets/img/brands/05.png" width="150" height="80" alt="Vice" class="img-fluid">
+								<img src={{site.data.index.section1.logos.logo5}} width="150" height="80" alt="Vice" class="img-fluid">
 							</div>
 							<div class="swiper-slide">
-								<img src="assets/img/brands/06.png" width="150" height="80" alt="Monzo" class="img-fluid">
+								<img src={{site.data.index.section1.logos.logo6}} width="150" height="80" alt="Monzo" class="img-fluid">
 							</div>
 							<div class="swiper-slide">
-								<img src="assets/img/brands/07.png" width="150" height="80" alt="Graze" class="img-fluid">
+								<img src={{site.data.index.section1.logos.logo7}} width="150" height="80" alt="Graze" class="img-fluid">
 							</div>
 							<!-- end imgs -->
 						</div>
@@ -86,8 +86,8 @@ permalink: /home
 		<div class="row">
 			<div class="col-lg-8 offset-lg-2 text-center m">
 				<hr class="separator"> 
-				<h2 class="h2 text-secondary-darker no-m-bot">A coffee company that aligns with 
-					<br class="d-none d-md-block">your company culture
+				<h2 class="h2 text-secondary-darker no-m-bot">{{site.data.index.section1.title.top}}
+					<br class="d-none d-md-block">{{site.data.index.section1.title.bottom}}
 				</h2>
 				<hr class="separator">
 			</div>
@@ -97,12 +97,12 @@ permalink: /home
 			<div class="col-sm-6 col-lg-4">
 				<a href="#" class="item-img">
 					<div class="img">
-						<img src="assets/img/home/img-1.jpg" class="img-fluid">
+						<img src={{site.data.index.section1.column.left.image}} class="img-fluid">
 					</div>
 					<div class="content">
-						<h3 class="h5 primary m">The best product.</h3>
-						<p class="sm">Our specialty coffee beans have been awarded an international Coffee Quality Score of 80+.</p>
-						<div class="cta">Free coffee tasting</div>
+						<h3 class="h5 primary m">{{site.data.index.section1.column.left.title}}</h3>
+						<p class="sm">{{site.data.index.section1.column.left.text}}</p>
+						<div class="cta">{{site.data.index.section1.column.left.button}}</div>
 					</div>
 				</a>
 			</div>
@@ -110,12 +110,12 @@ permalink: /home
 			<div class="col-sm-6 col-lg-4">
 				<a href="#" class="item-img">
 					<div class="img">
-						<img src="assets/img/home/img-2.jpg" class="img-fluid">
+						<img src={{site.data.index.section1.column.middle.image}} class="img-fluid">
 					</div>
 					<div class="content">
-						<h3 class="h5 primary m">Done the right way.</h3>
-						<p class="sm">Trading directly with farmers means unrivalled quality, affordable coffee for you and a fair price for the farmer.</p>
-						<div class="cta">Learn more about us</div>
+						<h3 class="h5 primary m">{{site.data.index.section1.column.middle.title}}</h3>
+						<p class="sm">{{site.data.index.section1.column.middle.text}}</p>
+						<div class="cta">{{site.data.index.section1.column.middle.button}}</div>
 					</div>
 				</a>
 			</div>
@@ -123,12 +123,12 @@ permalink: /home
 			<div class="col-sm-6 col-lg-4">
 				<a href="#" class="item-img">
 					<div class="img">
-						<img src="assets/img/home/img-3.jpg" class="img-fluid">
+						<img src={{site.data.index.section1.column.right.image}} class="img-fluid">
 					</div>
 					<div class="content">
-						<h3 class="h5 primary m">With care.</h3>
-						<p class="sm">Our coffee is roasted and ground in-house, delivered within 7 days of roasting, that’s when coffee tastes best.</p>
-						<div class="cta">Working with you</div>
+						<h3 class="h5 primary m">{{site.data.index.section1.column.right.title}}</h3>
+						<p class="sm">{{site.data.index.section1.column.right.text}}</p>
+						<div class="cta">{{site.data.index.section1.column.right.button}}</div>
 					</div>
 				</a>
 			</div>
@@ -257,4 +257,16 @@ permalink: /home
 	</div>
 </section>
 <!-- end SECTION 3 -->
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 

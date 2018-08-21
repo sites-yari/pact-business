@@ -5,11 +5,11 @@
 				
 			<div class="col-md-4 col-lg-5">
 				<a class="navbar-brand" href="index.php">
-					<img src="assets/img/brand/brand.png" width="200" alt="Pact Coffee for Business">
+					<img src={{site.data.footer.brand}} width="200" alt="Pact Coffee for Business">
 				</a>
 				<p class="secondary sm text-secondary-lighter">
-					A cost-effective way to facilitate team bonding.<br>
-					Show your employees that they’re valued.
+					{{site.data.footer.text.top}}<br>
+					{{site.data.footer.text.bottom}}
 				</p>
 			</div>
 			
@@ -18,13 +18,13 @@
 		
 					<div class="col-md-5 col-xl-6">
 						<ul class="menu">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">How It Works</a></li>
-							<li><a href="#">Our Story</a></li>
-							<li><a href="#">Machines</a></li>
-							<li><a href="#">Pricing</a></li>
-							<li><a href="#">Spilling The Beans</a></li>
-							<li><a href="#">Contact</a></li>
+							<li><a href="/home">Home</a></li>
+							<li><a href="/how_it_works">How It Works</a></li>
+							<li><a href="/our_story">Our Story</a></li>
+							<li><a href="/machines">Machines</a></li>
+							<li><a href="/pricing">Pricing</a></li>
+							<li><a href="/spilling_the_beans">Spilling The Beans</a></li>
+							<li><a href="/contact">Contact</a></li>
 							<li><a href="#">Pact for Home</a></li>
 						</ul>
 					</div>
@@ -32,17 +32,36 @@
 					<div class="col-md-6 col-lg-6">
 						<p class="bold text-secondary-lighter">
 							Call us
-							<a href="tel:020 3936 3316">020 3936 3316</a>
+							<a href={{site.data.general_info.phone.link}}>
+								{{site.data.general_info.phone.number}}</a>
 						</p>
 						<p class="bold text-secondary-lighter">
 							Email us
-							<a href="mailto:business@pactcoffee.com">business@pactcoffee.com</a>
+							<a href="{{site.data.general_info.email.link}}">
+								{{site.data.general_info.email.name}}
+							</a>
 						</p>                
 						<ul class="social">
-							<li><a href="#"><img src="assets/img/icons/white/fb.svg" width="20" height="20"></a></li>
-							<li><a href="#"><img src="assets/img/icons/white/tw.svg" width="20" height="20"></a></li>
-							<li><a href="#"><img src="assets/img/icons/white/ld.svg" width="20" height="20"></a></li>
-							<li><a href="#"><img src="assets/img/icons/white/ig.svg" width="20" height="20"></a></li>
+							<li>
+								<a href={{site.data.footer.facebook.link}}>
+									<img src={{site.data.footer.facebook.image}} width="20" height="20">
+								</a>
+							</li>
+							<li>
+								<a href={{site.data.footer.twitter.link}}>
+									<img src={{site.data.footer.twitter.image}} width="20" height="20">
+								</a>
+							</li>
+							<li>
+								<a href={{site.data.footer.linkedin.link}}>
+									<img src={{site.data.footer.linkedin.image}} width="20" height="20">
+								</a>
+							</li>
+							<li>
+								<a href={{site.data.footer.instagram.link}}>
+									<img src={{site.data.footer.instagram.image}} width="20" height="20">
+								</a>
+							</li>
 						</ul>
 					</div>
 						
