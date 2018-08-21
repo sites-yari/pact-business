@@ -3,8 +3,8 @@ header:
     white: Specialty coffee 
     blue_light: tailored to your team
   text:
-    top: We deliver coffee suitable for all offices,
-    bottom: in whole bean, ground form as well as in pods.
+    top: We deliver office coffee that’s world class and 
+    bottom: sourced direct from the farmer
   button_text: Treat your team
   image: assets/img/illustration/01.png
 
@@ -19,24 +19,24 @@ section1:
     logo6: assets/img/brands/06.png
     logo7: assets/img/brands/07.png
   title:
-    top: A coffee company that aligns with 
-    bottom: your company culture
+    top: Our coffee isn’t a commodity 
+    bottom: and neither is your team
   column:
     left:
       image: assets/img/home/img-1.jpg
       title: The best product.
-      text: Our specialty coffee beans have been awarded an international Coffee Quality Score of 80+.
+      text: We travel far and wide, scouring the globe to source the most special of speciality coffee that’s around.
       button: Free coffee tasting
     middle:
       image: assets/img/home/img-2.jpg
       title: Done the right way.
-      text: Trading directly with farmers means unrivalled quality, affordable coffee for you and a fair price for the farmer.
-      button: Learn more about us
+      text: Trading directly with growers means they can afford to reinvest in their farms, making more quality coffee for you to enjoy.
+      button: our story
     right:
       image: assets/img/home/img-3.jpg
       title: With care.
-      text: Our coffee is roasted and ground in-house, delivered within 7 days of roasting, that’s when coffee tastes best.
-      button: Working with you
+      text: Our coffee is grown with love, roasted with scientific precision and sent out immediately after being ground.
+      button: how it works
 
 section2:
 

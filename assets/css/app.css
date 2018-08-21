@@ -5457,6 +5457,8 @@ body.loaded {
 .temp-border{width: 100%; border: 2px solid white; text-align: center;}
 .temp-border-left{border-left: 1px solid white;}
 .text-center{text-align: center;}
+.no_margin{margin: 0px auto!important;}
+.container_width0{width:auto!important;}
 
 /*************
 *   Header   *
@@ -5599,4 +5601,4 @@ header {
     @media (min-width: 0) and (max-width: 767px) {
       header.machines:before {
         background-position: -40px center; } }
-    .machine-section header .scroll {left: 90%;}
+    /* .machine-section header .scroll {left: 90%;} */
