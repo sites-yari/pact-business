@@ -44,6 +44,21 @@ p {
 }
 
 quote {
+    display: block;
+    text-align: center;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 170%;
+    padding: 0 10px;
+    margin-bottom: 25px;
+    
+    > span {
+        display: block;
+        font-size: 21px;
+        line-height: 125%;
+        font-weight: bold;
+        margin-top: 30px;
+    }
 
 }
 
@@ -82,11 +97,12 @@ h5, .h5 {
 }
 
 h6, .h6 {
-    
+    font-size: 18px
 }
 
 
 ul {
+    list-style: none;
     margin: 0 0 20px;
     padding: 0;
     
@@ -607,66 +623,25 @@ header {
     height: 100%;
     background-color: $brand-secondary-darker;
     
-    &.home {
-        
-        > .content {
-            z-index: 3;
+    &.half {
+        height: 100%;
+
+        > .half-content {
             padding-top: 50px;
-            
+
             p { 
                 margin-bottom: 40px;
                 @include target-md-plus { margin-bottom: 50px }
             }
         }
 
-        > .bg {
-            z-index: 2;
-            position: absolute;
-            text-align: center;
-            display: none;
-            
-            @include target-lg-plus { display: block }
-            
+        > .half-bg {
+
             .content {
                 padding: 50px 65px 0;
-
-                img { display: inline-block }
             }
         }
-
-        &:before {
-            content: " ";
-            position: absolute;
-            z-index: 1;
-            background-color: $brand-secondary-darker;
-            width: 100%;
-            height: 100%;
-            left: 0;
-            top: 0;
-            background-image: url(../img/bg/watermark.jpg);
-            background-repeat: no-repeat;
-            background-position: center center;
-            @include background-size(cover);
-            
-            @include target-lg-plus { width: 50% }
-            @include target-xs-sm { background-position: -40px center }
-        }
-        
-        &:after {
-            content: " ";
-            position: absolute;
-            z-index: 1;
-            background-color: $brand-primary;
-            width: 50%;
-            height: 100%;
-            right: 0;
-            top: 0;
-            display: none;
-            
-            @include target-lg-plus { display: block }
-        }
-        
-    } 
+    }
     
     .scroll {
         position: absolute;
@@ -691,6 +666,96 @@ header {
     
 }
 
+    
+.half {
+    height: 75%;
+    min-height: 700px;
+    
+    &.full-height {
+        > .half-content {
+            height: 100%;
+            
+            > .row.content {
+                padding-top: 30px
+            }
+            
+            > .top {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                
+                h2 {
+                    margin: -10px 0 0;
+                }
+            }
+            
+            > .footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+            }
+        }
+    }
+    
+    > .half-content { 
+        z-index: 3;
+        position: relative;
+    }
+    
+    > .half-bg {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        @include transform(translate(-50%, -50%));
+        z-index: 2;
+        text-align: center;
+        display: none;
+
+        @include target-lg-plus { display: block }
+
+        .content {
+            padding: 0 65px;
+
+            img { display: inline-block }
+        }
+    }
+    
+    &:before {
+        content: " ";
+        position: absolute;
+        z-index: 1;
+        background-color: $brand-secondary-darker;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-image: url(../img/bg/watermark.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        @include background-size(cover);
+
+        @include target-lg-plus { width: 50% }
+        @include target-xs-sm { background-position: -40px center }
+    }
+
+    &:after {
+        content: " ";
+        position: absolute;
+        z-index: 1;
+        background-color: $brand-primary;
+        width: 50%;
+        height: 100%;
+        right: 0;
+        top: 0;
+        display: none;
+
+        @include target-lg-plus { display: block }
+    }
+    
+
+    &.half-bg-2:before { background-image: url(../img/bg/watermark-light.jpg) }
+} 
+
 
 /***************
 *   Sections   *
@@ -708,9 +773,7 @@ section {
     &.no-p-top { padding-top: 0    }
     &.no-p-bot { padding-bottom: 0 }
     
-    &.p { 
-        padding: 20px 0;
-    }
+    &.p { padding: 20px 0 }
     
     &.p-md { 
         padding: 20px 0;
@@ -783,6 +846,50 @@ a.item-img {
     }
 }
 
+.star-rating {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: inline-block;
+    
+    li {
+        display: inline-block;
+        margin: 0 -1px;
+        padding: 0;
+        
+        &:before {
+            content: "\f005";
+            font-family: FontAwesome;
+            color: $brand-primary;
+            font-size: 19px;
+        }
+    }
+}
+
+.star-rating__wrap {
+	display: inline-block;
+	font-size: 1rem;
+}
+.star-rating__wrap:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.star-rating__ico{
+	float: right;
+	padding-left: 2px;
+	cursor: pointer;
+	color: #FFB300;
+}
+.star-rating__ico:last-child{
+	padding-left: 0;
+}
+.star-rating__input{
+	display: none;
+}
+
+
 
 /*****************
 *   Containers   *
@@ -821,7 +928,143 @@ a.item-img {
 
 footer { 
     position: relative;
-    padding: 100px 0;
+    padding: 80px 0 35px;
+    background-color: $brand-secondary-dark;
+    
+    @include target-xs-sm { text-align: center }
+    
+    p, ul { margin: 0 }
+    
+    .main {
+        padding-bottom: 90px;
+        @include target-xs-sm { padding-bottom: 40px }
+        @include target-md-lg { padding-bottom: 60px }
+
+        .navbar-brand {
+            display: inline-block;
+            margin-bottom: 35px;
+            
+            @include target-md { margin-bottom: 60px }
+            @include target-lg { margin-bottom: 85px }
+            @include target-xl { margin-bottom: 105px }
+        }
+    
+        a { 
+            font-weight: bold;
+            color: $white;
+            line-height: 180%;
+
+            &:hover, &:focus, &:active, &.active {
+                color: $brand-secondary-lighter;
+            }
+        }
+        
+        ul.menu {  
+            margin: 0 0 30px;
+            @include target-md-plus { margin: 5px 0 0 }
+            
+            > li {
+                > a { 
+                    display: block;
+
+                    &:hover, &:focus, &:active, &.active {
+                        @include target-md-plus { padding-left: 8px }
+                    }
+                }
+            }
+        }
+            
+        .social {
+            margin: 0 -3px;
+            @include target-xl { margin: 0 -7px }
+            @include target-xs-sm { margin-top: 35px }
+            
+            > li {
+                display: inline-block;
+
+                > a {
+                    height: 40px;
+                    width: 40px;
+                    display: inline-block;
+                    @include border-radius(50%);
+                    border: solid 1px $white;
+                    text-align: center;
+                    margin: 0 3px;
+                    
+                    @include target-xl { margin: 0 7px }
+                    
+                    img {
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-top: 5px;
+                        line-height: 20px;
+                        @include transition(all 0.4s);
+                        opacity: 1;
+                    }
+
+                    &:hover, &:focus, &:active, &.active {
+                        img { opacity: 0.5 }
+                    }
+                }
+            }
+        }
+        
+        p.secondary {
+            margin-bottom: 30px;
+        }
+        
+        p:not(.secondary) {
+            margin: 0 0 20px;
+            
+            @include target-md-plus { margin: 5px 0 40px }
+            
+            a { 
+                display: block;
+                font-weight: bold;
+                color: $white;
+                line-height: 180%;
+                
+                &:hover, &:focus, &:active, &.active {
+                    color: $brand-secondary-lighter;
+                }
+            }
+        }
+    }
+    
+    .credits {
+        border-top: solid 1px $brand-secondary-lighter;
+        padding-top: 25px;
+        
+        ul {
+            @include target-md-plus { float: right }
+            @include target-xs-sm { margin-top: 10px }
+            
+            >:last-child:after { display: none !important }
+
+            > li {
+                display: inline-block;
+
+                &:after {
+                    content: "|";
+                    display: inline-block;
+                    vertical-align: middle;
+                    color: $brand-secondary-lighter;
+                    margin: 0 9px 0 16px;
+                }
+                
+                > a { 
+                    font-weight: bold;
+                    color: $white;
+                    line-height: 180%;
+                    font-size: 14px;
+                    
+                    &:hover, &:focus, &:active, &.active {
+                        color: $brand-secondary-lighter;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -835,64 +1078,10 @@ section.section-home-1 {
     padding: 30px 0 0;
 }
 
-section.section-home-2 { }
+section.section-home-2 {  }
 
-section.section-home-3 {
-    padding: 0;
-    min-height: 700px;
-    
-    .container {
-        left: 50%;
-        @include transform(translate(-50%, -50%));
-    }
-    
-    > .bg {
-        z-index: 2;
-        position: absolute;
-        text-align: center;
-        display: none;
+section.section-home-3 {  
 
-        @include target-lg-plus { display: block }
-
-        .content {
-            padding: 20px 65px 0;
-
-            img { display: inline-block }
-        }
-    }
-
-    &:before {
-        content: " ";
-        position: absolute;
-        z-index: 1;
-        background-color: $gray-light-bg;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-        background-image: url(../img/bg/watermark-light.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        @include background-size(cover);
-
-        @include target-lg-plus { width: 50% }
-        @include target-xs-sm { background-position: -40px center }
-    }
-
-    &:after {
-        content: " ";
-        position: absolute;
-        z-index: 1;
-        background-color: $brand-primary;
-        width: 50%;
-        height: 100%;
-        right: 0;
-        top: 0;
-        display: none;
-
-        @include target-lg-plus { display: block }
-    }
-        
 }
 
 
@@ -1083,33 +1272,39 @@ body.loaded {
 *   Swiper   *
 **************/
 
+.swiper {
+    position: relative;
+    
+    &.inner-pad { padding: 0 40px }
+}
 
 .swiper-container { 
-    
-    &:before {
-        content: " ";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 20px;
-        height: 100%;
-        z-index: 10;
-        background-image: url("../img/generic/fade-white-left.png");
-        @include background-size(20px auto);
-        background-repeat: repeat-y;
-    }
-    
-    &:after {
-        content: " ";
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 20px;
-        height: 100%;
-        z-index: 10;
-        background-image: url("../img/generic/fade-white-right.png");
-        @include background-size(20px auto);
-        background-repeat: repeat-y;
+    &.blur {
+        &:before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 100%;
+            z-index: 10;
+            background-image: url("../img/generic/fade-white-left.png");
+            @include background-size(20px auto);
+            background-repeat: repeat-y;
+        }
+
+        &:after {
+            content: " ";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 20px;
+            height: 100%;
+            z-index: 10;
+            background-image: url("../img/generic/fade-white-right.png");
+            @include background-size(20px auto);
+            background-repeat: repeat-y;
+        }
     }
     
     .swiper-wrapper {
@@ -1127,16 +1322,50 @@ body.loaded {
     z-index: 20;
     
     .swiper-button-prev,
-    .swiper-button-next {
-        
-    }
+    .swiper-button-next { }
     
     .swiper-button-prev { left: 0  }
     .swiper-button-next { right: 0 }
 }
 
-.swiper {
-    position: relative;
-    
-    &.inner-pad { padding: 0 40px }
+.swiper-pagination {
+    z-index: 100;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    @include transform(translateX(-50%));
+
+    .swiper-pagination-bullet {
+        opacity: 1;
+        border: 0;
+        background: transparent;
+        vertical-align: middle;
+        margin: 0;
+        @include transition(all 0.4s);
+        padding: 3px 6px;
+        outline: 0;
+        height: auto;
+        width: auto;
+        
+        &:before {
+            content: " ";
+            position: relative;
+            display: inline-block;
+            @include border-radius(50%);
+            height: 12px;
+            width: 12px;
+            background-color: transparent;
+            border: solid 1px $brand-secondary-light;
+            vertical-align: middle;
+            @include transition(all 0.4s);
+            float: left;
+        }
+        
+        &.swiper-pagination-bullet-active:before {
+            background: $brand-secondary-light;
+        }
+    }
 }
+
+// Fix cross-fade
+.fade .swiper-slide:not(.swiper-slide-active){ opacity: 0 !important }

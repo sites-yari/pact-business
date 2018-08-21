@@ -7,8 +7,8 @@ permalink: /home
     
 <!-- Content here -->
 <!-- HEADER -->
-<header class="home">
-	<div class="container content v-align">
+<header class="half">
+	<div class="container v-align half-content">
 		<div class="row">
 			<div class="col-lg-6">
 				<h1 class="text-white">
@@ -24,7 +24,7 @@ permalink: /home
 		</div>
 	</div>
 	
-	<div class="container-fluid bg v-align">
+	<div class="container-fluid half-bg">
 		<div class="row">
 			<div class="col-lg-6 offset-lg-6">
 				<div class="content">
@@ -52,7 +52,7 @@ permalink: /home
 		<div class="row">
 			<div class="col">
 				<div class="swiper brands">
-					<div class="swiper-container">
+					<div class="swiper-container blur">
 						<div class="swiper-wrapper">
 							<!--imgs -->
 							<div class="swiper-slide">
@@ -179,27 +179,81 @@ permalink: /home
 <!-- end SECTION 2 -->
 
 <!-- SECTION 3 -->
-<section class="section-home-3">
-	<div class="container content v-align">
-		<div class="row">
+<section class="section-home-3 half full-height half-bg-2 text-center">
+	<div class="container half-content">
+		<div class="row top">
 			<div class="col-lg-6">
-					
+				<h2 class="text-secondary-darker">what our clients say</h2>
 			</div>
 		</div>
-	</div>
-	
-	<div class="container bg v-align">
-		<div class="row">
-			<div class="col-lg-6 offset-lg-6">
-				<div class="content">
-					<img src="assets/img/illustration/03.png" width="700" class="img-fluid">
+			
+		<div class="row content v-align">
+			<div class="col-lg-6">
+				<div class="swiper testimonials fade">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+
+							<div class="swiper-slide">
+								<quote class="text-secondary-darker">
+									“Using Pact has meant we no longer need to leave the building to get a cappuccino that cuts the mustard. This has improved morale no end – despite the queue at the coffee machine.”
+									<span>Beth at Capital Law</span>
+								</quote>
+								<ul class="star-rating">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+								
+							<div class="swiper-slide">
+								<quote class="text-secondary-darker">
+									“Nulla suscipit lectus ut bibendum molestie. Donec in efficitur mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.”
+									<span>Lipsum at Vitrai amet</span>
+								</quote>
+								<ul class="star-rating">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+								
+							<div class="swiper-slide">
+								<quote class="text-secondary-darker">
+										“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate sit amet diam vel posuere. Nunc elementum faucibus ligula, rhoncus tempor sapien fringilla nec lipsum sit amet.”
+										<span>Vitrai at Consectetur</span>
+								</quote>
+								<ul class="star-rating">
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+								</ul>
+							</div>
+								
+						</div>
+					</div>                        
 				</div>
 			</div>
 		</div>
+			
+		<div class="row footer">
+			<div class="col-lg-6">
+				<div class="swiper-pagination testimonials"></div>
+			</div>
+		</div>
 	</div>
 	
-	<div class="container scroll">
-		<button class="scroll-to" data-scroll=".section-home-1"></button>
+	<div class="container half-bg">
+		<div class="row">
+			<div class="col-lg-6 offset-lg-6">
+				<div class="content">
+					<img src="img/illustration/03.png" width="700" class="img-fluid">
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 <!-- end SECTION 3 -->

@@ -30,10 +30,6 @@ $(function(){
             loop: false,
             grabCursor: true,
             slidesPerView: 7,
-            navigation: {
-                nextEl: '.swiper.brands .swiper-button-next',
-                prevEl: '.swiper.brands .swiper-button-prev',
-            },
             breakpoints: {
                 1200: {
                     slidesPerView: 6,
@@ -51,6 +47,22 @@ $(function(){
                     slidesPerView: 2,
                 }
             }
+        });
+    }
+    
+    if ($(".swiper.testimonials .swiper-container").length > 0) {
+
+        swiper = new Swiper ('.swiper.testimonials .swiper-container', {
+            speed: 1000,
+            loop: true,
+            autoHeight: true,
+            grabCursor: true,
+            effect: 'fade',
+            crossFade: false,
+            pagination: {
+                el: '.swiper-pagination.testimonials',
+                clickable: true,
+            } 
         });
     }
     
