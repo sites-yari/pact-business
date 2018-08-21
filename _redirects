@@ -1,0 +1,2 @@
+# Redirect domain aliases to primary domain
+# http://pact-business.com/* http://pact-business-varahamihira.netlify.com/:splat 301!

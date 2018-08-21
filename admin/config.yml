@@ -1,0 +1,12 @@
+publish_mode: editorial_workflow
+media_folder: "assets/uploads"
+
+backend:
+  name: git-gateway
+  repo: https://github.com/sites-yari/pact-business
+  branch: master # Branch to update (optional; defaults to master)
+  site_domain: pact-business-varahamihira.netlify.com
+
+# collections:
+#====================| POSTS |===================================================|  
+  #-----| Read me |------------------------------|
