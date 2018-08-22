@@ -52,6 +52,8 @@ quote {
     padding: 0 10px;
     margin-bottom: 25px;
     
+    @include target-xs-sm { font-size: 21px; margin-bottom: 15px }
+    
     > span {
         display: block;
         font-size: 21px;
@@ -59,7 +61,6 @@ quote {
         font-weight: bold;
         margin-top: 30px;
     }
-
 }
 
 h1, .h1,
@@ -77,19 +78,26 @@ h1, .h1 {
     font-size: 52px;
     margin-top: -5px;
     
-    @include target-xs-sm { font-size: 38px }
+    @include target-sm-lg { font-size: 42px }
+    @include target-xs    { font-size: 38px }
 }
 
 h2, .h2 {
     font-size: 48px;
+    margin-top: -5px;
+
+    @include target-sm-lg { font-size: 42px }
+    @include target-xs    { font-size: 38px }
 }
 
 h3, .h3 {
-    font-size: 32px; // tmp value
+    font-size: 32px;
+    @include target-xs-sm { font-size: 24px }
 }
 
 h4, .h4 {
     font-size: 24px;
+    @include target-xs-sm { font-size: 21px }
 }
 
 h5, .h5 {
@@ -117,23 +125,31 @@ ul {
         li { 
             position: relative;
             border-top: solid 1px $brand-secondary-mid;
-            padding: 40px 0;
+            padding: 20px 0 24px;
+
+            @include target-xl  { padding: 25px 0 }
+            @include target-xxl { padding: 40px 0 }
             
             >:nth-child(1) {
                 position: absolute;
-                top: 35px;
                 left: -10px;
                 color: $brand-secondary-dark;
                 margin: 0;
-                display: inline-block;
-                vertical-align: top;
+                top: 20px;
+
+                @include target-xl  { top: 25px }
+                @include target-xxl { top: 35px }
+                
+                @include target-xs-sm { left: 0 }
             }
             
             >:nth-child(2) {
                 display: inline-block;
                 vertical-align: top;
                 color: $white;
-                padding-left: 50px;
+                padding-left: 40px;
+                
+                @include target-md-plus { padding-left: 50px }
                 
                 >:last-child { margin-bottom: -5px }
                 
@@ -150,13 +166,14 @@ ul {
 hr {
     &.separator {
         width: 1px;
-        height: 60px;
+        height: 50px;
         outline: 0;
         border: 0;
         background-color: $brand-secondary-lightest;
-        margin: 50px auto;
+        margin: 30px auto; 
         
-        @include target-xs-sm { margin: 30px auto }
+        @include target-lg-plus { height: 60px }
+        @include target-xxl   { margin: 50px auto }
     } 
 }
 
@@ -215,6 +232,22 @@ a {
     width: 325px;
     max-width: 100%;
     
+    @include target-xs-sm { padding: 0 20px }
+    
+    &.center-mobile {
+        @include target-xs-sm {
+            float: none;
+            display: block;
+            margin: 0 auto;
+            max-width: 350px;
+            width: 100%;
+        }
+    }
+    
+    &.full-width {
+        width: 100%; 
+    }
+    
     &.btn-primary {
         color: $brand-primary;
         background-color: transparent;
@@ -233,6 +266,8 @@ a {
             right: 30px;
             top: 13px;
             @include transition(all 0.4s);
+            
+            @include target-xs-md { right: 20px }
         }
         
         &:hover, &:focus, 
@@ -240,6 +275,42 @@ a {
             color: $white;
             background-color: $brand-primary; 
             border-color: $brand-primary-light;
+            
+            &:after {
+                right: 16px;
+                background-image: url(../img/icons/white/btn-arrow-right.svg);
+            }
+        }
+    }
+    
+    
+    &.btn-secondary-dark {
+        color: $brand-secondary-dark;
+        background-color: transparent;
+        border: solid 1px $brand-secondary-dark;
+        @include border-radius(25px);
+        
+        &:after {
+            content: " ";
+            width: 38px;
+            height: 24px;
+            background-image: url(../img/icons/secondary-dark/btn-arrow-right.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 38px 24px;
+            position: absolute;
+            right: 30px;
+            top: 13px;
+            @include transition(all 0.4s);
+            
+            @include target-xs-md { right: 20px }
+        }
+        
+        &:hover, &:focus, 
+        &:not(:disabled):not(.disabled):active, &:not(:disabled):not(.disabled).active { 
+            color: $white;
+            background-color: $brand-secondary-dark; 
+            border-color: $brand-secondary-dark;
             
             &:after {
                 right: 16px;
@@ -266,7 +337,7 @@ a {
     max-width: 100%;
     color: $brand-primary;
     background-color: transparent;
-
+    
     &:after {
         content: " ";
         width: 38px;
@@ -302,6 +373,10 @@ form {
 *****************/
 
 * {
+    &.m-mobile {
+        @include target-xs-sm { margin-bottom: 40px }
+    }
+    
     &.no-m-top { margin-top: 0 !important }
     &.no-m-bot { margin-bottom: 0 !important }
  
@@ -363,6 +438,10 @@ img {
 }
 
 .text-center { text-align: center }
+
+.text-center-mobile {
+    @include target-xs-sm { text-align: center }
+}
 
 .uppercase   { text-transform: uppercase }
 
@@ -626,6 +705,14 @@ header {
     &.half {
         height: 100%;
 
+        &:before {
+            background-color: $brand-secondary-darker;
+            
+            @include target-xs-md { 
+                background-position: -80px center;
+            }
+        }
+
         > .half-content {
             padding-top: 50px;
 
@@ -638,7 +725,7 @@ header {
         > .half-bg {
 
             .content {
-                padding: 50px 65px 0;
+                padding-top: 50px;
             }
         }
     }
@@ -668,21 +755,35 @@ header {
 
     
 .half {
-    height: 75%;
-    min-height: 700px;
+    
+    @include target-lg-plus { 
+        height: 75%;
+        min-height: 700px;
+    }
     
     &.full-height {
         > .half-content {
-            height: 100%;
+            @include target-lg-plus { height: 100% }
             
             > .row.content {
-                padding-top: 30px
+                padding-top: 45px;
+                padding-bottom: 65px;
+                
+                @include target-lg-plus {
+                    position: relative;
+                    top: 50%;
+                    @include transform(translateY(-50%));
+                    padding-top: 30px;
+                    padding-bottom: 0;
+                }
             }
             
             > .top {
-                position: absolute;
-                top: 0;
-                width: 100%;
+                @include target-lg-plus {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                }
                 
                 h2 {
                     margin: -10px 0 0;
@@ -714,8 +815,9 @@ header {
         @include target-lg-plus { display: block }
 
         .content {
-            padding: 0 65px;
-
+            padding: 0 40px;
+            @include target-xl { padding: 0 65px }
+            
             img { display: inline-block }
         }
     }
@@ -724,7 +826,7 @@ header {
         content: " ";
         position: absolute;
         z-index: 1;
-        background-color: $brand-secondary-darker;
+        background-color: $gray-light-bg;
         width: 100%;
         height: 100%;
         left: 0;
@@ -735,7 +837,11 @@ header {
         @include background-size(cover);
 
         @include target-lg-plus { width: 50% }
-        @include target-xs-sm { background-position: -40px center }
+        
+        @include target-xs-md { 
+            background-position: right center;
+            @include background-size(800px auto)
+        }
     }
 
     &:after {
@@ -768,6 +874,9 @@ section {
     min-height: 10px;
     z-index: 1;
     
+    @include target-md    { padding: 80px 0 }
+    @include target-xs-sm { padding: 60px 0 }
+
     &.no-p { padding: 0 }
     
     &.no-p-top { padding-top: 0    }
@@ -819,7 +928,7 @@ section {
         position: absolute;
         bottom: 0;
         left: 0;
-        padding: 20px 30px;
+        padding: 25px 30px;
         
         >:last-child { margin-bottom: 0 }
         
@@ -840,9 +949,58 @@ a.item-img {
         .cta {
             &:after {
                 background-image: url(../img/icons/white/btn-arrow-right.svg);
-                right: -20px;   
+                right: -20px;  
+                @include target-xs-md { right: -6px }
             }
         }
+    }
+}
+
+
+.item-img-alt {
+    position: relative;
+    display: block;
+    margin: 0 0 20px;
+    
+    &.same-height {
+        background-color: $gray-light-bg;
+        height: 100%;
+        margin: 0;
+        
+        .img {
+            width: 100%;
+
+            @include target-xs-md { height: 180px }
+            @include target-lg-xl { height: 220px }
+            @include target-xxl   { height: 260px }
+        }
+    }
+    
+    .img {
+        overflow: hidden;
+        
+        img {
+            @include transition(all 1s);
+            width: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    .content {
+        padding: 25px 30px;
+        background-color: $gray-light-bg;
+        
+        >:last-child { margin-bottom: 0 }
+        
+        @include target-xl { padding: 40px 50px }
+        
+        .h5 { color: $brand-secondary-dark }
+        
+        p { color: $brand-secondary-darker }
     }
 }
 
@@ -865,28 +1023,6 @@ a.item-img {
             font-size: 19px;
         }
     }
-}
-
-.star-rating__wrap {
-	display: inline-block;
-	font-size: 1rem;
-}
-.star-rating__wrap:after{
-	content: "";
-	display: table;
-	clear: both;
-}
-.star-rating__ico{
-	float: right;
-	padding-left: 2px;
-	cursor: pointer;
-	color: #FFB300;
-}
-.star-rating__ico:last-child{
-	padding-left: 0;
-}
-.star-rating__input{
-	display: none;
 }
 
 
@@ -931,7 +1067,7 @@ footer {
     padding: 80px 0 35px;
     background-color: $brand-secondary-dark;
     
-    @include target-xs-sm { text-align: center }
+    @include target-xs-sm { text-align: center; padding: 45px 0 35px }
     
     p, ul { margin: 0 }
     
@@ -1033,7 +1169,8 @@ footer {
     
     .credits {
         border-top: solid 1px $brand-secondary-lighter;
-        padding-top: 25px;
+        padding-top: 35px;
+        @include target-md-plus { padding-top: 25px }
         
         ul {
             @include target-md-plus { float: right }
@@ -1076,12 +1213,47 @@ footer {
 
 section.section-home-1 {
     padding: 30px 0 0;
+    
+    @include target-xs { padding: 30px 0 20px }
 }
 
-section.section-home-2 {  }
+section.section-home-2 {  
+    
+    img.illustration {
+        @include target-xs-sm { margin-bottom: 50px }
+    }
+    
+    ul.numbered-list {
+        margin-bottom: 30px;
+        @include target-md-lg  { margin-bottom: 30px }
+        @include target-xl     { margin-bottom: 60px }
+        @include target-xxl    { margin-bottom: 60px }
+    }
+}
 
 section.section-home-3 {  
 
+}
+
+section.section-home-4 { 
+    @include target-xs-md { padding-bottom: 180px }
+    @include target-lg-xl { padding-bottom: 220px }
+    @include target-xxl   { padding-bottom: 260px }
+    
+    p {
+        margin-bottom: 75px;
+        @include target-xs-sm { margin-bottom: 40px }
+    }
+    
+    a.btn {        
+        @include target-xs-sm { margin-bottom: 60px }
+    }
+}
+
+section.section-home-5 {  
+    @include target-xs-md { margin-top: -180px; padding-bottom: 40px }
+    @include target-lg-xl { margin-top: -220px }
+    @include target-xxl   { margin-top: -260px }
 }
 
 
@@ -1090,41 +1262,64 @@ section.section-home-3 {
 ******************/
 
 // On: Default
-/*
-section, header, footer {
+
+section, footer {
     opacity: 0;
     @include transition(all 0.6s);
 }
 
-nav.navbar {
-    
-    .brand {
-        opacity: 0;
-        @include animation-delay(0.2s);
-        @include animation-fill-mode(forwards);
-        @include animation-duration(1s);
-    }
-    
-    #navigation .nav, #toggle-nav {
+header {
+    .half-content > .row > div {
         opacity: 0;
         @include animation-delay(0.6s);
         @include animation-fill-mode(forwards);
+        @include animation-duration(0.8s);
+    }
+    
+    .half-bg > .row > div {
+        opacity: 0;
+        @include animation-delay(0.8s);
+        @include animation-fill-mode(forwards);
+        @include animation-duration(0.8s);
+    }
+    
+    .scroll > div {
+        opacity: 0;
+        @include animation-delay(1s);
+        @include animation-fill-mode(forwards);
         @include animation-duration(1s);
     }
-}*/
+}
+
+nav.navbar {
+    .navbar-brand, .navbar-collapse .navbar-nav, .navbar-toggler {
+        opacity: 0;
+        @include animation-delay(0.1s);
+        @include animation-fill-mode(forwards);
+        @include animation-duration(0.8s);
+    }
+}
 
 // On: Load
-/*
+
 body.loaded {
-    section, header, footer { opacity: 1 }
+    section, footer { opacity: 1 }
     
     nav.navbar {
         
-        #navigation .nav, .brand, #toggle-nav {
+        .navbar-brand, .navbar-collapse .navbar-nav, .navbar-toggler {
             @include animation-name(fadeInTop);
         }
     }
-}*/
+    
+    header {
+        .half-content > .row > div { @include animation-name(fadeIn) }
+
+        .half-bg > .row > div { @include animation-name(fadeIn) }
+        
+        .scroll > div { @include animation-name(fade) }
+    }
+}
 
 // On: Open Navbar
 
@@ -1240,6 +1435,11 @@ body.loaded {
 *   Animations   *
 ******************/ 
 
+@include keyframes(fade) { 
+    from { opacity: 0 } 
+    to   { opacity: 1 } 
+}
+
 @include keyframes(fadeInOut) { 
     0%   { opacity: 1   } 
     50%  { opacity: 0.5 } 
@@ -1331,7 +1531,7 @@ body.loaded {
 .swiper-pagination {
     z-index: 100;
     position: absolute;
-    bottom: -20px;
+    bottom: -5px;
     left: 50%;
     @include transform(translateX(-50%));
 

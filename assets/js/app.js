@@ -1,5 +1,13 @@
 $(function(){
     
+    // Behaviour when ready ***
+    
+    setTimeout( function() { 
+        $("body").addClass("loaded");
+        $(window).scroll();
+    }, 200);
+    
+    
     // Vars & Init ************
         
     detectResize();
@@ -86,7 +94,33 @@ $(function(){
  
     function detectResize() { }
 
-    function detectScroll() { }
+    function detectScroll() { 
+    
+        // Trigger in-view
+        
+        var window_height = $(window).height();
+        var window_top    = $(window).scrollTop();
+        var window_bottom = window_top + window_height;
+        var timer         = 100;
+        var i             = 1;
+        
+        $.each($.find('.animate:not(.in-view)'), function() {
+
+            var element                 = $(this);
+            var element_height          = $(element).outerHeight();
+            var element_top_position    = $(element).offset().top + 150;
+            var element_bottom_position = (element_top_position + element_height);
+
+            if ((element_bottom_position >= window_top) && (element_top_position <= window_bottom)) {
+                setTimeout(function(){
+                    element.addClass("in-view");
+                }, timer*i);
+            }
+            
+            i++;
+        });
+    
+    }
     
     function scrollTo(obj, speed, fx){
 
