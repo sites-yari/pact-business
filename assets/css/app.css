@@ -5738,145 +5738,365 @@ body.loaded header .scroll > div {
 .no_margin{margin: 0px auto!important;}
 .container_width0{width:auto!important;}
 
+
+
+.item-img-alt {
+  position: relative;
+  display: block;
+  margin: 0 0 20px; }
+.item-img-alt.same-less-height {
+  background-color: #edeeed;
+  height: 100%;
+  margin: 0; }
+.item-img-alt.same-less-height { width: 100%; }
+@media (min-width: 0) and (max-width: 991px) {
+  .item-img-alt.same-less-height {  height: 280px; } 
+}
+@media (min-width: 992px) and (max-width: 1499px) {
+  .item-img-alt.same-less-height { height: 320px; } 
+}
+@media (min-width: 1500px) {
+  .item-img-alt.same-less-height { height: 360px; } 
+}
+
+
+
 /*************
 *   Header   *
 **************/
-/* how_it_works */
-header {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-color: #004249; }
-  header.works > .content {
-    z-index: 3;
-    padding-top: 50px;
-    text-align: center; }
-    header.works > .content p {
-      margin-bottom: 40px; }
-      @media (min-width: 768px) {
-        header.works > .content p {
-          margin-bottom: 50px; } }
-  header.works > .bg {
-    z-index: 2;
-    position: absolute;
-    text-align: center;
-    display: none; }
-    @media (min-width: 992px) {
-      header.works > .bg {
-        display: block; } }
-    header.works > .bg .content {
-      padding: 50px 65px 0; }
-      header.works > .bg .content img {
-        display: inline-block; }
-  header.works:before {
-    content: " ";
-    position: absolute;
-    z-index: 1;
-    background-color: #004249;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-image: url(../img/bg/watermark.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover; }
-    @media (min-width: 992px) {
-      header.works:before {
-        width: 50%; } }
-    @media (min-width: 0) and (max-width: 767px) {
-      header.works:before {
-        background-position: -40px center; } }
-  /* header.works:after {
-    content: " ";
-    position: absolute;
-    z-index: 1;
-    background-color: #f3ad49;
-    width: 50%;
-    height: 100%;
-    right: 0;
-    top: 0;
-    display: none; }
-    @media (min-width: 992px) {
-      header.works:after {
-        display: block; } } */
-  /* header .scroll {
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    z-index: 3; }
-    header .scroll .scroll-to {
-      height: 31px;
-      width: 13px;
-      display: block;
-      background-image: url(../img/icons/secondary-light/arrow-bot.svg);
-      background-size: 13px 31px;
-      z-index: 10;
-      cursor: pointer;
-      -webkit-animation-name: fadeInOut;
-      -moz-animation-name: fadeInOut;
-      -o-animation-name: fadeInOut;
-      animation-name: fadeInOut;
-      -webkit-animation-duration: 1s;
-      -moz-animation-duration: 1s;
-      -o-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-iteration-count: infinite;
-      -moz-animation-iteration-count: infinite;
-      -o-animation-iteration-count: infinite;
-      animation-iteration-count: infinite; } */
+/* <----------------------------------------------------------| how it works */
+header.works {height: 100%; }
+header.works:before {background-color: #004249; }
+@media (min-width: 0) and (max-width: 991px) {
+  header.works:before { background-position: -80px center; } 
+}
+header.works > .works-content { padding-top: 50px; }
+header.works > .works-content p { margin-bottom: 40px; }
+@media (min-width: 768px) {
+  header.works > .works-content p { margin-bottom: 50px; } 
+}
+header.works > .works-bg .content { padding-top: 50px; }
 
-header {
-  position: relative;
+@media (min-width: 992px) {
+  .works {
+    height: 75%;
+    min-height: 700px; } 
+}
+@media (min-width: 992px) {
+  .works.full-height > .works-content { height: 100%; } 
+}
+.works.full-height > .works-content > .row.content {
+  padding-top: 45px;
+  padding-bottom: 65px; 
+}
+@media (min-width: 992px) {
+  .works.full-height > .works-content > .row.content {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-top: 30px;
+    padding-bottom: 0; } 
+}
+
+@media (min-width: 992px) {
+  .works.full-height > .works-content > .top {
+    position: absolute;
+    top: 0;
+    width: 100%; } 
+}
+.works.full-height > .works-content > .top h2 { margin: -10px 0 0; }
+.works.full-height > .works-content > .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; 
+}
+.works > .works-content {
+  z-index: 3;
+  position: relative; 
+}
+.works > .works-bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  display: none; 
+}
+@media (min-width: 992px) {
+  .works > .works-bg { display: block; } 
+}
+.works > .works-bg .content { padding: 0 40px; }
+@media (min-width: 1200px) {
+  .works > .works-bg .content { padding: 0 65px; } 
+}
+.works > .works-bg .content img { display: inline-block; }
+.works:before {
+  content: " ";
+  position: absolute;
+  z-index: 1;
+  background-color: #edeeed;
   width: 100%;
   height: 100%;
-  background-color: #004249; }
-  header.machines > .content {
-    z-index: 3;
-    padding-top: 50px;
-    text-align: center; }
-    header.machines > .content p {
-      margin-bottom: 40px; }
-      @media (min-width: 768px) {
-        header.machines > .content p {
-          margin-bottom: 50px; } }
-  header.machines > .bg {
-    z-index: 2;
+  left: 0;
+  top: 0;
+  background-image: url(../img/bg/watermark.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover; 
+}
+@media (min-width: 992px) {
+  .works:before { width: 50%; } 
+}
+@media (min-width: 0) and (max-width: 991px) {
+  .works:before {
+    background-position: right center;
+    -webkit-background-size: 800px auto;
+    -moz-background-size: 800px auto;
+    background-size: 800px auto; } 
+}
+/* .works:after {
+  content: " ";
+  position: absolute;
+  z-index: 1;
+  background-color: #f3ad49;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  display: none; }
+  @media (min-width: 992px) {
+    .works:after {
+      display: block; } } */
+.works.works-bg-2:before { background-image: url(../img/bg/watermark-light.jpg); }
+header .works-content > .row > div {
+  opacity: 0;
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  -o-animation-duration: 0.8s;
+  animation-duration: 0.8s; 
+}
+header .works-bg > .row > div {
+  opacity: 0;
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  -o-animation-duration: 0.8s;
+  animation-duration: 0.8s; 
+}
+body.loaded header .works-content > .row > div {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn; 
+}
+body.loaded header .works-bg > .row > div {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn; 
+}
+
+
+
+/* <--------------------------------------------------------------| Machines */
+header.machines {height: 100%; }
+header.machines:before {background-color: #004249; }
+@media (min-width: 0) and (max-width: 991px) {
+  header.machines:before { background-position: -80px center; } 
+}
+header.machines > .machines-content { padding-top: 50px; }
+header.machines > .machines-content p { margin-bottom: 40px; }
+@media (min-width: 768px) {
+  header.machines > .machines-content p { margin-bottom: 50px; } 
+}
+header.machines > .machines-bg .content { padding-top: 50px; }
+
+@media (min-width: 992px) {
+  .machines {
+    height: 75%;
+    min-height: 700px; } 
+}
+@media (min-width: 992px) {
+  .machines.full-height > .machines-content { height: 100%; } 
+}
+.machines.full-height > .machines-content > .row.content {
+  padding-top: 45px;
+  padding-bottom: 65px; 
+}
+@media (min-width: 992px) {
+  .machines.full-height > .machines-content > .row.content {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-top: 30px;
+    padding-bottom: 0; } 
+}
+
+@media (min-width: 992px) {
+  .machines.full-height > .machines-content > .top {
     position: absolute;
-    text-align: center;
-    display: none; }
-    @media (min-width: 992px) {
-      header.machines > .bg {
-        display: block; } }
-    header.machines > .bg .content {
-      padding: 50px 65px 0; }
-      header.machines > .bg .content img {
-        display: inline-block; }
-  header.machines:before {
-    content: " ";
-    position: absolute;
-    z-index: 1;
-    background-color: #004249;
-    width: 100%;
-    height: 100%;
-    left: 0;
     top: 0;
-    background-image: url(../img/bg/watermark.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover; }
-    @media (min-width: 992px) {
-      header.machines:before {
-        width: 50%; } }
-    @media (min-width: 0) and (max-width: 767px) {
-      header.machines:before {
-        background-position: -40px center; } }
+    width: 100%; } 
+}
+.machines.full-height > .machines-content > .top h2 { margin: -10px 0 0; }
+.machines.full-height > .machines-content > .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; 
+}
+.machines > .machines-content {
+  z-index: 3;
+  position: relative; 
+}
+.machines > .machines-bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  display: none; 
+}
+@media (min-width: 992px) {
+  .machines > .machines-bg { display: block; } 
+}
+.machines > .machines-bg .content { padding: 0 40px; }
+@media (min-width: 1200px) {
+  .machines > .machines-bg .content { padding: 0 65px; } 
+}
+.machines > .machines-bg .content img { display: inline-block; }
+.machines:before {
+  content: " ";
+  position: absolute;
+  z-index: 1;
+  background-color: #edeeed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: url(../img/bg/watermark.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover; 
+}
+@media (min-width: 992px) {
+  .machines:before { width: 50%; } 
+}
+@media (min-width: 0) and (max-width: 991px) {
+  .machines:before {
+    background-position: right center;
+    -webkit-background-size: 800px auto;
+    -moz-background-size: 800px auto;
+    background-size: 800px auto; } 
+}
+.machines.machines-bg-2:before { background-image: url(../img/bg/watermark-light.jpg); }
+header .machines-content > .row > div {
+  opacity: 0;
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  -o-animation-duration: 0.8s;
+  animation-duration: 0.8s; 
+}
+header .machines-bg > .row > div {
+  opacity: 0;
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  -o-animation-duration: 0.8s;
+  animation-duration: 0.8s; 
+}
+body.loaded header .machines-content > .row > div {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn; 
+}
+body.loaded header .machines-bg > .row > div {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn; 
+}
+
     /* .machine-section header .scroll {left: 90%;} */
+
+
+
+
+    .btn.btn-primary-no-arrow {
+      text-align: center;
+      color: #f3ad49;
+      background-color: transparent;
+      border: solid 1px #f5c351;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -ms-border-radius: 25px;
+      border-radius: 25px; }
+      .btn.btn-primary-no-arrow:after {
+        content: " ";
+        width: 38px;
+        height: 24px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 38px 24px;
+        position: absolute;
+        right: 30px;
+        top: 13px;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s; }
+        @media (min-width: 0) and (max-width: 991px) {
+          .btn.btn-primary-no-arrow:after {
+            right: 20px; } }
+      .btn.btn-primary-no-arrow:hover, 
+      .btn.btn-primary-no-arrow:focus, 
+      .btn.btn-primary-no-arrow:not(:disabled):not(.disabled):active, 
+      .btn.btn-primary-no-arrow:not(:disabled):not(.disabled).active {
+        color: #ffffff;
+        background-color: #f3ad49;
+        border-color: #f5c351; }
