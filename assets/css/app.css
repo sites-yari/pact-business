@@ -5725,10 +5725,35 @@ body.loaded header .scroll > div {
 /*=================================| My code |============================*/
 .active-top{border-top: 1px solid white!important;}
 .no-margin-bottom{ margin-bottom: 0px!important; }
+/* More spacing */
+.zero-padding{
+  padding: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.zero-margin-top{ margin-top: 0px!important; }
+.zero-margin-bottom{ margin-bottom: 0px!important; }
+.zero-margin-right{ margin-right: 0px!important; }
+.zero-margin-left{ margin-left: 0px!important; }
+.zero-padding-top{ padding-top: 0px!important; }
+.zero-padding-bottom{ padding-bottom: 0px!important; }
+.zero-padding-right{ padding-right: 0px!important; }
+.zero-padding-left{ padding-left: 0px!important; }
+.less-margin-top{ margin-top: -50px!important; }
+.less-margin-bottom{ margin-bottom: -50px!important; }
 .more-margin-top{ margin-top: 50px!important; }
-.more2-margin-top{ margin-top: 50px!important; }
+.more-margin-bottom{ margin-bottom: 50px!important; }
 .more-padding-top{ padding-top: 50px!important; }
+.more-padding-bottom{ padding-bottom: 50px!important; }
+.more2-margin-top{ margin-top: 100px!important; }
+.more2-margin-bottom{ margin-bottom: 100px!important; }
 .more2-padding-top{ padding-top: 100px!important; }
+.more2-padding-bottom{ padding-bottom: 100px!important; }
+.more-25-margin-bottom{margin-bottom: 25px!important;}
+.less-25-margin-bottom{margin-bottom: -25px!important;}
+/* end More spacing */
 .top70-empty-space{ top: 70%; }
 .color-orange {color: #f3ad49!important;}
 .small-h1{font-size: 24px!important;}
@@ -5737,6 +5762,10 @@ body.loaded header .scroll > div {
 .text-center{text-align: center;}
 .no_margin{margin: 0px auto!important;}
 .container_width0{width:auto!important;}
+.fit-image-corners{
+  height: 450px;
+  object-fit: cover;
+}
 
 
 
