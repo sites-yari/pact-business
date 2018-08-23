@@ -101,7 +101,7 @@ $(function(){
         var window_height = $(window).height();
         var window_top    = $(window).scrollTop();
         var window_bottom = window_top + window_height;
-        var timer         = 100;
+        var timer         = 50;
         var i             = 1;
         
         $.each($.find('.animate:not(.in-view)'), function() {

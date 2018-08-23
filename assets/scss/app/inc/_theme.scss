@@ -25,8 +25,6 @@ p {
     margin: 0 0 20px;
     
     @include target-xs-sm { font-size: 16px }
-
-    &.bold { font-weight: bold }
     
     &.xs { font-size: 14px }
     
@@ -39,7 +37,7 @@ p {
     
     &.xl { 
         font-size: 24px; line-height: 160%; 
-        @include target-xs-sm { font-size: 21px }
+        @include target-xs-sm { font-size: 21px; line-height: 150% }
     }
 }
 
@@ -215,6 +213,13 @@ a {
 
     &:hover, &:focus, &:active, &.active {
     }
+    
+    
+    &.link-secondary-lighter {
+        color: $brand-secondary-lighter;
+        
+        &:hover, &:focus, &:active, &.active { opacity: 0.5 }
+    }
 }
 
 .btn {
@@ -359,13 +364,143 @@ a {
 *************/
 
 form {
+    position: relative;
+    display: block;
+        
+    .form-group {
+        position: relative;
+        display: block;
+        margin: 0 0 38px;
+        
+        &.m-top { margin-top: 12px }
+        
+        label {
+            font-family: $font-primary;
+            font-size: 18px;
+            color: $brand-secondary-lighter;
+            font-weight: normal;
+            position: relative;
+        }
+        
+        .form-control {
+            display: block;
+            position: relative;
+            border: 0;
+            outline: 0;
+            height: 40px;
+            font-size: 18px;
+            border-bottom: solid 1px $white;
+            background-color: transparent;
+            @include transition(all 0.4s); 
+            @include border-radius(0);
+            color: $white;
+            width: 100%;
+            padding: 0 0 19px;
+            margin: 0;
+            -webkit-appearance: none;
+            -moz-appearance : none;
+            font-family: $font-secondary;
+
+            &:hover, &:focus { border-color: $brand-secondary-lighter }
+        }
+        
+        
+        textarea.form-control {
+            min-height: 120px; 
+            padding: 0;
+            resize: none;
+        }
+        
+        select.form-control {
+            background-image: url(../img/icons/secondary-lighter/select-arrow.svg);
+            background-repeat: no-repeat;
+            background-size: 11px 5px;
+            background-position: right 10px;
+            
+            option {
+                background-color: $brand-secondary-darker;
+                color: $white;
+            }
+        }
+        
+        .checkbox-control {
+            background-color: transparent;
+            position: relative;
+            @include border-radius(0);
+            
+            input[type=checkbox] { 
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 25px;
+                width: 25px;
+            }
+            
+            span {
+                display: inline-block;
+                vertical-align: middle;
+                padding-top: 3px;
+            }
+            
+            label {
+                display: block;
+                @include border-radius(0);
+                @include transition(all 0.4s); 
+                cursor: pointer;
+                display: inline-block;
+                vertical-align: middle;
+
+                &:before {
+                    content: " ";
+                    height: 25px;
+                    width: 25px;
+                    cursor: pointer;
+                    background: transparent;
+                    display: inline-block;
+                    border: solid 1px $brand-secondary-lighter;
+                    @include transition(all 0.4s); 
+                    margin-right: 8px;
+                    vertical-align: middle;
+                }
+                
+                &:after {
+                    content: " ";
+                    width: 13px;
+                    height: 10px;
+                    position: absolute;
+                    top: 7px;
+                    left: 6px;
+                    @include transition(all 0.4s); 
+                    background-image: url(../img/icons/secondary-lighter/checkbox.svg);
+                    background-repeat: no-repeat;
+                    background-size: 13px 10px;
+                    background-position: center center ;
+                    opacity: 0;
+                }
+            }
+        }
+        .checkbox-control input[type=checkbox]:checked + label:after {
+            opacity: 1;
+        }
+        
+    }
     
 }
 
-::-webkit-input-placeholder { color: $gray !important             }
-:-moz-placeholder           { color: $gray !important; opacity: 1 }
-::-moz-placeholder          { color: $gray !important; opacity: 1 }
-:-ms-input-placeholder      { color: $gray !important             }
+::-webkit-input-placeholder { color: $white !important             }
+:-moz-placeholder           { color: $white !important; opacity: 1 }
+::-moz-placeholder          { color: $white !important; opacity: 1 }
+:-ms-input-placeholder      { color: $white !important             }
+
+input[type='text'],
+input[type='password'],
+input[type='email'],
+textarea { 
+    outline:0px !important;
+    -webkit-appearance:none !important;
+    @include box-shadow(none !important);
+}
 
 
 /****************
@@ -874,6 +1009,29 @@ section {
     min-height: 10px;
     z-index: 1;
     
+    &.bg-pattern-dark {
+        background-repeat: no-repeat;
+        background-position: center center;
+        @include background-size(cover);
+        background-image: url(../img/bg/pattern.png);
+        
+        @include target-xs-lg {
+            @include background-size(auto 100%);
+        }
+    }
+    
+    &.bg-white {
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-color: $white;
+        background-image: url(../img/bg/watermark-white.jpg);
+        
+        @include target-xs-xl { 
+            background-position: -100px bottom;
+            @include background-size(800px auto)
+        }
+    }
+    
     @include target-md    { padding: 80px 0 }
     @include target-xs-sm { padding: 60px 0 }
 
@@ -1004,6 +1162,68 @@ a.item-img {
     }
 }
 
+.item-supply {
+    position: relative;
+    display: block;
+    
+    img {
+        @include target-xs { margin-bottom: 30px }
+    }
+    
+    h3 { 
+        color: $brand-secondary-darker; 
+        margin: 0;
+        @include target-md-plus { font-size: 36px }
+    }
+    
+    h6 {
+        position: relative;
+        color: $brand-secondary-darker; 
+        margin-bottom: 45px;
+        @include target-xs { margin-bottom: 30px }
+
+        &:after {
+            content: " ";
+            position: absolute;
+            top: 15px;
+            right: 0;
+            width: calc(100% - 130px);
+            height: 1px;
+            background-color: $brand-secondary-lightest;
+        }
+    }
+    
+    ul {
+        margin-bottom: -15px;
+        
+        li {
+            color: $brand-secondary-dark;
+            margin: 0 0 15px;
+            
+            > * {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            
+            >:nth-child(1) {
+                content: " ";
+                width: 20px;
+                height: 20px;
+                @include border-radius(50%);
+                margin-right: 10px;
+                
+            }
+            >:nth-child(2) {
+                font-weight: bold;
+                width: 42px;
+                //@include target-lg-plus { width: 42px }
+            }
+            >:nth-child(3) {
+            }
+        }
+    }
+}
+
 .star-rating {
     list-style: none;
     padding: 0;
@@ -1032,9 +1252,23 @@ a.item-img {
 ******************/
 
 .container {
-    
     @include target-xs-md { max-width: 100%   }
     @include target-xxl   { max-width: 1300px }
+    
+    &.container-sm {
+        width: 100%;
+        max-width: 780px;
+    }
+    
+    .row.md-gutter {
+        margin-left: -15px;
+        margin-right: -15px;
+
+        > [class*=col] { 
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
     
     .row.sm-gutter {
         margin-left: -10px;
@@ -1251,10 +1485,46 @@ section.section-home-4 {
 }
 
 section.section-home-5 {  
-    @include target-xs-md { margin-top: -180px; padding-bottom: 40px }
+    @include target-xs-md { margin-top: -180px }
     @include target-lg-xl { margin-top: -220px }
     @include target-xxl   { margin-top: -260px }
 }
+
+section.section-home-6 {  
+    img.illustration {
+        @include target-xl { padding: 0 20px 0 60px }
+        @include target-xs-sm { margin-bottom: 50px; margin-top: 30px }
+    }
+}
+
+.line-top {
+    &:before {
+        content: " ";
+        width: 1px;
+        height: 50px;
+        outline: 0;
+        border: 0;
+        background-color: $brand-secondary-lighter;
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        @include transition(translateX(-50%));
+    }
+}
+
+.float-img {
+    width: 174px;
+    height: 220px;
+    background-size: 174px 220px;
+    background-image: url(../img/generic/floating-watermark.png);
+    position: absolute;
+    top: -30px;
+    right: 60px;
+    z-index: -1;
+    
+    @include target-xs-sm { display: none }
+}
+
 
 
 /*****************
@@ -1271,21 +1541,21 @@ section, footer {
 header {
     .half-content > .row > div {
         opacity: 0;
-        @include animation-delay(0.6s);
+        @include animation-delay(0.8s);
         @include animation-fill-mode(forwards);
         @include animation-duration(0.8s);
     }
     
     .half-bg > .row > div {
         opacity: 0;
-        @include animation-delay(0.8s);
+        @include animation-delay(1s);
         @include animation-fill-mode(forwards);
         @include animation-duration(0.8s);
     }
     
     .scroll > div {
         opacity: 0;
-        @include animation-delay(1s);
+        @include animation-delay(1.4s);
         @include animation-fill-mode(forwards);
         @include animation-duration(1s);
     }
