@@ -1,7 +1,7 @@
 brand: assets/img/brand/brand.png
 text:
-  top: A cost-effective way to facilitate team bonding.
-  bottom: Show your employees that they’re valued.
+  top: 'A cost-effective way to say "you''re valued":'
+  bottom: our coffee isn't a commodity and neither is your team
 facebook:
   link: #
   image: assets/img/icons/white/fb.svg

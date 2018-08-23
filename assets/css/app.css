@@ -5975,6 +5975,8 @@ body.loaded header .scroll > div {
 
 /*=================================| My code |============================*/
 .active-top{border-top: 1px solid white!important;}
+.font-size-12{font-size: 12px!important;}
+.bg-white{background-color: white!important;}
 .no-margin-bottom{ margin-bottom: 0px!important; }
 /* More spacing */
 .zero-padding{
@@ -6029,6 +6031,7 @@ body.loaded header .scroll > div {
     margin-top: -130px;
     padding-bottom: 30px;
 }
+.item-img-alt .content-less-space {padding: 20px 10px 100px;}
 .image-area img{border-radius: 50%;}
 
 

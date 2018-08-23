@@ -88,96 +88,100 @@ permalink: /contact
 	</section>
 	<!-- end SECTION 1 -->
 
-	<!-- SECTION 7 -->
-<section class="section-home-7 bg-pattern-dark line-top">
-	<div class="container container-sm">
-
-		<div class="row m-lg">
-			<div class="col animate slide-in-from-top">
-				<h1 class="text-white text-center">
-					It only takes a second <br class="d-none d-lg-block">
-					<span class="text-secondary-lighter">to get started</span>
-				</h1>
-				<p class="text-white text-center">
-					<b>
-					To get started, please email us on <a class="link-secondary-lighter" href="mailto:business@pactcoffee.com">business@pactcoffee.com</a> or call us on <br class="d-none d-lg-block"><a href="tel:020 3936 3316" class="link-secondary-lighter">020 3936 3316</a>. Alternativley use the contact form below:
-					</b>
-				</p>
+	<!-- SECTION 2 -->
+	<section class="section-home-7 bg-pattern-dark line-top">
+		<div class="container container-sm">
+	
+			<div class="row m-lg">
+				<div class="col animate slide-in-from-top">
+					<h1 class="text-white text-center">
+						{{site.data.contact.section2.title.top}} <br class="d-none d-lg-block">
+						<span class="text-secondary-lighter">{{site.data.contact.section2.title.bottom}}</span>
+					</h1>
+					<p class="text-white text-center">
+						<b>
+							To get started, please email us on <a class="link-secondary-lighter" 
+							href="{{site.data.general_info.email.link}}">{{site.data.general_info.email.name}}</a> 
+							or call us on <br class="d-none d-lg-block"><a href="{{site.data.general_info.phone.link}}" 
+							class="link-secondary-lighter">{{site.data.general_info.phone.number}}</a>. 
+							Alternatively use the contact form below:
+						</b>
+					</p>
+				</div>
 			</div>
-		</div>
-
-		<div class="row">
-			<div class="col animate slide-in-from-top">
-				<form>
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Full Name *">
-					</div>
-
-					<div class="row md-gutter">
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Email *">
-							</div>
+	
+			<div class="row">
+				<div class="col animate slide-in-from-top">
+					<form>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Full Name *">
 						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Phone No. *">
+	
+						<div class="row md-gutter">
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Email *">
+								</div>
 							</div>
-						</div>
-					</div>
-
-					<div class="row md-gutter">
-						<div class="col-md-6">
-							<div class="form-group">
-									<input type="text" class="form-control" placeholder="Company *">
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<select class="form-control">
-									<option  disabled selected value>No. of Staff</option>
-									<option>5</option>
-									<option>10</option>
-									<option>15</option>
-								</select>
-							</div>
-						</div>
-					</div>
-
-					<div class="form-group">
-						<select class="form-control">
-							<option disabled selected value>Preferred method of contact</option>
-							<option>Phone</option>
-							<option>Email</option>
-						</select>
-					</div>
-
-					<div class="row md-gutter">
-						<div class="col-lg-12">
-							<div class="form-group">
-									<textarea class="form-control" placeholder="How can we help you?"></textarea>
-							</div>
-						</div>
-					</div>
-
-					<div class="row md-gutter">
-						<div class="col-md-6">
-							<div class="form-group m-top">
-								<div class="checkbox-control">
-									<input type="checkbox"  value="1" id="checkbox-1" name="" >
-									<label for="checkbox-1">
-										<span>I would like a <b>free coffee tasting</b></span>
-									</label>
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Phone No. *">
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6">
-							<a href="#" class="btn btn-primary full-width center-mobile">Treat your team</a>
+	
+						<div class="row md-gutter">
+							<div class="col-md-6">
+								<div class="form-group">
+										<input type="text" class="form-control" placeholder="Company *">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<select class="form-control">
+										<option  disabled selected value>No. of Staff</option>
+										<option>5</option>
+										<option>10</option>
+										<option>15</option>
+									</select>
+								</div>
+							</div>
 						</div>
-					</div>
-				</form>
+	
+						<div class="form-group">
+							<select class="form-control">
+								<option disabled selected value>Preferred method of contact</option>
+								<option>Phone</option>
+								<option>Email</option>
+							</select>
+						</div>
+	
+						<div class="row md-gutter">
+							<div class="col-lg-12">
+								<div class="form-group">
+										<textarea class="form-control" placeholder="How can we help you?"></textarea>
+								</div>
+							</div>
+						</div>
+	
+						<div class="row md-gutter">
+							<div class="col-md-6">
+								<div class="form-group m-top">
+									<div class="checkbox-control">
+										<input type="checkbox"  value="1" id="checkbox-1" name="" >
+										<label for="checkbox-1">
+											<span>I would like a <b>free coffee tasting</b></span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<a href="#" class="btn btn-primary full-width center-mobile">Treat your team</a>
+							</div>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!-- end SECTION 7 -->
+	</section>
+<!-- end SECTION 2 -->
