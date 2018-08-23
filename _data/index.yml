@@ -39,9 +39,102 @@ section1:
       button: how it works
 
 section2:
+  title: We make it easy
+  image: assets/img/illustration/02.png
+  button:
+    link: 
+    text: Get started
+  theme1:
+    title: Tailored for you 
+    subtitle: Together, we'll design a bespoke package that suits your team to a tee
+  theme2:
+    title: Coffee launch
+    subtitle: Kicking things off with a bang, a coffee launch will let your office know that we've arrived!
+  theme3:
+    title: On-hand Support
+    subtitle: Our Customer Chapions are ready and willing to chat coffee 9am-5pm, seven days a week.
 
 section3:
+  title: what our clients say
+  image: assets/img/illustration/03.png
+  slide1:
+    text: “Using Pact has meant we no longer need to leave the building to get a cappuccino that cuts the mustard. This has improved morale no end – despite the queue at the coffee machine.”
+    bold_text: Beth at Capital Law
+  slide2:
+    text: “Nulla suscipit lectus ut bibendum molestie. Donec in efficitur mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.”
+    bold_text: Lipsum at vitrai amet
+  slide3:
+    text: “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate sit amet diam vel posuere. Nunc elementum faucibus ligula, rhoncus tempor sapien fringilla nec lipsum sit amet.”
+    bold_text: Vitrai at Consectetur
 
 section4:
+  title: Why might Pact be perfect for you?
+  subtitle: We're already fuelling hundreds of offices with some of the world's mst incredible coffee
+  button:
+    link: 
+    text: Our sustainable approach
 
 section5:
+  box1:
+    image: assets/img/home/img-4.jpg
+    title: Variety
+    text: We're constantly switching up which coffees we have available, as our travels uncover incredible new finds.
+  box2:
+    image: assets/img/home/img-5.jpg
+    title: Excenllence
+    text: 'We accept nothing but the best at each step: during sourching, growing, processing, quality control, roasting and grinding.'
+  box3:
+    image: assets/img/home/img-6.jpg
+    title: Flexibility
+    text: We offer tailor-made packages to suit your team, depending on the number of employees and their preferences.
+
+section6:
+  title: Coffee Supply Chain
+  text: We pay <b>farmers</b> fairer than Fairtrade prices, which means <b>better coffee</b> for you and a <b>better quality of life</b> for them.
+  image: assets/img/illustration/04.png
+  coffee_stat_top:
+    title: Pact Coffee
+    subtitle: Supply Chain
+    image: assets/img/illustration/supply-1.png
+    color1: 
+      percentage: '4%'
+      of: Exporter
+    color2:
+      percentage: '9%'
+      of: Shipping &amp; Finance
+    color3:
+      percentage: '10%'
+      of: Mill
+    color4:
+      percentage: '77%'
+      of: Farmer
+  coffee_stat_bottom:
+    title: Traditional
+    subtitle: Supply Chain
+    image: assets/img/illustration/supply-2.png
+    color1:
+      percentage: '25%'
+      of: Importer
+    color2:
+      percentage: '9%'
+      of: Shipping &amp; Finance
+    color3:
+      percentage: '20%'
+      of: 'Exporter'
+    color4:
+      percentage: '20%'
+      of: Mill
+    color5:
+      percentage: '26%'
+      of: Farmer
+
+section7:
+  title:
+    top: It only takes a second
+    bottom: to get started
+  
+
+
+
+
+

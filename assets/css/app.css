@@ -6005,6 +6005,7 @@ body.loaded header .scroll > div {
 .more-25-margin-bottom{margin-bottom: 25px!important;}
 .less-25-margin-bottom{margin-bottom: -25px!important;}
 /* end More spacing */
+.text-normal{font-weight: normal!important;}
 .top70-empty-space{ top: 70%; }
 .color-orange {color: #f3ad49!important;}
 .small-h1{font-size: 24px!important;}
