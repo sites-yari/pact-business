@@ -6021,6 +6021,7 @@ body.loaded header .scroll > div {
 .temp-border{width: 100%; border: 2px solid white; text-align: center;}
 .temp-border-left{border-left: 1px solid white;}
 .text-center{text-align: center;}
+.text-left{text-align: left!important;}
 .no_margin{margin: 0px auto!important;}
 .container_width0{width:auto!important;}
 .fit-image-corners{
