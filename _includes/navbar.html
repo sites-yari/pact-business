@@ -17,13 +17,21 @@
           <div class="navbar-nav-wrapper">
               <ul class="navbar-nav top">
                   <li class="nav-item">
-                    {% if page.class == "how_it_works" %}<a class="nav-link color-orange" href="#">
+                    {% if page.class == "how_it_works" or 
+                    "our_story" or  
+                    "machines" or 
+                    "pricing" or 
+                    "contact" %}<a class="nav-link color-orange" href="#">
                     {% else %}<a class="nav-link" href="#">
                     {% endif %}
                     <span>Pact for Home</span></a>
                   </li>
                   <li class="nav-item">
-                    {% if page.class == "how_it_works" %}<a class="nav-link color-orange" href="#">
+                    {% if page.class == "how_it_works" or 
+                    "our_story" or 
+                    "machines" or 
+                    "pricing" or 
+                    "contact" %}<a class="nav-link color-orange" href="#">
                     {% else %}<a class="nav-link" href="#">
                     {% endif %}
                     <span>Login</span></a>
@@ -46,7 +54,7 @@
                     {% endif %}
                     <a class="nav-link" href="/machines"><span>Machines</span></a>
                   </li>
-                  {% if page.class == "princing" %}<li class="nav-item active-top">
+                  {% if page.class == "pricing" %}<li class="nav-item active-top">
                     {% else %} <li class="nav-item">
                     {% endif %}
                     <a class="nav-link" href="/pricing"><span>Pricing</span></a>
