@@ -5974,11 +5974,10 @@ body.loaded header .scroll > div {
 
 
 /*=================================| My code |============================*/
-.active-top{border-top: 1px solid white!important;}
-.font-size-12{font-size: 12px!important;}
-.bg-white{background-color: white!important;}
-.no-margin-bottom{ margin-bottom: 0px!important; }
-/* More spacing */
+/* MORE - LESS SPACING (margins and paddings) */
+/* Zero */
+.no-margin-bottom{ margin-bottom: 0px!important; } /* repetido... */
+.no_margin{margin: 0px auto!important;}
 .zero-padding{
   padding: 0px;
   padding-left: 0px;
@@ -5994,26 +5993,46 @@ body.loaded header .scroll > div {
 .zero-padding-bottom{ padding-bottom: 0px!important; }
 .zero-padding-right{ padding-right: 0px!important; }
 .zero-padding-left{ padding-left: 0px!important; }
+/* end Zero */
+
+/* Margin */
+.more-25-margin-top{margin-top: 25px!important;}
+.more-25-margin-bottom{margin-bottom: 25px!important;}
+.less-25-margin-bottom{margin-bottom: -25px!important;}
+/* --- */
 .less-margin-top{ margin-top: -50px!important; }
 .less-margin-bottom{ margin-bottom: -50px!important; }
 .more-margin-top{ margin-top: 50px!important; }
 .more-margin-bottom{ margin-bottom: 50px!important; }
-.more-padding-top{ padding-top: 50px!important; }
-.more-padding-bottom{ padding-bottom: 50px!important; }
 .more2-margin-top{ margin-top: 100px!important; }
 .more2-margin-bottom{ margin-bottom: 100px!important; }
+.more6-margin-top{margin-top: 300px!important;}
+/* end Margin */
+
+/* Padding */
+.more-padding-top{ padding-top: 50px!important; }
+.more-padding-bottom{ padding-bottom: 50px!important; }
 .more2-padding-top{ padding-top: 100px!important; }
 .more2-padding-bottom{ padding-bottom: 100px!important; }
-.more-25-margin-bottom{margin-bottom: 25px!important;}
-.less-25-margin-bottom{margin-bottom: -25px!important;}
-.more6-margin-top{margin-top: 300px!important;}
+/* --- */
 .section4-extra-padding-bottom{ padding-bottom: 620px!important; }
 .content-padd-10{
   padding-right: 10px!important;
   padding-left: 10px!important;
 }
-.more-l-margin-top{margin-top: 25px!important;}
+/* end Padding */
+
+/* OTHERS */
+.story {padding-top: 400px;}
+.item-img-alt .content-less-space {padding: 20px 10px 100px;}
+.item-img-alt .content-less2-space {padding: 20px 10px 50px;}
+/* end OTHERES */
 /* end More spacing */
+
+
+.active-top{border-top: 1px solid white!important;}
+.font-size-12{font-size: 12px!important;}
+.bg-white{background-color: white!important;}
 .text-normal{font-weight: normal!important;}
 .top70-empty-space{ top: 70%; }
 .color-orange {color: #f3ad49!important;}
@@ -6022,7 +6041,6 @@ body.loaded header .scroll > div {
 .temp-border-left{border-left: 1px solid white;}
 .text-center{text-align: center;}
 .text-left{text-align: left!important;}
-.no_margin{margin: 0px auto!important;}
 .container_width0{width:auto!important;}
 .fit-image-corners{
   height: 450px;
@@ -6039,16 +6057,30 @@ body.loaded header .scroll > div {
     margin-top: -130px;
     padding-bottom: 30px;
 }
-.story {padding-top: 400px;}
-.item-img-alt .content-less-space {padding: 20px 10px 100px;}
 .image-area img{border-radius: 50%;}
+.top-border-only{border-top: 1px solid;}
+.in-between{  
+  margin-top: -30px;
+  margin-bottom: 25px;
+}
+.in-between .border-middle-balloon{
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 15px 20px;
+}
+.top-border-only .in-between .middle-balloon{
+  border: 0px solid;
+  border-radius: 50%;
+  padding: 15px 20px;
+}
+.in-between .middle-balloon{
+  border: 2px solid;
+  border-radius: 50%;
+  padding: 15px 20px;
+}
 
 
-
-.item-img-alt {
-  position: relative;
-  display: block;
-  margin: 0 0 20px; }
+/* Edited/new code */
 .item-img-alt.same-less-height {
   background-color: #edeeed;
   height: 100%;
@@ -6063,6 +6095,20 @@ body.loaded header .scroll > div {
 @media (min-width: 1500px) {
   .item-img-alt.same-less-height { height: 260px; } 
 }
+.item-img-alt.same-less-height-no-bg {
+  height: 100%;
+  margin: 0; }
+.item-img-alt.same-less-height { width: 100%; }
+@media (min-width: 0) and (max-width: 991px) {
+  .item-img-alt.same-less-height {  height: 180px; } 
+}
+@media (min-width: 992px) and (max-width: 1499px) {
+  .item-img-alt.same-less-height { height: 220px; } 
+}
+@media (min-width: 1500px) {
+  .item-img-alt.same-less-height { height: 260px; } 
+}
+/* end Edited/new code */
 
 
 
