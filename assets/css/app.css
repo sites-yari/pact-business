@@ -5997,6 +5997,7 @@ body.loaded header .scroll > div {
 
 /* Margin */
 .more-25-margin-top{margin-top: 25px!important;}
+.less-25-margin-top{margin-top: -25px!important;}
 .more-25-margin-bottom{margin-bottom: 25px!important;}
 .less-25-margin-bottom{margin-bottom: -25px!important;}
 /* --- */
@@ -6042,6 +6043,16 @@ body.loaded header .scroll > div {
 .text-center{text-align: center;}
 .text-left{text-align: left!important;}
 .container_width0{width:auto!important;}
+.box-comparison{ height: 500px; }
+.box-comparison .less-spacing-list p{ 
+  line-height: normal; 
+  font-size: 16px; 
+  margin-bottom: 5px;
+}
+.box-comparison .less-spacing p{ 
+  line-height: normal; 
+  margin-bottom: 5px;
+}
 .fit-image-corners{
   height: 450px;
   object-fit: cover;
@@ -6077,6 +6088,10 @@ body.loaded header .scroll > div {
   border: 2px solid;
   border-radius: 50%;
   padding: 15px 20px;
+}
+.box-comparison{
+  border: 1px solid;
+  padding: 25px;
 }
 
 
