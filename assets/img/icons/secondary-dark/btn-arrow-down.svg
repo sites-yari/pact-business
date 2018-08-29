@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="15px" viewBox="0 0 12 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Spilling-the-Beans-copy" transform="translate(-448.000000, -248.000000)" stroke="#56868F">
+            <g id="Group-14" transform="translate(145.000000, 247.300000)">
+                <g id="arrow" transform="translate(304.000000, 0.000000)">
+                    <polyline id="Stroke-8" points="9.9415 9.3403 5.0875 15.2073 0.2335 9.3403"></polyline>
+                    <path d="M5.088,15.207 L5.088,0.907" id="Stroke-10"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
