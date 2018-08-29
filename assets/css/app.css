@@ -5996,6 +5996,8 @@ body.loaded header .scroll > div {
 /* end Zero */
 
 /* Margin */
+.more-10-margin-top{margin-top: 10px!important;}
+.more-10-margin-bottom{margin-bottom: 10px!important;}
 .more-25-margin-top{margin-top: 25px!important;}
 .less-25-margin-top{margin-top: -25px!important;}
 .more-25-margin-bottom{margin-bottom: 25px!important;}
@@ -6010,6 +6012,13 @@ body.loaded header .scroll > div {
 .more2-margin-top{ margin-top: 100px!important; }
 .more2-margin-bottom{ margin-bottom: 100px!important; }
 .more6-margin-top{margin-top: 300px!important;}
+.content-margin-10{
+  margin-right: 10px!important;
+  margin-left: 10px!important;
+}
+.content-whole-margin-10{
+  margin: 10px!important;
+}
 /* end Margin */
 
 /* Padding */
@@ -6032,6 +6041,7 @@ body.loaded header .scroll > div {
 .story {padding-top: 400px;}
 .item-img-alt .content-less-space {padding: 20px 10px 100px;}
 .item-img-alt .content-less2-space {padding: 20px 10px 50px;}
+.item-img-alt .content-less2-space { padding: 10px 0px 50px; }
 /* end OTHERES */
 /* end More spacing */
 
@@ -6130,7 +6140,8 @@ body.loaded header .scroll > div {
   border-radius: 50%;
   padding: 15px 20px;
 }
-
+.bgbox-lightgray{ background-color: #edeeed!important; }
+.bg-image-blog{ background-color: #3e8d93!important; }
 
 
 /* Edited/new code */
@@ -6615,7 +6626,7 @@ body.loaded header .machines-bg > .row > div {
 
 
 /* <--------------------------------------------------------------| Blog */
-header.blog {height: 100%; height: 400px; }
+header.blog {height: 100%; height: 450px; }
 header.blog:before {background-color: #004249; }
 @media (min-width: 0) and (max-width: 991px) {
   header.blog:before { background-position: -80px center; } 
