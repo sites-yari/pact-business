@@ -6006,6 +6006,7 @@ body.loaded header .scroll > div {
 .less-25-margin-top{margin-top: -25px!important;}
 .more-25-margin-bottom{margin-bottom: 25px!important;}
 .less-25-margin-bottom{margin-bottom: -25px!important;}
+.more-60-margin-top{margin-top: 60px!important;}
 /* --- */
 .less-margin-top{ margin-top: -50px!important; }
 .less-margin-bottom{ margin-bottom: -50px!important; }
@@ -6027,7 +6028,9 @@ body.loaded header .scroll > div {
 
 /* Padding */
 .more-10-padding-top{ padding-top: 10px!important; }
+.more-10-padding-bottom{ padding-bottom: 10px!important; }
 .more-25-padding-top{ padding-top: 25px!important; }
+.more-25-padding-bottom{ padding-bottom: 25px!important; }
 .more-30-padding-top{ padding-top: 30px!important; }
 .more-40-padding-top{ padding-top: 40px!important; }
 .more-padding-top{ padding-top: 50px!important; }
@@ -6066,6 +6069,7 @@ body.loaded header .scroll > div {
 .font-size-20{font-size: 20px!important;}
 .font-size-24{font-size: 24px!important;}
 .font-size-36{font-size: 36px!important;}
+.font-size-42{font-size: 42px!important;}
 .bg-white{background-color: white!important;}
 .text-normal{font-weight: normal!important;}
 .top70-empty-space{ top: 70%; }
@@ -6079,7 +6083,17 @@ body.loaded header .scroll > div {
 .container_width0{width:auto!important;}
 .text-orange{color: #ffaa2b!important;}
 .text-light-gray{ color: #edeeed!important; }
+.invisible-area{opacity:0;}
 .bg-color-footer{ background-color: #3e8d93!important; }
+.stage_row .separator-ball{
+  border: 5px solid #ffaa2b;
+  border-radius: 50%;
+  width: 10px;
+  background-color: #ffaa2b;
+  height: 10px;
+  margin-top: -100px;
+  z-index: 3;
+}
 .box-blog{
   border: 0px solid #f5c351;
   background-color: #edeeed;
@@ -6158,6 +6172,24 @@ body.loaded header .scroll > div {
   padding: 15px 20px;
 }
 .bgbox-lightgray{ background-color: #edeeed!important; }
+.bg-coffee-tasting{
+  background-image: url(../img/bg/side_imgs_s2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;  */
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .bg-coffee-tasting{
+    background-image: url(../img/bg/spattern-white.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover; 
+  }
+}
 .bg-image-blog{ 
   /* background-color: #3e8d93!important; */
   background-image: url(../img/bg/bg_blog.png);
