@@ -5993,6 +5993,10 @@ body.loaded header .scroll > div {
 .zero-padding-bottom{ padding-bottom: 0px!important; }
 .zero-padding-right{ padding-right: 0px!important; }
 .zero-padding-left{ padding-left: 0px!important; }
+@media(min-width: 992px) and (max-width: 2000px){
+  .temp-zero-p-left{ padding-left: 0px!important; }
+  .temp-zero-p-right{ padding-right: 0px!important; }
+}
 /* end Zero */
 
 /* Margin */
@@ -6022,7 +6026,10 @@ body.loaded header .scroll > div {
 /* end Margin */
 
 /* Padding */
+.more-10-padding-top{ padding-top: 10px!important; }
 .more-25-padding-top{ padding-top: 25px!important; }
+.more-30-padding-top{ padding-top: 30px!important; }
+.more-40-padding-top{ padding-top: 40px!important; }
 .more-padding-top{ padding-top: 50px!important; }
 .more-padding-bottom{ padding-bottom: 50px!important; }
 .more2-padding-top{ padding-top: 100px!important; }
@@ -6039,6 +6046,7 @@ body.loaded header .scroll > div {
 
 /* OTHERS */
 .story {padding-top: 400px;}
+.padd-left60{padding-left: 60px;}
 .padd-sides {padding-left: 10px; padding-right: 10px;}
 .item-img-alt .content-less-space {padding: 20px 10px 100px;}
 .item-img-alt .content-less2-space {padding: 20px 10px 50px;}
@@ -6159,9 +6167,40 @@ body.loaded header .scroll > div {
   -moz-background-size: cover;
   background-size: cover; 
 }
+.bg-number1{
+  background-image: url(../img/icons/big_1_70.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  height:100px;
+}
+.bg-number2{
+  background-image: url(../img/icons/big_2_70.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  height:100px;
+}
+.bg-bar::before{
+  content: url(../img/icons/big_bar.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  height:100px;
+}
+.bg-number3{
+  background-image: url(../img/icons/big_3_70.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  height:100px;
+}
 @media (max-width: 767px) and (min-width: 0) { 
   .mobile-remove{opacity: 0; height:0px;} 
 }
+
+
+
 
 
 /* Edited/new code */
@@ -6236,31 +6275,29 @@ body.loaded header .scroll > div {
 *   Header   *
 **************/
 /* <----------------------------------------------------------| how it works */
-header.works {height: 100%; }
-header.works:before {background-color: #004249; }
+header.works {
+  height: 100%;
+  background-image: url(../img/bg/works_p.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover; 
+}
 @media (min-width: 0) and (max-width: 991px) {
   header.works:before { background-position: -80px center; } 
 }
 header.works > .works-content { padding-top: 50px; }
 header.works > .works-content p { margin-bottom: 40px; }
-@media (min-width: 768px) {
-  header.works > .works-content p { margin-bottom: 50px; } 
-}
 header.works > .works-bg .content { padding-top: 50px; }
 
+@media (min-width: 768px) {header.works > .works-content p { margin-bottom: 50px; } }
 @media (min-width: 992px) {
   .works {
     height: 75%;
-    min-height: 700px; } 
-}
-@media (min-width: 992px) {
+    min-height: 700px; 
+  }
   .works.full-height > .works-content { height: 100%; } 
-}
-.works.full-height > .works-content > .row.content {
-  padding-top: 45px;
-  padding-bottom: 65px; 
-}
-@media (min-width: 992px) {
   .works.full-height > .works-content > .row.content {
     position: relative;
     top: 50%;
@@ -6270,13 +6307,14 @@ header.works > .works-bg .content { padding-top: 50px; }
     transform: translateY(-50%);
     padding-top: 30px;
     padding-bottom: 0; } 
-}
-
-@media (min-width: 992px) {
   .works.full-height > .works-content > .top {
     position: absolute;
     top: 0;
     width: 100%; } 
+}
+.works.full-height > .works-content > .row.content {
+  padding-top: 45px;
+  padding-bottom: 65px; 
 }
 .works.full-height > .works-content > .top h2 { margin: -10px 0 0; }
 .works.full-height > .works-content > .footer {
@@ -6300,33 +6338,11 @@ header.works > .works-bg .content { padding-top: 50px; }
   text-align: center;
   display: none; 
 }
-@media (min-width: 992px) {
-  .works > .works-bg { display: block; } 
-}
+@media (min-width: 992px) {.works > .works-bg { display: block; } }
 .works > .works-bg .content { padding: 0 40px; }
-@media (min-width: 1200px) {
-  .works > .works-bg .content { padding: 0 65px; } 
-}
+@media (min-width: 1200px) {.works > .works-bg .content { padding: 0 65px; } }
 .works > .works-bg .content img { display: inline-block; }
-.works:before {
-  content: " ";
-  position: absolute;
-  z-index: 1;
-  background-color: #edeeed;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-image: url(../img/bg/watermark.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover; 
-}
-@media (min-width: 992px) {
-  .works:before { width: 50%; } 
-}
+@media (min-width: 992px) {.works:before { width: 50%; } }
 @media (min-width: 0) and (max-width: 991px) {
   .works:before {
     background-position: right center;
@@ -6334,19 +6350,6 @@ header.works > .works-bg .content { padding-top: 50px; }
     -moz-background-size: 800px auto;
     background-size: 800px auto; } 
 }
-/* .works:after {
-  content: " ";
-  position: absolute;
-  z-index: 1;
-  background-color: #f3ad49;
-  width: 50%;
-  height: 100%;
-  right: 0;
-  top: 0;
-  display: none; }
-  @media (min-width: 992px) {
-    .works:after {
-      display: block; } } */
 .works.works-bg-2:before { background-image: url(../img/bg/watermark-light.jpg); }
 header .works-content > .row > div {
   opacity: 0;
@@ -6388,6 +6391,7 @@ body.loaded header .works-bg > .row > div {
   -o-animation-name: fadeIn;
   animation-name: fadeIn; 
 }
+
 
 
 /* <----------------------------------------------------------| how it story */
