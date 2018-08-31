@@ -15,20 +15,20 @@ permalink: /contact
 						Great coffee, <br>
 					<span class="text-secondary-lighter">the way you like it</span>
 				</h1>
-				<p class="text-white">
+				<p class="text-white bold">
 						Our dedicated support team are on-hand to help 9am-5pm, 7 days a week.
 				</p>
-				<div class="row text-center">
-					<div class="col-md-5 col-sm-12">
-						<h3 class="lg bold text-white no-margin-bottom">
+				<div class="row">
+					<div class="col-md-5 col-sm-12 pricing-info-right">
+						<h3 class="lg bold text-orange no-margin-bottom font-size-18">
 							Call us now {{site.data.general_info.phone.number}}
 						</h3>
 					</div>
-					<div class="col-md-2 col-sm-12">
-						<hr class="separator no_margin"> 
+					<div class="col-md-2 col-sm-12 text-light-gray mobile-remove">
+						<hr class="separator no_margin" style="background-color: #005761;"> 
 					</div>
-					<div class="col-md-5 col-sm-12 ">
-						<h3 class="lg bold text-white no-margin-bottom">
+					<div class="col-md-5 col-sm-12 pricing-info-left">
+						<h3 class="lg bold text-orange no-margin-bottom font-size-18">
 								{{site.data.general_info.email.name}}
 						</h3>
 					</div>
@@ -89,16 +89,16 @@ permalink: /contact
 	<!-- end SECTION 1 -->
 
 	<!-- SECTION 2 -->
-	<section class="section-home-7 bg-pattern-dark line-top">
+	<section class="section-home-7 line-top">
 		<div class="container container-sm">
 	
 			<div class="row m-lg">
 				<div class="col animate slide-in-from-top">
-					<h1 class="text-white text-center">
+					<h1 class="text-center">
 						{{site.data.contact.section2.title.top}} <br class="d-none d-lg-block">
-						<span class="text-secondary-lighter">{{site.data.contact.section2.title.bottom}}</span>
+						{{site.data.contact.section2.title.bottom}}
 					</h1>
-					<p class="text-white text-center">
+					<p class="text-center">
 						<b>
 							To get started, please email us on <a class="link-secondary-lighter" 
 							href="{{site.data.general_info.email.link}}">{{site.data.general_info.email.name}}</a> 
@@ -112,74 +112,76 @@ permalink: /contact
 	
 			<div class="row">
 				<div class="col animate slide-in-from-top">
-					<form>
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Full Name *">
-						</div>
-	
-						<div class="row md-gutter">
-							<div class="col-md-6">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Email *">
-								</div>
+					<div class="contacts">
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control-white" placeholder="Full Name *">
 							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Phone No. *">
+		
+							<div class="row md-gutter">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control-white" placeholder="Email *">
+									</div>
 								</div>
-							</div>
-						</div>
-	
-						<div class="row md-gutter">
-							<div class="col-md-6">
-								<div class="form-group">
-										<input type="text" class="form-control" placeholder="Company *">
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<select class="form-control">
-										<option  disabled selected value>No. of Staff</option>
-										<option>5</option>
-										<option>10</option>
-										<option>15</option>
-									</select>
-								</div>
-							</div>
-						</div>
-	
-						<div class="form-group">
-							<select class="form-control">
-								<option disabled selected value>Preferred method of contact</option>
-								<option>Phone</option>
-								<option>Email</option>
-							</select>
-						</div>
-	
-						<div class="row md-gutter">
-							<div class="col-lg-12">
-								<div class="form-group">
-										<textarea class="form-control" placeholder="How can we help you?"></textarea>
-								</div>
-							</div>
-						</div>
-	
-						<div class="row md-gutter">
-							<div class="col-md-6">
-								<div class="form-group m-top">
-									<div class="checkbox-control">
-										<input type="checkbox"  value="1" id="checkbox-1" name="" >
-										<label for="checkbox-1">
-											<span>I would like a <b>free coffee tasting</b></span>
-										</label>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control-white" placeholder="Phone No. *">
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6">
-								<a href="#" class="btn btn-primary full-width center-mobile">Treat your team</a>
+		
+							<div class="row md-gutter">
+								<div class="col-md-6">
+									<div class="form-group">
+											<input type="text" class="form-control-white" placeholder="Company *">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<select class="form-control-white">
+											<option  disabled selected value>No. of Staff</option>
+											<option>5</option>
+											<option>10</option>
+											<option>15</option>
+										</select>
+									</div>
+								</div>
 							</div>
-						</div>
-					</form>
+		
+							<div class="form-group">
+								<select class="form-control-white">
+									<option disabled selected value>Preferred method of contact</option>
+									<option>Phone</option>
+									<option>Email</option>
+								</select>
+							</div>
+		
+							<div class="row md-gutter">
+								<div class="col-lg-12">
+									<div class="form-group">
+										<textarea class="form-control-white" placeholder="How can we help you?"></textarea>
+									</div>
+								</div>
+							</div>
+		
+							<div class="row md-gutter">
+								<div class="col-md-6">
+									<div class="form-group m-top">
+										<div class="checkbox-control">
+											<input type="checkbox"  value="1" id="checkbox-1" name="" >
+											<label for="checkbox-1">
+												<span>I would like a <b>free coffee tasting</b></span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<a href="#" class="btn btn-secondary-dark full-width center-mobile">Treat your team</a>
+								</div>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>

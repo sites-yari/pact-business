@@ -6000,6 +6000,7 @@ body.loaded header .scroll > div {
 /* end Zero */
 
 /* Margin */
+.margin-auto{margin:auto;}
 .more-10-margin-top{margin-top: 10px!important;}
 .more-10-margin-bottom{margin-bottom: 10px!important;}
 .more-25-margin-top{margin-top: 25px!important;}
@@ -6060,6 +6061,7 @@ body.loaded header .scroll > div {
 .bold{font-weight: bold;}
 .active-top{border-top: 1px solid white!important;}
 .top-border{border-top: 1px solid white!important;}
+.top-border-secundary-light{border-top: 1px solid #58cdca!important;}
 .top-g-border{border-top: 1px solid #edeeed!important;}
 .font-size-10{font-size: 10px!important;}
 .font-size-12{font-size: 12px!important;}
@@ -6079,10 +6081,27 @@ body.loaded header .scroll > div {
 .temp-border-left{border-left: 1px solid white;}
 .text-center{text-align: center;}
 .text-left{text-align: left!important;}
+.text-right{text-align: right!important;}
+@media (min-width: 769px){
+  .pricing-info-left{
+    text-align: left;
+    padding-left: 0px;
+  }
+  .pricing-info-right{
+    text-align: right;
+    padding-right: 0px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768){
+  .pricing-info-left{ text-align: center; }
+  .pricing-info-right{ text-align: center; }
+}
 .text-primary-blue{ color: #56868f; font-weight: bold;}
 .container_width0{width:auto!important;}
 .text-orange{color: #ffaa2b!important;}
 .text-light-gray{ color: #edeeed!important; }
+.text-secundary-darker{color: #004249!important;}
+.text-blue-icon{color: #73bcba!important;}
 .invisible-area{opacity:0;}
 .bg-color-footer{ background-color: #3e8d93!important; }
 .stage_row .separator-ball{
@@ -6157,9 +6176,14 @@ body.loaded header .scroll > div {
   margin-bottom: 25px;
 }
 .in-between .border-middle-balloon{
-  border: 1px solid;
+  border: 1px solid #58cdca;
   border-radius: 50%;
-  padding: 15px 20px;
+  padding: 10px 18px;
+}
+.in-between .border-middle-balloon2{
+  border: 1px solid #58cdca;
+  border-radius: 50%;
+  padding: 10px 15px;
 }
 .top-border-only .in-between .middle-balloon{
   border: 0px solid;
@@ -6172,6 +6196,23 @@ body.loaded header .scroll > div {
   padding: 15px 20px;
 }
 .bgbox-lightgray{ background-color: #edeeed!important; }
+.bg-brand{
+  background-image: url(../img/brand/bg_brand_b.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover; 
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .bg-brand{ background-image: url(../img/brand/bg_brand_b3.png); }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .bg-brand{ background-image: url(../img/brand/bg_brand_b.png); }
+}
+@media (min-width: 0px) and (max-width: 575px) {
+  .bg-brand{ background-image: url(../img/brand/bg_brand_b4.png); }
+}
 .bg-coffee-tasting{
   background-image: url(../img/bg/side_imgs_s2.png);
   background-repeat: no-repeat;
@@ -6230,7 +6271,15 @@ body.loaded header .scroll > div {
 @media (max-width: 767px) and (min-width: 0) { 
   .mobile-remove{opacity: 0; height:0px;} 
 }
-
+@media (min-width: 992px) and (max-width: 3000px){ 
+  .mobile-add{
+    opacity: 0!important; 
+    height:0px!important;
+    padding: 0px!important;
+    margin: 0px!important;
+  } 
+}
+.mobile-add{ background-color: #ffaa2b; }
 
 
 
@@ -6299,6 +6348,66 @@ body.loaded header .scroll > div {
     .btn.btn-secondary-dark-down:hover:after, .btn.btn-secondary-dark-down:focus:after, .btn.btn-secondary-dark-down:not(:disabled):not(.disabled):active:after, .btn.btn-secondary-dark-down:not(:disabled):not(.disabled).active:after {
       right: 16px;
       background-image: url(../img/icons/white/btn-arrow-down.svg); }
+.btn.mobile-btn-secondary-dark {
+  color: #3e8d93;
+  background-color: transparent;
+  border: solid 1px #3e8d93;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  border-radius: 25px;
+}
+@media (min-width: 992px) and (max-width: 3500px){ 
+  .btn.mobile-btn-secondary-dark:after {
+      content: " ";
+      width: 38px;
+      height: 24px;
+      background-image: url(../img/icons/secondary-dark/btn-arrow-right.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 38px 24px;
+      position: absolute;
+      right: 30px;
+      top: 13px;
+      -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      -ms-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      transition: all 0.4s;
+  }
+}
+@media (min-width: 0px) and (max-width: 991px){ 
+  .btn.mobile-btn-secondary-dark { text-align: center; }
+}
+.contacts form .form-group .form-control-white {
+  display: block;
+  position: relative;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  font-size: 18px;
+  border-bottom: solid 1px;
+  background-color: transparent;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  color: #666666;
+  border-radius: 0;
+  width: 100%;
+  padding: 0 0 19px;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "Noe", serif;
+}
+.contacts input::placeholder{color: #666666!important;}
+.contacts textarea::placeholder{color: #666666!important;}
+.contacts label{color: #666666!important;}
 /* end Edited/new code */
 
 
@@ -6427,7 +6536,7 @@ body.loaded header .works-bg > .row > div {
 
 
 /* <----------------------------------------------------------| how it story */
-header.story {height: 100%; }
+header.story {height: 200px; }
 header.story:before {background-color: #004249; }
 @media (min-width: 0) and (max-width: 991px) {
   header.story:before { background-position: -80px center; } 
@@ -6442,7 +6551,7 @@ header.story > .story-bg .content { padding-top: 50px; }
 @media (min-width: 992px) {
   .story {
     height: 75%;
-    min-height: 700px; } 
+    min-height: 200px; } 
 }
 @media (min-width: 992px) {
   .story.full-height > .story-content { height: 100%; } 
@@ -6711,6 +6820,113 @@ body.loaded header .machines-bg > .row > div {
 }
 
     /* .machine-section header .scroll {left: 90%;} */
+
+
+
+/* <--------------------------------------------------------------| pricing */
+header.pricing {
+  height: 100%;
+  background-image: url(../img/bg/pricing_p.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover; 
+}
+header.pricing:before {background-color: #004249; }
+header.pricing > .pricing-content { padding-top: 50px; }
+header.pricing > .pricing-content p { margin-bottom: 40px; }
+header.pricing > .pricing-bg .content { padding-top: 50px; }
+.pricing.full-height > .pricing-content > .row.content {padding-top: 45px; padding-bottom: 65px; }
+.pricing.full-height > .pricing-content > .top h2 { margin: -10px 0 0; }
+.pricing.full-height > .pricing-content > .footer { position: absolute; bottom: 0; width: 100%; }
+.pricing > .pricing-content { z-index: 3; position: relative; }
+.pricing > .pricing-bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  display: none; 
+}
+.pricing > .pricing-bg .content { padding: 0 40px; }
+.pricing > .pricing-bg .content img { display: inline-block; }
+@media (min-width: 1200px) {.pricing > .pricing-bg .content { padding: 0 65px; } }
+@media (min-width: 0) and (max-width: 991px) { 
+  header.pricing:before { background-position: -80px center; } 
+  .pricing:before {
+    background-position: right center;
+    -webkit-background-size: 1000px auto;
+    -moz-background-size: 1000px auto;
+    background-size: 1000px auto; 
+  } 
+}
+@media (min-width: 768px) { header.pricing > .pricing-content p { margin-bottom: 50px; } }
+@media (min-width: 992px) {
+  .pricing { height: 75%; min-height: 700px; } 
+  .pricing.full-height > .pricing-content { height: 100%; }
+  .pricing.full-height > .pricing-content > .row.content {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-top: 30px;
+    padding-bottom: 0; 
+  } 
+  .pricing.full-height > .pricing-content > .top {
+    position: absolute;
+    top: 0;
+    width: 100%; } 
+  .pricing > .pricing-bg { display: block; } 
+  .pricing:before { width: 50%; } 
+}
+
+header .pricing-content > .row > div {
+  opacity: 0;
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  -o-animation-duration: 0.8s;
+  animation-duration: 0.8s; 
+}
+header .pricing-bg > .row > div {
+  opacity: 0;
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  -o-animation-duration: 0.8s;
+  animation-duration: 0.8s; 
+}
+body.loaded header .pricing-content > .row > div {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn; 
+}
+body.loaded header .pricing-bg > .row > div {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn; 
+}
 
 
 
