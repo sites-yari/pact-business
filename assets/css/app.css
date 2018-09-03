@@ -6017,7 +6017,10 @@ body.loaded header .scroll > div {
 .more-margin-bottom{ margin-bottom: 50px!important; }
 .more2-margin-top{ margin-top: 100px!important; }
 .more2-margin-bottom{ margin-bottom: 100px!important; }
+.more3-margin-top{ margin-top: 150px!important; }
+.more3-margin-bottom{ margin-bottom: 150px!important; }
 .more6-margin-top{margin-top: 300px!important;}
+.more6-margin-bottom{margin-bottom: 300px!important;}
 .content-margin-10{
   margin-right: 10px!important;
   margin-left: 10px!important;
@@ -6059,6 +6062,14 @@ body.loaded header .scroll > div {
 /* end More spacing */
 
 .bold{font-weight: bold;}
+.bg-dark{background-color: #004249;}
+.bg-fingerprint{
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #edeeed;
+  background-image: url(../img/bg/watermark-white3.jpg);
+}
 .active-top{border-top: 1px solid white!important;}
 .top-border{border-top: 1px solid white!important;}
 .top-border-secundary-light{border-top: 1px solid #58cdca!important;}
@@ -6158,6 +6169,11 @@ body.loaded header .scroll > div {
   height: 450px;
   object-fit: cover;
 }
+.fit-image-corners_story{
+  height: 600px;
+  object-fit: cover;
+  width: 100%;
+}
 .image-area .center-image-top{
   display: block;
     margin-left: auto;
@@ -6166,7 +6182,18 @@ body.loaded header .scroll > div {
     margin-top: 10px;
     object-fit: contain;
     width: 160px;
-    margin-top: -130px;
+    margin-top: -290px;
+    padding-bottom: 30px;
+}
+.image-area .center-image-header{
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-top: 10px;
+    object-fit: contain;
+    width: 200px;
+    margin-top: -190px;
     padding-bottom: 30px;
 }
 .image-area img{border-radius: 50%;}
@@ -6536,7 +6563,15 @@ body.loaded header .works-bg > .row > div {
 
 
 /* <----------------------------------------------------------| how it story */
-header.story {height: 200px; }
+header.story {
+  height: 200px;
+  background-image: url(../img/bg/bg_story3.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover; 
+}
 header.story:before {background-color: #004249; }
 @media (min-width: 0) and (max-width: 991px) {
   header.story:before { background-position: -80px center; } 
@@ -6608,22 +6643,6 @@ header.story > .story-bg .content { padding-top: 50px; }
   .story > .story-bg .content { padding: 0 65px; } 
 }
 .story > .story-bg .content img { display: inline-block; }
-.story:before {
-  content: " ";
-  position: absolute;
-  z-index: 1;
-  background-color: #edeeed;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-image: url(../img/bg/watermark.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover; 
-}
 @media (min-width: 992px) {
   .story:before { width: 50%; } 
 }
@@ -6634,7 +6653,6 @@ header.story > .story-bg .content { padding-top: 50px; }
     -moz-background-size: 800px auto;
     background-size: 800px auto; } 
 }
-.story.story-bg-2:before { background-image: url(../img/bg/watermark-light.jpg); }
 header .story-content > .row > div {
   opacity: 0;
   -webkit-animation-delay: 0.6s;
