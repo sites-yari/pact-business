@@ -73,6 +73,50 @@ $(function(){
             } 
         });
     }
+    // Swiper2 ***************
+    
+    if ($(".swiper2.brands .swiper2-container").length > 0) {
+
+        swiper2 = new Swiper2 ('.swiper2.brands .swiper2-container', {
+            speed: 1000,
+            loop: false,
+            grabCursor: true,
+            slidesPerView: 7,
+            breakpoints: {
+                1200: {
+                    slidesPerView: 6,
+                },
+                992: {
+                    slidesPerView: 5,
+                },
+                768: {
+                    slidesPerView: 4,
+                },
+                576: {
+                    slidesPerView: 3,
+                },
+                450: {
+                    slidesPerView: 2,
+                }
+            }
+        });
+    }
+    
+    if ($(".swiper2.testimonials .swiper2-container").length > 0) {
+
+        swiper2 = new Swiper2 ('.swiper2.testimonials .swiper2-container', {
+            speed: 1000,
+            loop: true,
+            autoHeight: true,
+            grabCursor: true,
+            effect: 'fade',
+            crossFade: false,
+            pagination: {
+                el: '.swiper2-pagination.testimonials',
+                clickable: true,
+            } 
+        });
+    }
     
         
     // Resize ***************
