@@ -6049,6 +6049,8 @@ body.loaded header .scroll > div {
 .more-padding-bottom{ padding-bottom: 50px!important; }
 .more2-padding-top{ padding-top: 100px!important; }
 .more2-padding-bottom{ padding-bottom: 100px!important; }
+.more4-padding-top{ padding-top: 200px!important; }
+.more4-padding-bottom{ padding-bottom: 200px!important; }
 .more6-padding-top{ padding-top: 300px!important; }
 .more6-padding-bottom{ padding-bottom: 300px!important; }
 /* --- */
@@ -6333,6 +6335,7 @@ body.loaded header .scroll > div {
 }
 @media (min-width: 0px) and (max-width: 575px) {
   .bg-brand{ background-image: url(../img/brand/bg_brand_b4.png); }
+  .story-header-margin{margin-top: 300px;}
 }
 .bg-coffee-tasting{
   background-image: url(../img/bg/side_imgs_s2.png);
@@ -6354,11 +6357,16 @@ body.loaded header .scroll > div {
   .mobile-img-hide{
     display: none!important;
   }
+  
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  .story-header-margin{margin-top: 700px;}
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .tablet-img-hide{
     display: none!important;
   }
+  .story-header-margin{margin-top: 700px;}
 }
 .bg-image-blog{ 
   /* background-color: #3e8d93!important; */
@@ -6399,6 +6407,7 @@ body.loaded header .scroll > div {
 }
 @media (max-width: 767px) and (min-width: 0) { 
   .mobile-remove{opacity: 0; height:0px;} 
+  .mobile-work-section1{height:600px;}
 }
 @media (min-width: 992px) and (max-width: 3000px){ 
   .mobile-add{
@@ -6407,9 +6416,8 @@ body.loaded header .scroll > div {
     padding: 0px!important;
     margin: 0px!important;
   } 
-  .web-ls-img-hide{
-    display: none!important;
-  }
+  .web-ls-img-hide{ display: none!important;}
+  .story-header-margin{margin-top: 300px;}
 }
 /*=========================================================================
 ||||||||||||||||||||||||||||| end CREATED AREA ||||||||||||||||||||||||||||
