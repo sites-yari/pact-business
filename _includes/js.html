@@ -2,44 +2,67 @@
 <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="assets/js/jquery/jquery.easing.js"></script>
 <script src="assets/js/jquery/jquery.swiper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="assets/js/app.js"></script>
 
 <script>
-  $(document).ready(function(){
-    var text1 = $(document.getElementById("slide1_text"));
-    var text2 = $(document.getElementById("slide1_text2"));
-    var text3 = $(document.getElementById("slide2_text"));
-    var text4 = $(document.getElementById("slide2_text2"));
-    var text5 = $(document.getElementById("slide3_text"));
-    var text6 = $(document.getElementById("slide3_text2"));
-    $(text1).hide();
-    $(text2).hide();
-    $(text3).hide();
-    $(text4).hide();
-    $(text5).hide();
-    $(text6).hide();
-
-
-    // slide 1
-    $(document.getElementById("slide1_b1")).click(function(){
-      $(text1).toggle(500);
-    });
-    $(document.getElementById("slide1_b2")).click(function(){
-      $(text2).toggle(500);
-    });
-    // slide 2
-    $(document.getElementById("slide2_b1")).click(function(){
-      $(text3).toggle(500);
-    });
-    $(document.getElementById("slide2_b2")).click(function(){
-      $(text4).toggle(500);
-    });
-    // slide 3
-    $(document.getElementById("slide3_b1")).click(function(){
-      $(text5).toggle(500);
-    });
-    $(document.getElementById("slide3_b2")).click(function(){
-      $(text6).toggle(500);
-    });
+jQuery(function($) {
+  var mySwiper = new Swiper(".swiper-container", {
+    pagination: ".swiper-pagination",
+    nextButton: ".swiper-button-next",
+    prevButton: ".swiper-button-prev",
+    paginationClickable: true,
+    spaceBetween: 50,
+    centeredSlides: true,
+    autoplay: 10000,
+    autoplayDisableOnInteraction: true,
+    loop: false
   });
+
+  console.log("a", mySwiper);
+
+  $(".swiper-container").on("focusout", function() {
+    setTimeout(function() {
+      if ($(this).find(":focus").length === 0) {
+        mySwiper.startAutoplay();
+        console.log("focusout, startAutoplay");
+      }
+    }, 100);
+  });
+
+  $(document).on("touchmove", function() {
+    mySwiper.startAutoplay();
+    console.log("touchmove, startAutoplay");
+  });
+});
+
+$(function() {
+  $("*[data-toggle]").click(function() {
+    $("#" + $(this).attr("data-toggle")).toggle();
+    //$('#'+$(this).attr('data-toggle')).classList.toggle('collapsed');
+    document
+      .querySelector(".swiper-container.collapsible")
+      .classList.toggle("collapsed");
+
+    return false;
+  });
+});
+
+$(function() {
+  $("#accordion").accordion({
+      collapsible: true
+  }); 
+});
+
+$(function() {
+  $("#accordion2").accordion({
+      collapsible: true
+  }); 
+});
+
+$(function() {
+  $("#accordion3").accordion({
+      collapsible: true
+  }); 
+});
   </script>
