@@ -6187,7 +6187,7 @@ body.loaded header .scroll > div {
 .bg-free-office-coffee-tasting{
   padding-left: 0px;
   padding-right: 0px;
-  background-image: url(../img/bg/bg_free_office_coffee_tasting.png);
+  background-image: url(../img/bg/main/bg_free_office_coffee_tasting.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -6432,7 +6432,7 @@ body.loaded header .scroll > div {
 }
 .bg-image-blog{ 
   /* background-color: #3e8d93!important; */
-  background-image: url(../img/bg/bg_blog.png);
+  background-image: url(../img/bg/main/bg_blog.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -6661,7 +6661,7 @@ body.loaded header .scroll > div {
 /* <----------------------------------------------------------| how it works */
 header.works {
   height: 100%;
-  background-image: url(../img/bg/works_p.png);
+  background-image: url(../img/bg/main/works_p.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -6781,7 +6781,7 @@ body.loaded header .works-bg > .row > div {
 /* <----------------------------------------------------------| how it story */
 header.story {
   height: 200px;
-  background-image: url(../img/bg/bg_story3.jpg);
+  background-image: url(../img/bg/main/bg_story.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -6915,7 +6915,7 @@ body.loaded header .story-bg > .row > div {
 /* <--------------------------------------------------------------| Machines */
 header.machines {
   height: 100%;
-  background-image: url(../img/bg/machines_p.png);
+  background-image: url(../img/bg/main/machines_p.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -7051,7 +7051,7 @@ body.loaded header .machines-bg > .row > div {
 /* <--------------------------------------------------------------| pricing */
 header.pricing {
   height: 100%;
-  background-image: url(../img/bg/pricing_p.png);
+  background-image: url(../img/bg/main/pricing_p.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
