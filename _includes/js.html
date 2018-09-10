@@ -6,63 +6,50 @@
 <script src="assets/js/app.js"></script>
 
 <script>
-jQuery(function($) {
-  var mySwiper = new Swiper(".swiper-container", {
-    pagination: ".swiper-pagination",
-    nextButton: ".swiper-button-next",
-    prevButton: ".swiper-button-prev",
-    paginationClickable: true,
-    spaceBetween: 50,
-    centeredSlides: true,
-    autoplay: 10000,
-    autoplayDisableOnInteraction: true,
-    loop: false
-  });
+  if ($('.swiper-container').length > 0) { //some-slider-wrap-in
+    let swiperInstances = [];
+    $(".swiper-container").each(function(index, element){ //some-slider-wrap-in
+        const $this = $(this);
+        $this.addClass("instance-" + index); //instance need to be unique (ex: some-slider)
+        $this.parent().find(".swiper-pagination").addClass("pagination-" + index);
+        $this.parent().find(".swiper-button-prev").addClass("prev-" + index); //prev must be unique (ex: some-slider-prev)
+        $this.parent().find(".swiper-button-next").addClass("next-" + index); //next must be unique (ex: some-slider-next)
+        swiperInstances[index] = new Swiper(".instance-" + index, { //instance need to be unique (ex: some-slider)
+            // your settings ...
+            navigation: {
+                prevEl: ".prev-" + index,  //prev must be unique (ex: some-slider-prev)
+                nextEl: ".next-" + index, //next must be unique (ex: some-slider-next)
+            },
+            pagination: {
+                el: '.pagination-' + index,
+                type: 'bullets',
+                clickable: true
+            },
+        });
+    });
 
-  console.log("a", mySwiper);
+    // Now you can call the update on a specific instance in the "swiperInstances" object
+    // e.g.
+    swiperInstances[3].update();
+    //or all of them
+    setTimeout(function () {
+        for (const slider of swiperInstances) {
+            slider.update();
+        }
+    }, 50);
+}
+</script>
 
-  $(".swiper-container").on("focusout", function() {
-    setTimeout(function() {
-      if ($(this).find(":focus").length === 0) {
-        mySwiper.startAutoplay();
-        console.log("focusout, startAutoplay");
-      }
-    }, 100);
-  });
-
-  $(document).on("touchmove", function() {
-    mySwiper.startAutoplay();
-    console.log("touchmove, startAutoplay");
-  });
-});
-
-$(function() {
-  $("*[data-toggle]").click(function() {
-    $("#" + $(this).attr("data-toggle")).toggle();
-    //$('#'+$(this).attr('data-toggle')).classList.toggle('collapsed');
-    document
-      .querySelector(".swiper-container.collapsible")
-      .classList.toggle("collapsed");
-
-    return false;
-  });
-});
-
+<script>
 $(function() {
   $("#accordion").accordion({
       collapsible: true
   }); 
-});
-
-$(function() {
   $("#accordion2").accordion({
       collapsible: true
   }); 
-});
-
-$(function() {
   $("#accordion3").accordion({
       collapsible: true
-  }); 
+  });
 });
   </script>
