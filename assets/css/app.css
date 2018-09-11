@@ -6187,6 +6187,7 @@ body.loaded header .scroll > div {
 /*=========================================================================
 |||||||||||||||||||||||||||||||| CREATED AREA |||||||||||||||||||||||||||||
  ===========================================================================*/
+ .auto-flex{ flex: auto!important; }
 .machine-title{    
   margin: 0px;
   padding-bottom: 20px;
@@ -7419,41 +7420,14 @@ body.loaded header .blog-bg > .row > div {
 
 
 
-/* Pagination Styles 
-.swiper-pagination:after{
-  content: " ";
-  width: 38px;
-  height: 24px;
-  background-image: url(../img/icons/secondary-dark/btn-arrow-right.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 38px 24px;
-  position: absolute;
-  right: -100px;
-  top: -13px;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+/* Pagination Styles */
+.title-arrow-down{
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 15px;
+  color: white;
+  font-size:20px;
 }
-.swiper-pagination::before{
-  content: " ";
-  width: 38px;
-  height: 24px;
-  background-image: url(../img/icons/secondary-dark/left-s-drk.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 38px 24px;
-  position: absolute;
-  left: -100px;
-  top: -13px;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
-}*/
 .swiper-button-next{
   background-image: url(../img/icons/secondary-dark/btn-arrow-right.svg);
   right: 40px;
@@ -7475,5 +7449,25 @@ body.loaded header .blog-bg > .row > div {
 @media(min-width: 0px) and (max-width: 992px;){
   .mobile-bottom{ padding-top: 100px;}
 }
-
-
+.title-arrow-down i { 
+  position:absolute;
+  right: 50px;
+    -webkit-transition:all 300ms ease-in 0s;
+    -moz-transition: all 300ms ease-in 0s;
+    -o-transition: all 300ms ease-in 0s;
+  transition: all 300ms ease-in 0s;}
+.title-arrow-down .bg-arrow { 
+  background-image: url(../img/icons/white/down-arrow.svg); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 15px;
+  height: 15px;
+}
+.ui-state-active i {
+    color: #ACD4CE;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
