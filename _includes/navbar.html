@@ -15,24 +15,16 @@
 
       <div class="navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav-wrapper">
-              <ul class="navbar-nav top">
+              <ul class="navbar-nav top mobile-25-m-top">
                   <li class="nav-item">
-                    {% if page.class == "how_it_works" or 
-                    "our_story" or  
-                    "machines" or 
-                    "pricing" or 
-                    "contact" %}<a class="nav-link color-orange" href="#">
-                    {% else %}<a class="nav-link" href="#">
+                    {% if page.class == "homepage" %}<a class="nav-link text-secundary-darker mobile-log-item" href="#">
+                    {% else %}<a class="nav-link color-orange mobile-log-item" href="#">
                     {% endif %}
                     <span>Pact for Home</span></a>
                   </li>
                   <li class="nav-item">
-                    {% if page.class == "how_it_works" or 
-                    "our_story" or 
-                    "machines" or 
-                    "pricing" or 
-                    "contact" %}<a class="nav-link color-orange" href="#">
-                    {% else %}<a class="nav-link" href="#">
+                    {% if page.class == "homepage" %}<a class="nav-link text-secundary-darker mobile-log-item" href="#">
+                    {% else %}<a class="nav-link color-orange mobile-log-item" href="#">
                     {% endif %}
                     <span>Login</span></a>
                   </li>
@@ -59,11 +51,11 @@
                     {% endif %}
                     <a class="nav-link" href="/pricing"><span>Pricing</span></a>
                   </li>
-                  {% if page.class == "spilling_the_beans" %}<li class="nav-item active-top">
+                  <!-- {% if page.class == "spilling_the_beans" %}<li class="nav-item active-top">
                     {% else %} <li class="nav-item">
                     {% endif %}
                     <a class="nav-link" href="/spilling_the_beans"><span>Spilling The Beans</span></a>
-                  </li>
+                  </li> -->
                   {% if page.class == "contact" %}<li class="nav-item active-top">
                     {% else %} <li class="nav-item">
                     {% endif %}

@@ -6070,6 +6070,7 @@ body.loaded header .scroll > div {
     padding-right: 40px!important;
     padding-left: 40px!important;
   }
+  .mobile-25-m-top{ margin-top: 25px!important; }
 }
 @media(min-width: 768px) and (max-width: 992px){
   .mobile-margin-top{margin-top:20px;}
@@ -6108,6 +6109,9 @@ body.loaded header .scroll > div {
 .text-light-gray{ color: #edeeed!important; }
 .text-secundary-darker{color: #004249!important;}
 .text-blue-icon{color: #73bcba!important;}
+@media(min-width: 0px) and (max-width: 992px){
+  .mobile-log-item{ color: #004249!important;}
+}
   /*=========================================================================
 ||||||||||||||||||||||||| end COLORS (text and bg) ||||||||||||||||||||||||||
  ===========================================================================*/
