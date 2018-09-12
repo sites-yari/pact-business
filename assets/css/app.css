@@ -7479,8 +7479,7 @@ body.loaded header .blog-bg > .row > div {
     transform: rotate(180deg);
 }
 
-
-a.info-link-call:hover,a.info-link-mail:hover{ color:white!important; }
+a.info-link-call:hover, a.info-link-mail:hover{ color:white!important; }
 a.info-link-call span.header-effect:after,
 a.info-link-mail span.header-effect:after{
   content: '';
@@ -7492,25 +7491,21 @@ a.info-link-mail span.header-effect:after{
   border-bottom: 2px solid white;
   transition: 0.4s;
 }
-a.info-link-call span.header-effect:hover:after {width: 57%;}
-a.info-link-mail span.header-effect:hover:after {width: 108%;}
-/* a.inner-effect{ 
-  background-color: white;
-  border-radius: 50%;
-  color: rgba(0, 0, 0, 0)!important;
-} */
-/* footer .main .social > li > a > img {
-  height: 40px;
-  width: 40px;
-  display: inline-block;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-  border: solid 1px #ffffff;
-  text-align: center;
-  margin: 0 3px;
-} */
+a.info-link-call span.header-effect:hover:after {width: 39%;}
+a.info-link-mail span.header-effect:hover:after {width: 73%;}
+@media(min-width: 1200px) and (max-width: 1500px){
+  a.info-link-call span.header-effect:hover:after {width: 45%;}
+  a.info-link-mail span.header-effect:hover:after {width: 85%;}
+}
+@media(min-width: 992px) and (max-width: 1200px){
+  a.info-link-call span.header-effect:hover:after {width: 59%;}
+  a.info-link-mail span.header-effect:hover:after {width: 108%;}
+}
+@media(min-width: 0px) and (max-width: 992px){
+  a.info-link-call span.header-effect:hover:after {width: 100%;}
+  a.info-link-mail span.header-effect:hover:after {width: 100%;}
+}
+
 a.inner-effect svg{
   display: inline-block;
   vertical-align: middle;
@@ -7542,6 +7537,4 @@ a.inner-effect:hover svg #XMLID_5_ #XMLID_11_,
 a.inner-effect:hover svg #XMLID_262_ #XMLID_263_,
 a.inner-effect:hover svg #XMLID_226_ #XMLID_310_ #XMLID_311_ #XMLID_312_ #XMLID_313_,
 a.inner-effect:hover svg #XMLID_245_ #XMLID_289_ #XMLID_290_ #XMLID_291_
-{ 
-  fill: #3e8d93!important; 
-}
+{ fill: #3e8d93!important; }
