@@ -10,12 +10,17 @@ backend:
 collections:
 #====================| POSTS |===================================================|  
   #-----| Read me |------------------------------|
-  - name: "posts"
-    label: "Instructions"
-    folder: "_posts"
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "_posts/blog"
     create: false
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Published date", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
-      - { label: "Instructions", name: "body", widget: "markdown" }
+      - { label: "Public Date", name: "date-shown", widget: "string" }
+      - { label: "Visible Link", name: "permalink", widget: "string", default: "/spilling_beans/(name-here)"}
+      - { label: "Category", name: "category", widget: "select", options: [ " ", "tasting" , "more to add"] }
+      - { label: "Class", name: "class", widget: "hidden", default: "blog" } 
+      - { label: "Main Image", name: "image_path", widget: "image" }
+      - { label: "Body Text", name: "body", widget: "markdown" }
