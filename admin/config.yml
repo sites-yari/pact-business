@@ -9,11 +9,11 @@ backend:
 
 collections:
 #====================| POSTS |===================================================|  
-  #-----| Read me |------------------------------|
+  #-----| Blog |------------------------------|
   - name: "blog"
     label: "Blog Posts"
     folder: "_posts/blog"
-    create: false
+    create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
