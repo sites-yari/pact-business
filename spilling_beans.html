@@ -23,7 +23,7 @@ permalink: /spilling_the_beans
 				{% include blog_most_popular.html %}
 			</div>
 			<!-- right -->
-			{% for post in blog %}
+			{% for post in blog limit:1 %}
 			<div class="col-md-8 col-sm-12 content-padd-10">
 				<div class="invisible-box-blog">
 					<div class="img-big-blog">
