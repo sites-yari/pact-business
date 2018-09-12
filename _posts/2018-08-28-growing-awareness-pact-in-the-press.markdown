@@ -1,11 +1,11 @@
 ---
-layout: blog
-title: "Kayon Mountain Guji Washed: hints of... marmite?!"
-date-shown: September 29, 2018
-permalink: /spilling_beans/kayon-mountain-guji-washed-hints-of-marmite
+layout: post
+title: "Growing awareness: Pact in the Press"
+date-shown: September 28, 2018
+permalink: /spilling_beans/growing-awareness-pact-in-the-press
 category: tasting 
 class: blog
-image_path: ../../assets/img/upload/arhive.png
+image_path: ../../assets/img/bg/post_4.jpg
 ---
 
 We like to say that our coffee isn’t a commodity, and that neither is your team. But what do we mean by that? It comes down to coffee largely falling into two groups: speciality and commodity. On one side you have Pact Coffee: coffees that score 80 or more out of 100 in cupping tests (where experts smell and taste coffee to evaluate its quality), made from beans that are incredibly low on defects and tend to be comprised of a single variety. On the other, you have popular coffee chains: their coffee is made from damaged, defect-ridden and differently sized beans and are often are blends of different origins as well.Aside from differences in quality, cost (and the way cost is calculated) varies massively between the two types of crop. While speciality coffee is typically sold through various channels including, in our case, Direct Trade, commodity coffee is traded on the stock market - specifically the “New York Board of Trade [NYBOT], the Kansai Commodities Exchange [in Osaka, Japan], the Singapore Commodities Exchange [SICOM] and Euronext [London]”. As in, it’s literally traded as a commodity. And that has widespread ramifications.

@@ -3,24 +3,10 @@
 </div>
 <div class="box-blog more-25-padding-top">
   <h4 class="text-secondary-darker">Most Popular</h4>
+  {% for post in blog %}
   <div class="blog-posts more-25-margin-bottom">
-    <p class="text-primary-blue more-10-margin-top font-size-14">AUGUST 17, 2018</p>
-    <p class="font-size-16 bold text-secondary-darker">Java Jargon Buster: our coffee chat, explained!</p>
+    <p class="text-primary-blue more-10-margin-top font-size-14">{{post.date-shown}}</p>
+    <p class="font-size-16 bold text-secondary-darker">{{post.title}}</p>
   </div>
-  <div class="blog-posts more-25-margin-bottom">
-    <p class="text-primary-blue more-10-margin-top font-size-14">AUGUST 17, 2018</p>
-    <p class="font-size-16 bold text-secondary-darker">Kayon Mountain Guji Washed: hints of... marmite?!</p>
-  </div>
-  <div class="blog-posts more-25-margin-bottom">
-    <p class="text-primary-blue more-10-margin-top font-size-14">AUGUST 17, 2018</p>
-    <p class="font-size-16 bold text-secondary-darker">Growing awareness: Pact in the Press</p>
-  </div>
-  <div class="blog-posts more-25-margin-bottom">
-    <p class="text-primary-blue more-10-margin-top font-size-14">AUGUST 17, 2018</p>
-    <p class="font-size-16 bold text-secondary-darker">3 reasons to ban supermarket blends from your office</p>
-  </div>
-  <div class="blog-posts more-25-margin-bottom">
-    <p class="text-primary-blue more-10-margin-top font-size-14">AUGUST 17, 2018</p>
-    <p class="font-size-16 bold text-secondary-darker">Java Jargon Buster: our coffee chat, explained!</p>
-  </div>
+  {% endfor %}
 </div>

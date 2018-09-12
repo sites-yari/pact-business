@@ -13,8 +13,8 @@ permalink: /spilling_the_beans
 </header>
 
 <!-- SECTION 1 -->
-{% assign blog = site.posts %}
-<section class="section-home-5 m-top-negative no-p ">
+{% assign blog = site.posts | where: "category", "tasting" %}
+<section class="section-home-5 m-top-negative no-p top-blog ">
 	<div class="container">
 
 		<div class="row sm-gutter compensate-m text-left">
@@ -31,8 +31,8 @@ permalink: /spilling_the_beans
 					</div>
 					<div class="info-blog ">
 						<p class="more-10-margin-bottom text-primary-blue more-25-margin-top font-size-14">{{post.date-shown}}</p>
-						<h3 class="h4 primary m text-secondary-darker">{{post.title}}</h3>
-						<p>{{post.excerpt | strip_html |  truncatewords: 20}}</p>
+						<h3 class="h4 post-title-big-box">{{post.title}}</h3>
+						<p class="post-text-big-box">{{post.excerpt | strip_html |  truncatewords: 40}}</p>
 						<a href="/article" class="text-primary-blue"><i class="fa fa-plus"></i> read more</a>
 					</div>
 				</div>
@@ -41,8 +41,8 @@ permalink: /spilling_the_beans
 		</div>
 
 		<div class="row animate text-left slide-in-from-top more-margin-top">
-			{% for post in blog offset:1 %}
-				{% include blog_small_boxes %}
+			{% for post in blog offset:1 limit:3 %}
+				{% include blog_small_boxes.html %}
 			{% endfor %}
 		</div>
 				

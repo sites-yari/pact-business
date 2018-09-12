@@ -1,12 +1,12 @@
 <div class="col-sm-6 col-lg-4 m content-padd-10">
   <div class="item-img-alt same-less-height-no-bg">
     <div class="img">
-      <img src="../assets/img/bg/post_2.jpg" class="img-fluid">
+      <img src="{{post.image_path}}" class="img-fluid">
     </div>
     <div class="content-less2-space">
       <p class="font-size-14 more-10-margin-bottom text-primary-blue">{{post.date-shown}}</p>
-      <h3 class="h5 primary m text-secondary-darker">{{post.title}}</h3>
-      <p class="more-10-margin-bottom">{{post.excerpt | strip_html |  truncatewords: 20}}</p>
+      <h3 class="h5 post-title-box">{{post.title | strip_html |  truncatewords: 8}}</h3>
+      <p class="post-text-box">{{post.excerpt | strip_html |  truncatewords: 20}}</p>
       <br><br>
       <a href="#" class="text-primary-blue"><i class="fa fa-plus"></i> read more</a>
     </div>

@@ -1,11 +1,11 @@
 ---
-layout: blog
+layout: post
 title: "Java Jargon Buster: our coffee chat explained!"
 date-shown: September 30, 2018
 permalink: /spilling_beans/java-jargon-buster-our-coffee-chat-explained
 category: tasting 
 class: blog
-image_path: ../../assets/img/upload/arhive.png
+image_path: ../../assets/img/bg/post_2.jpg
 ---
 
 Lorem ipsum dolor sit amet, nullam graeco cu pro. No est aperiri corpora, pri commune recteque ad. Te iudico mandamus mediocritatem mei. Porro putant complectitur mei an. No nam saepe salutatus, ex eos falli debitis. Ullum prompta vis in, mea facer tibique id.
