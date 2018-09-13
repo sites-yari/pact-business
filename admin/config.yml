@@ -1,5 +1,5 @@
 publish_mode: editorial_workflow
-media_folder: "assets/img/uploads"
+media_folder: "assets/img/upload"
 
 backend:
   name: git-gateway

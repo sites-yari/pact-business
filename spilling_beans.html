@@ -13,7 +13,8 @@ permalink: /spilling_the_beans
 </header>
 
 <!-- SECTION 1 -->
-{% assign blog = site.posts | where: "category", "tasting" %}
+<!-- {% assign blog = site.posts | where: "category", "tasting" %} -->
+{% assign blog = site.posts | where: "class", "blog" %}
 <section class="section-home-5 m-top-negative no-p top-blog ">
 	<div class="container">
 
@@ -24,19 +25,7 @@ permalink: /spilling_the_beans
 			</div>
 			<!-- right -->
 			{% for post in blog limit:1 %}
-			<div class="col-md-8 col-sm-12 content-padd-10">
-				<div class="invisible-box-blog">
-					<div class="img-big-blog">
-						<img src="../assets/img/bg/post_1.jpg" class="img-fluid">
-					</div>
-					<div class="info-blog ">
-						<p class="more-10-margin-bottom text-primary-blue more-25-margin-top font-size-14">{{post.date-shown}}</p>
-						<h3 class="h4 post-title-big-box">{{post.title}}</h3>
-						<p class="post-text-big-box">{{post.excerpt | strip_html |  truncatewords: 40}}</p>
-						<a href="/article" class="text-primary-blue"><i class="fa fa-plus"></i> read more</a>
-					</div>
-				</div>
-			</div>
+				{% include blog_main_post.html %}
 			{% endfor %}
 		</div>
 
@@ -55,7 +44,7 @@ permalink: /spilling_the_beans
 <!-- end SECTION 2 -->
 
 <!-- SECTION 3 -->
-<section class="section-home-4 line-top  more2-padding-top more-padding-bottom">
+<section class="section-home-2 line-top  more2-padding-top more-padding-bottom">
 	<div class="container text-center">
 
 		<div class="row animate text-left slide-in-from-top more-margin-top">

@@ -1,0 +1,31 @@
+<!-- Content here -->
+<!-- HEADER -->
+<header class="blog"> 
+	<div class="container v-less-align blog-content text-center ">
+	</div>
+</header>
+
+<!-- SECTION 1 -->
+<section class="section-home-5 m-top-negative no-p ">
+	<div class="container">
+
+		<div class="row sm-gutter compensate-m text-left">
+			<!-- left -->
+			<div class="col-md-4 col-sm-12 content-padd-10 mobile-remove">
+				{% include blog_most_popular.html %}
+			</div>
+			<!-- right -->
+			<div class="col-md-8 col-sm-12 content-padd-10">
+				<div class="invisible-box-blog" style="height:auto;">
+					<div class="img-big-blog">
+						<img src="{{post.image_path}}" class="img-fluid">
+					</div>
+					<div class="info-blog ">
+            <p class="more-10-margin-bottom text-primary-blue more-25-margin-top 
+                      uppercase font-size-14">
+							{{post.date-shown}}
+							<span class="padd-sides text-light-gray uppercase">|</span>
+							{{post.category}}
+						</p>
+						<h3 class="h4 primary m text-secondary-darker">{{post.title}}</h3>
+						<p>

@@ -5,9 +5,8 @@ date-shown: 'september 13, 2018'
 permalink: /spilling_beans/test-the-blog-upload
 category: tasting
 class: blog
-image_path: /assets/img/uploads/asset-5-4x_p3.png
+image_path: /assets/img/upload/archive.png
 ---
-
 
 Lorem ipsum dolor sit amet, vel eu wisi commodo iracundia. Everti maiestatis quo ex, dolores invidunt cu cum. At mel eirmod fuisset principes, tation atomorum qui ea. Eu quot percipitur pro, unum definiebas per no. Vis nulla errem blandit ne, mundi tamquam erroribus at nam.
 

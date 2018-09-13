@@ -4,11 +4,11 @@
       <img src="{{post.image_path}}" class="img-fluid">
     </div>
     <div class="content-less2-space">
-      <p class="font-size-14 more-10-margin-bottom text-primary-blue">{{post.date-shown}}</p>
+      <p class="font-size-14 more-10-margin-bottom text-primary-blue uppercase">{{post.date-shown}}</p>
       <h3 class="h5 post-title-box">{{post.title | strip_html |  truncatewords: 8}}</h3>
       <p class="post-text-box">{{post.excerpt | strip_html |  truncatewords: 20}}</p>
       <br><br>
-      <a href="#" class="text-primary-blue"><i class="fa fa-plus"></i> read more</a>
+      <a href="{{post.url}}" class="text-primary-blue"><i class="fa fa-plus"></i> read more</a>
     </div>
   </div>
 </div>
