@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Test the blog upload
+title: Test the blog upload now
 date-shown: 'september 13, 2018'
 permalink: /spilling_beans/test-the-blog-upload
 category: tasting
