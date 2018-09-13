@@ -1,0 +1,8 @@
+section_area:
+  title:
+    top: Latest from
+    bottom: Spilling the Beans
+  subtitle: "Find out what we've been chatting about in our coffee breaks..."
+  button:
+    link: "#"
+    text: view all aticles

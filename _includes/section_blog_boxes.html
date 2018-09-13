@@ -1,0 +1,38 @@
+<section class="section-home-4">
+	<div class="container animate slide-in-from-left">
+		<div class="row">
+			<div class="col-lg-6">
+				<h2 class="text-secondary-darker text-center-mobile">
+          <span class="font-size-36">{{site.data.section_blog.section_area.title.top}}
+          </span><br>{{site.data.section_blog.section_area.title.bottom}}
+        </h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-lg-7 col-xl-6 ">
+				<p class="lg text-center-mobile text-primary-blue">
+          <b>{{site.data.section_blog.section_area.subtitle}}</b>
+        </p>
+			</div>
+			<div class="col-md-6 col-lg-5 col-xl-4 offset-xl-2">
+				<a href="{{site.data.section_blog.section_area.button.link}}" class="btn btn-secondary-dark full-width center-mobile">
+          {{site.data.section_blog.section_area.button.text}}
+        </a>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% assign blog = site.posts | where: "class", "blog" %}
+<!-- Part 2 -->
+<section class="section-home-5 m-top-negative no-p">
+	<div class="container">
+		<div class="row sm-gutter compensate-m">
+			<!-- Post -->
+			{% for post in blog limit:3 %}
+				{% include blog_small_boxes.html %}
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
