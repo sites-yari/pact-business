@@ -6240,6 +6240,9 @@ body.loaded header .scroll > div {
   .pricing-info-left{ text-align: center; }
   .pricing-info-right{ text-align: center; }
 }
+@media (min-width: 1500px) and (max-width: 3000px){
+  .stage_row .separator-ball{margin-top: -120px!important;}
+}
 .stage_row .separator-ball{
   border: 5px solid #ffaa2b;
   border-radius: 50%;

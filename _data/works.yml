@@ -1,4 +1,36 @@
+header:
+  title:
+    white: How to bring good coffee
+    light_blue: to your team
+  one_text: Tell us what you need
+  two_text: Coffee Tasting Visit
+  tree_text: Enjoy office coffee, <br>on your terms
+
 section1:
+  step1: 
+    image: ../assets/img/illustration/step_1.png
+    top_title: Step.1
+    title: Tell us what you need
+    text: Our team loves to chat coffee. We can work out what you want, and which options would be best for you - based on your office and its needs.
+    button:
+      link: "#"
+      text: get in touch
+  step2: 
+    image: ../assets/img/illustration/step_2.png
+    top_title: Step.2
+    title: Coffee tasting visit
+    text: We’ll arrange a 30-minute visit with you, to tell your stakeholders what we’re about and show off a few of our delicious brews!
+    button:
+      link: "#"
+      text: free coffee tasting
+  step3: 
+    image: ../assets/img/illustration/step_3.png
+    top_title: Step.3
+    title: Enjoy office coffee, on your terms
+    text: Make the most of having great coffee in your company’s kitchen. Just shout if anything needs tweaking - from machine maintenance to delivery frequency.
+    button:
+      link: "#"
+      text: get started
 
 section2:
 

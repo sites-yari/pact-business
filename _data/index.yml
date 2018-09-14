@@ -39,14 +39,14 @@ section1:
       button: how it works
 
 section2:
-  title: We make it easy
+  title: From our team, to yours
   image: assets/img/illustration/02.png
   button:
     link: 
     text: Get started
   theme1:
     title: Tailored for you 
-    subtitle: Together, we'll design a bespoke package that suits your team to a tee
+    subtitle: Together, we'll design a bespoke package that suits your team to a tee.
   theme2:
     title: Coffee launch
     subtitle: Kicking things off with a bang, a coffee launch will let your office know that we've arrived!

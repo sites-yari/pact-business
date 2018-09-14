@@ -12,12 +12,12 @@ permalink: /pricing
 			<div class="row">
 				<div class="col-lg-12">
 					<h1 class="text-white more-margin-top">
-						World-class coffee that <br>
-						<span class="text-secondary-lighter">suits your budget</span>
+						{{site.data.pricing.header.title.white}} <br>
+						<span class="text-secondary-lighter">{{site.data.pricing.header.title.blue_light}}</span>
 					</h1>
 					<p class="text-white bold">
-						From £1.18 to £7.98 per employee per month. We don't try to be the 
-						<br>cheapest, just the best. 
+						{{site.data.pricing.header.text}}
+						<!-- <br> -->
 					</p>
 					<div class="row">
 						<div class="col-md-5 col-sm-12 pricing-info-right">
@@ -91,25 +91,19 @@ permalink: /pricing
 		<div class="row animate slide-in-from-top text-left more-margin-top">
 			<div class="col-lg-5 ">
 				<h3 class="h2 text-secondary-darker no-m-bot">
-					Our Pricing
+					{{site.data.pricing.section1.title}}
 				</h3>
 			</div>
 			<div class="col-lg-7">
 				<p class=" text-secondary-darker no-m-bot">
-					For many the ‘speciality coffee’ label is synonymous with a hefty price tag, 
-					but to give you an idea of pricing, Pact Coffee for Business customers typically 
-					pay between £1-£5 per employee per month (depending on the size of the company). 
-					Not bad for the ultimate employee perk!
+					{{site.data.pricing.section1.text.top}}
 				</p>
 				<br>
 				<p class=" text-secondary-darker no-m-bot">
-					We can help you to find a world-class coffee solution that suits your budget, by 
-					looking at different coffees and machines in the range. Get in touch and we’ll 
-					even arrange a free, no-obligation, coffee tasting, along with an individual 
-					quote for your office.
+					{{site.data.pricing.section1.text.bottom}}
 				</p>
 				<br>
-				<a href="#" class="btn btn-secondary-dark center-mobile">Get Started</a>
+				<a href="{{site.data.pricing.section1.button.link}}" class="btn btn-secondary-dark center-mobile">{{site.data.pricing.section1.button.text}}</a>
 			</div>
 			
 		</div>		
@@ -122,16 +116,14 @@ permalink: /pricing
 	<div class="container animate slide-in-from-left">
 		<div class="row">
 			<div class="col-lg-12">
-				<h2 class="text-orange text-center-mobile">Hassle-free, <br>end-to-end service</h2>
+				<h2 class="text-orange text-center-mobile">{{site.data.pricing.section2.title}}</h2>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-3 col-sm-0"></div>
 			<div class="col-md-6">
 				<p class="lg text-center-mobile text-center text-white">
-					<b>
-						Here's how we'll make it easy for you to provide your office with 
-						world-class coffee:</b>
+					<b>{{site.data.pricing.section2.subtitle}}</b>
 				</p>
 			</div>
 			<div class="col-md-3 col-sm-0"></div>
@@ -151,7 +143,7 @@ permalink: /pricing
 							<b class="h3 border-middle-balloon bg-secondary-light 
 												text-secundary-darker lg font-size-24">1</b>
 						</div>
-						<p class="text-white">{{site.data.index.section5.box1.text}}</p>
+						<p class="text-white">{{site.data.pricing.section2.area.one}}</p>
 					</div>
 				</div>
 			</div>
@@ -163,7 +155,7 @@ permalink: /pricing
 								<b class="h3 border-middle-balloon2 bg-secondary-light 
 												text-secundary-darker lg font-size-24">2</b>
 							</div>
-							<p class="text-white">{{site.data.index.section5.box2.text}}</p>
+							<p class="text-white">{{site.data.pricing.section2.area.two}}</p>
 						</div>
 				</div>
 			</div>
@@ -175,7 +167,7 @@ permalink: /pricing
 							<b class="h3 border-middle-balloon2 bg-secondary-light 
 												text-secundary-darker lg font-size-24">3</b>
 						</div>
-						<p class="text-white">{{site.data.index.section5.box3.text}}</p>
+						<p class="text-white">{{site.data.pricing.section2.area.tree}}</p>
 					</div>
 				</div>
 			</div>
@@ -187,7 +179,7 @@ permalink: /pricing
 							<b class="h3 border-middle-balloon2 bg-secondary-light 
 												text-secundary-darker lg font-size-24">4</b>
 						</div>
-						<p class="text-white">{{site.data.index.section5.box1.text}}</p>
+						<p class="text-white">{{site.data.pricing.section2.area.four}}</p>
 					</div>
 				</div>
 			</div>
@@ -199,7 +191,7 @@ permalink: /pricing
 								<b class="h3 border-middle-balloon2 bg-secondary-light 
 												text-secundary-darker lg font-size-24">5</b>
 							</div>
-							<p class="text-white">{{site.data.index.section5.box2.text}}</p>
+							<p class="text-white">{{site.data.pricing.section2.area.five}}</p>
 						</div>
 				</div>
 			</div>
@@ -211,7 +203,7 @@ permalink: /pricing
 							<b class="h3 border-middle-balloon2 bg-secondary-light 
 												text-secundary-darker lg font-size-24">6</b>
 						</div>
-						<p class="text-white">{{site.data.index.section5.box3.text}}</p>
+						<p class="text-white">{{site.data.pricing.section2.area.six}}</p>
 					</div>
 				</div>
 			</div>
@@ -219,7 +211,8 @@ permalink: /pricing
 		</div>
 		<div class="row animate slide-in-from-top">
 			<div class="col-md-12 more2-margin-bottom more-25-margin-top">
-				<a href="#" class="btn btn-primary-no-arrow center-mobile">Treat your team</a>
+				<a href="{{site.data.pricing.section2.button.link}}" 
+						class="btn btn-primary-no-arrow center-mobile">{{site.data.pricing.section2.button.text}}</a>
 			</div>
 		</div>
 	</div>
@@ -237,17 +230,14 @@ permalink: /pricing
 			<div class="col-lg-12 animate slide-in-from-top">
 				<img src="../assets/img/illustration/01.png" width="400" 
 							class="img-fluid margin-auto more-margin-bottom">
-				<h2 class="text-secondary-darker text-center-mobile">At work, coffee matters</h2>
+				<h2 class="text-secondary-darker text-center-mobile">{{site.data.pricing.section4.title}}</h2>
 			</div>
 		</div>
 		<div class="row animate slide-in-from-left">
 			<div class="col-md-2 col-sm-0"></div>
 			<div class="col-md-8">
 				<p class="text-center-mobile">
-					In today’s competitive and ever-changing work environment, employers are 
-					constantly having to work harder to hire, motivate and retain the best talent. 
-					Serving world-class coffee, brewed in market-leading machines is a cost-effective 
-					and hassle-free way to make your team feel valued.
+					{{site.data.pricing.section4.subtitle}}
 				</p>
 			</div>
 			<div class="col-md-2 col-sm-0"></div>
@@ -262,78 +252,72 @@ permalink: /pricing
 				
 			<div class="col-sm-6 col-lg-4 animate slide-in-from-top">
 				<div class="item-img-alt same-less-height-no-bg more-margin-bottom bg-brand">
-					<img src="../assets/img/icons/plus.png" width="50" 
+					<img src="{{site.data.pricing.section4.image}}" width="50" 
 								class="margin-auto more-25-margin-bottom">
 					<h3 class="h5 primary text-blue-icon text-blue-icon m uppercase">
-						Tried and Tested:</h3>
+						{{site.data.pricing.section4.theme.one.title}}</h3>
 					<p class="">
-						We’re already creating stronger, happier company cultures at the companies 
-						we work with.
+							{{site.data.pricing.section4.theme.one.text}}
 					</p>
 				</div>
 			</div>
 			
 			<div class="col-sm-6 col-lg-4 animate slide-in-from-left">
 				<div class="item-img-alt same-less-height-no-bg more-margin-bottom bg-brand">
-					<img src="../assets/img/icons/plus.png" width="50" 
+					<img src="{{site.data.pricing.section4.image}}" width="50" 
 								class="margin-auto more-25-margin-bottom">
 					<h3 class="h5 primary text-blue-icon m uppercase">
-						Profile-Raising:</h3>
+						{{site.data.pricing.section4.theme.two.title}}</h3>
 					<p class="">
-						Serving better coffee impresses clients and customers, as well as your 
-						team.
+						{{site.data.pricing.section4.theme.two.text}}
 					</p>
 				</div>
 			</div>
 			
 			<div class="col-sm-6 col-lg-4 animate slide-in-from-top">
 				<div class="item-img-alt same-less-height-no-bg more-margin-bottom bg-brand">
-					<img src="../assets/img/icons/plus.png" width="50" 
+					<img src="{{site.data.pricing.section4.image}}" width="50" 
 								class="margin-auto more-25-margin-bottom">
 					<h3 class="h5 primary text-blue-icon m uppercase">
-						Easy:</h3>
+						{{site.data.pricing.section4.theme.tree.title}}</h3>
 					<p class="">
-						Our hassle-free service, includes the maintenance of all coffee machines, 
-						to make life easy for office and ops managers.
+						{{site.data.pricing.section4.theme.tree.text}}
 					</p>
 				</div>
 			</div>
 
 			<div class="col-sm-6 col-lg-4 animate slide-in-from-left">
 				<div class="item-img-alt same-less-height-no-bg more-margin-bottom bg-brand">
-					<img src="../assets/img/icons/plus.png" width="50" 
+					<img src="{{site.data.pricing.section4.image}}" width="50" 
 								class="margin-auto more-25-margin-bottom">
 					<h3 class="h5 primary text-blue-icon m uppercase">
-						Ethical:</h3>
+						{{site.data.pricing.section4.theme.four.title}}</h3>
 					<p class="">
-						Ethically sourced coffee counts towards a company’s CSR; together we’re 
-						making coffee a force for good.
+						{{site.data.pricing.section4.theme.four.text}}
 					</p>
 				</div>
 			</div>
 			
 			<div class="col-sm-6 col-lg-4 animate slide-in-from-top">
 				<div class="item-img-alt same-less-height-no-bg more-margin-bottom bg-brand">
-					<img src="../assets/img/icons/plus.png" width="50" 
+					<img src="{{site.data.pricing.section4.image}}" width="50" 
 								class="margin-auto more-25-margin-bottom">
 					<h3 class="h5 primary text-blue-icon m uppercase">
-						Rewarding:</h3>
+						{{site.data.pricing.section4.theme.five.title}}</h3>
 					<p class="">
-						Employees who enjoy Pact Coffee for Business can also benefit from a 
-						discount for the Pact home delivery service.
+						{{site.data.pricing.section4.theme.five.text}}
 					</p>
 				</div>
 			</div>
 			
 			<div class="col-sm-6 col-lg-4 animate slide-in-from-left">
 				<div class="item-img-alt same-less-height-no-bg more-margin-bottom bg-brand">
-					<img src="../assets/img/icons/plus.png" width="50" 
+					<img src="{{site.data.pricing.section4.image}}" width="50" 
 								class="margin-auto more-25-margin-bottom">
 					<h3 class="h5 primary text-blue-icon m uppercase">
-						Team-Building:</h3>
+						{{site.data.pricing.section4.theme.six.title}}</h3>
 					<p class="">
-						As well as delivering superlative coffee, our service can also include 
-						social events, cupping sessions and coffee classes.
+						{{site.data.pricing.section4.theme.six.text}}
 					</p>
 				</div>
 			</div>
@@ -341,7 +325,8 @@ permalink: /pricing
 		</div>
 		<div class="row animate slide-in-from-top">
 			<div class="col-md-12 more2-margin-bottom more-25-margin-top">
-				<a href="#" class="btn btn-primary-no-arrow center-mobile">free coffee tasting</a>
+				<a href="{{site.data.pricing.section4.button.link}}" 
+						class="btn btn-primary-no-arrow center-mobile">{{site.data.pricing.section4.button.text}}</a>
 			</div>
 		</div>
 	</div>

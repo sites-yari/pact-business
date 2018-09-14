@@ -3,7 +3,7 @@
 </div>
 <div class="box-blog more-25-padding-top">
   <h4 class="text-secondary-darker">Most Popular</h4>
-  {% for post in blog %}
+  {% for post in blog offset:0 limit:5 %}
   <div class="blog-posts more-25-margin-bottom">
     <p class="text-primary-blue more-10-margin-top font-size-14 uppercase">{{post.date-shown}}</p>
     <p class="font-size-16 bold text-secondary-darker">{{post.title}}</p>

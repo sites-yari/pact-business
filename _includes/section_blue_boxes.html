@@ -25,46 +25,92 @@
   </div>
 </section>
 
+{% if page.class == "how_it_works" or page.class == "our_story" %}
 <section class="section-home-5 m-top-negative no-p-top">
-<div class="container ">
-  <div class="row sm-gutter compensate-m">
-      
-    <div class="col-sm-12 col-lg-4 m animate slide-in-from-left">
-      <div class="item-img-alt same-height">
-        <div class="img2">
-          <img src="{{site.data.section_blue_boxes.boxes.box1.image}}" class="img-fluid">
-        </div>
-        <div class="content">
-          <h3 class="h5 primary m uppercase">{{site.data.section_blue_boxes.boxes.box1.title}}</h3>
-          <p>{{site.data.section_blue_boxes.boxes.box1.text}}</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-sm-12 col-lg-4 m animate slide-in-from-left">
-      <div class="item-img-alt same-height">
-        <div class="img2">
-          <img src="{{site.data.section_blue_boxes.boxes.box2.image}}" class="img-fluid">
-        </div>
-          <div class="content">
-            <h3 class="h5 primary m uppercase">{{site.data.section_blue_boxes.boxes.box2.title}}</h3>
-            <p>{{site.data.section_blue_boxes.boxes.box2.text}}</p>
+  <div class="container ">
+    <div class="row sm-gutter compensate-m">
+        
+      <div class="col-sm-12 col-lg-4 m animate slide-in-from-left">
+        <div class="item-img-alt same-height">
+          <div class="img2">
+            <img src="{{site.data.section_blue_boxes.works_and_story.boxes.box1.image}}" class="img-fluid">
           </div>
-      </div>
-    </div>
-    
-    <div class="col-sm-12 col-lg-4 m animate slide-in-from-top">
-      <div class="item-img-alt same-height">
-        <div class="img2">
-          <img src="{{site.data.section_blue_boxes.boxes.box3.image}}" class="img-fluid">
-        </div>
-        <div class="content">
-          <h3 class="h5 primary m uppercase">{{site.data.section_blue_boxes.boxes.box3.title}}</h3>
-          <p>{{site.data.section_blue_boxes.boxes.box3.text}}</p>
+          <div class="content">
+            <h3 class="h5 primary m uppercase">{{site.data.section_blue_boxes.works_and_story.boxes.box1.title}}</h3>
+            <p>{{site.data.section_blue_boxes.works_and_story.boxes.box1.text}}</p>
+          </div>
         </div>
       </div>
-    </div>
       
+      <div class="col-sm-12 col-lg-4 m animate slide-in-from-left">
+        <div class="item-img-alt same-height">
+          <div class="img2">
+            <img src="{{site.data.section_blue_boxes.works_and_story.boxes.box2.image}}" class="img-fluid">
+          </div>
+            <div class="content">
+              <h3 class="h5 primary m uppercase">{{site.data.section_blue_boxes.works_and_story.boxes.box2.title}}</h3>
+              <p>{{site.data.section_blue_boxes.works_and_story.boxes.box2.text}}</p>
+            </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-12 col-lg-4 m animate slide-in-from-top">
+        <div class="item-img-alt same-height">
+          <div class="img2">
+            <img src="{{site.data.section_blue_boxes.works_and_story.boxes.box3.image}}" class="img-fluid">
+          </div>
+          <div class="content">
+            <h3 class="h5 primary m uppercase">{{site.data.section_blue_boxes.works_and_story.boxes.box3.title}}</h3>
+            <p>{{site.data.section_blue_boxes.works_and_story.boxes.box3.text}}</p>
+          </div>
+        </div>
+      </div>
+        
+    </div>
   </div>
-</div>
 </section>
+{% else %}
+<section class="section-home-5 m-top-negative no-p-top">
+  <div class="container ">
+    <div class="row sm-gutter compensate-m">
+        
+      <div class="col-sm-12 col-lg-4 m animate slide-in-from-left">
+        <div class="item-img-alt same-height">
+          <div class="img2">
+            <img src="{{site.data.section_blue_boxes.home_machines_and_pricing.boxes.box1.image}}" class="img-fluid">
+          </div>
+          <div class="content">
+            <h3 class="h5 primary m uppercase">{{site.data.section_blue_boxes.home_machines_and_pricing.boxes.box1.title}}</h3>
+            <p>{{site.data.section_blue_boxes.home_machines_and_pricing.boxes.box1.text}}</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-12 col-lg-4 m animate slide-in-from-left">
+        <div class="item-img-alt same-height">
+          <div class="img2">
+            <img src="{{site.data.section_blue_boxes.home_machines_and_pricing.boxes.box2.image}}" class="img-fluid">
+          </div>
+            <div class="content">
+              <h3 class="h5 primary m uppercase">{{site.data.section_blue_boxes.home_machines_and_pricing.boxes.box2.title}}</h3>
+              <p>{{site.data.section_blue_boxes.home_machines_and_pricing.boxes.box2.text}}</p>
+            </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-12 col-lg-4 m animate slide-in-from-top">
+        <div class="item-img-alt same-height">
+          <div class="img2">
+            <img src="{{site.data.section_blue_boxes.home_machines_and_pricing.boxes.box3.image}}" class="img-fluid">
+          </div>
+          <div class="content">
+            <h3 class="h5 primary m uppercase">{{site.data.section_blue_boxes.home_machines_and_pricing.boxes.box3.title}}</h3>
+            <p>{{site.data.section_blue_boxes.home_machines_and_pricing.boxes.box3.text}}</p>
+          </div>
+        </div>
+      </div>
+        
+    </div>
+  </div>
+</section>
+{% endif %}

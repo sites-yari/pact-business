@@ -7,16 +7,31 @@ top:
     link: 
     text: Our sustainable approach
 
-boxes:
-  box1:
-    image: assets/img/home/img-4.jpg
-    title: Variety
-    text: We're constantly switching up which coffees we have available, as our travels uncover incredible new finds.
-  box2:
-    image: assets/img/home/img-5.jpg
-    title: Excenllence
-    text: 'We accept nothing but the best at each step: during sourching, growing, processing, quality control, roasting and grinding.'
-  box3:
-    image: assets/img/home/img-6.jpg
-    title: Flexibility
-    text: We offer tailor-made packages to suit your team, depending on the number of employees and their preferences.
+home_machines_and_pricing: 
+  boxes:
+    box1:
+      image: assets/img/home/img-4.jpg
+      title: Variety
+      text: We're constantly switching up which coffees we have available, as our travels uncover incredible new finds.
+    box2:
+      image: assets/img/home/img-5.jpg
+      title: Excenllence
+      text: 'We accept nothing but the best at each step: during sourching, growing, processing, quality control, roasting and grinding.'
+    box3:
+      image: assets/img/home/img-6.jpg
+      title: Flexibility
+      text: We offer tailor-made packages to suit your team, depending on the number of employees and their preferences.
+works_and_story:
+  boxes:
+    box1:
+      image: assets/img/home/img-4.jpg
+      title: Quality
+      text: We only use beans that have been awarded an international Coffee Quality Score of 80 or above.
+    box2:
+      image: assets/img/home/img-5.jpg
+      title: Ethics
+      text: We source directly from farmers, paying fairer than Fair trade prices - improving their coffee and their lives.
+    box3:
+      image: assets/img/home/img-6.jpg
+      title: Freshness
+      text: We roast and grind our own coffee, delivered to you within seven days for the freshest taste possible.
