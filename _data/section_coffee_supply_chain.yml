@@ -1,0 +1,38 @@
+title: Coffee Supply Chain
+text: We pay <b>farmers</b> fairer than Fairtrade prices, which means <b>better coffee</b> for you and a <b>better quality of life</b> for them.
+image: assets/img/illustration/04.png
+coffee_stat_top:
+  title: Pact Coffee
+  subtitle: Supply Chain
+  image: assets/img/illustration/supply-1.png
+  color1: 
+    percentage: '4%'
+    of: Exporter
+  color2:
+    percentage: '9%'
+    of: Shipping &amp; Finance
+  color3:
+    percentage: '10%'
+    of: Mill
+  color4:
+    percentage: '77%'
+    of: Farmer
+coffee_stat_bottom:
+  title: Traditional
+  subtitle: Supply Chain
+  image: assets/img/illustration/supply-2.png
+  color1:
+    percentage: '25%'
+    of: Importer
+  color2:
+    percentage: '9%'
+    of: Shipping &amp; Finance
+  color3:
+    percentage: '20%'
+    of: 'Exporter'
+  color4:
+    percentage: '20%'
+    of: Mill
+  color5:
+    percentage: '26%'
+    of: Farmer

@@ -1,0 +1,22 @@
+
+top:
+  title: Why might Pact be perfect for you?
+  small_title: 
+  subtitle: We're already fuelling hundreds of offices with some of the world's mst incredible coffee
+  button:
+    link: 
+    text: Our sustainable approach
+
+boxes:
+  box1:
+    image: assets/img/home/img-4.jpg
+    title: Variety
+    text: We're constantly switching up which coffees we have available, as our travels uncover incredible new finds.
+  box2:
+    image: assets/img/home/img-5.jpg
+    title: Excenllence
+    text: 'We accept nothing but the best at each step: during sourching, growing, processing, quality control, roasting and grinding.'
+  box3:
+    image: assets/img/home/img-6.jpg
+    title: Flexibility
+    text: We offer tailor-made packages to suit your team, depending on the number of employees and their preferences.
