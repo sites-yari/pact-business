@@ -1,19 +1,45 @@
 section1:
+  image: ../assets/img/avatars/header_story.png
+  title: Where it all began
+  text: In 2012, armed with not much more than a coffee grinder, a set of envelopes and a passion for coffee, our Founder, Stephen, set up Pact in his kitchen. His dream was to introduce the UK to better coffee at home, improving millions of mornings and changing the coffee industry for the better.
+  button:
+    link: "#"
+    text: our mission
+  img01:
+    link: "#"
+    title: Hassle-free service.
+    text: We’ll make it easy for you to set up your account, hand-tailored to your needs. You can manage orders online or with our Customer Champions.
+    cta: how it works
+  img02:
+    link: "#"
+    title: Using the best machines.
+    text: "Choose from a range of different coffee machines: whether you’re a filter fanatic or espresso enthusiast, we’ll find the right choice for you."
+    cta: machines
+  img03:
+    link: "#"
+    title: At a reasonable price.
+    text: Our rates are low for coffee that’s this good. Customers typically pay £1-£5 per employee each month… that would hardly buy them a coffee out per day!
+    cta: pricing
 
 section2:
+  title: Our Mission
+  text: "In a phrase: to make coffee a force for good. We do this through Direct Trade - going straight to the source to find the world’s most incredible coffees. Paying fairer than Fair trade rates, we help good farmers become great farmers with our personalised training and small investments. This means we can keep bringing back your favourite speciality coffees, year after year."
+  button:
+    link:  "#"
+    text: Get Started
 
 section3:
+  top:
+    image: ../assets/img/avatars/section_3_story.png
+    title: Head of Coffee, Will Corby, travels around the world to source the best beans around.
+  bottom:
+    image: ../assets/img/bg/full-will-says-b.png
+    title: "Will says:"
+    text: "“Coffee’s ability to change people’s lives and improve local economies is huge. This is Pact’s goal, to get coffee consumers to understand the value in speciality coffee and the impact their choice to buy it can have in communities at origin. It’s a win-win: customers get a fantastic cup of coffee and that revenue supports the livelihood of the communities who grow it.”"
+    bold_text: Our head of coffee
 
-section4:
+section6: Swiper here
 
-section5:
-
-section6:
-
-section7:
-
-section8:
-
-
+section9: form here
 
   

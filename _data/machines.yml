@@ -1,14 +1,69 @@
+header:
+  title:
+    white: Filter, Bean-to-Cup
+    light_blue: or Expresso?
+  subtitle: Choices, choices. Don’t worry - we’ll guide you through the pros and cons and <br>help you choose the best option for your business.
+
 section1:
+  machine1: 
+    image: ../assets/img/machines/expresso.png
+    title: Espresso
+    top:
+      bold: "Average monthly spend: "
+      text: £4.29pp
+    middle:
+      subtitle: "Pros:"
+      txt1: Barista-style coffee
+      txt2: Semi/fully-automatic, and high capacity
+      txt3: Idiot proof
+      txt4: Enjoy a range of 2-3 espressos at a time
+    bottom:
+      subtitle: "Cons:"
+      txt1: Requires daily maintenance
+      txt2: Long-term commitment
+  machine2: 
+    image: ../assets/img/machines/filter.png
+    title: Filter
+    top:
+      bold: "Average monthly spend: "
+      text: £3.26pp
+    middle:
+      subtitle: "Pros: "
+      txt1: Full access to our select menu
+      txt2: Perfect coffee, every time
+      txt3: "Makes batches: good for meetings and social spaces"
+      txt4: Short-term commitment
+      txt5: Little-to-no maintenance
+    bottom:
+      subtitle: "Cons: "
+      txt1: Manually operated
+      txt2: Only makes black coffee
+  machine3: 
+    image: ../assets/img/machines/expresso_filter.png 
+    title: Espresso & Filter
+    top:
+      bold: "Average monthly spend: "
+      text: £4.12pp
+    middle:
+      subtitle: "Pros: "
+      txt1: Offices have the highest satisfaction rating from this option
+      txt2: "Something for everyone: from barista-style treats to exploring new origins"
+      txt3: Wide selection of choices
+      txt4: Self-serve and meeting room coffee covered
+    bottom:
+      subtitle: "Cons: "
+      txt1: Almost none!
+  button:
+    link: "#"
+    text: Treat your team
 
 section2:
+  title: Free Office Coffee Tasting
+  text: See what we have to offer, for an average of £4.58 per person per month. We don’t try to be the cheapest, just the best.
+  button:
+    link: "#"
 
-section3:
-
-section4:
-
-section5:
-
-section6:
+section5: swiper here
 
 section7:
 

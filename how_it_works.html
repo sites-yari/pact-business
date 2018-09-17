@@ -85,46 +85,8 @@ permalink: /how_it_works
 
 <!-- SECTION 1 -->
 <section class="section-home-1">
-  <div class="container animate slide-in-from-top">
-    <div class="row">
-      <div class="col text-center">
-        <p class="xs bold text-secondary-lightest no-m-bot">trusted by</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <div class="swiper2 brands">
-          <div class="swiper2-container">
-            <div class="swiper2-wrapper">
-              <!--imgs -->
-              <div class="swiper2-slide">
-                <img src="assets/img/brands/01.png" width="150" height="80" alt="Zopa" class="img-fluid">
-              </div>
-              <div class="swiper2-slide">
-                <img src="assets/img/brands/02.png" width="150" height="80" alt="Trainline" class="img-fluid">
-              </div>
-              <div class="swiper2-slide">
-                <img src="assets/img/brands/03.png" width="150" height="80" alt="TransferWise" class="img-fluid">
-              </div>
-              <div class="swiper2-slide">
-                <img src="assets/img/brands/04.png" width="150" height="80" alt="Just Eat" class="img-fluid">
-              </div>
-              <div class="swiper2-slide">
-                <img src="assets/img/brands/05.png" width="150" height="80" alt="Vice" class="img-fluid">
-              </div>
-              <div class="swiper2-slide">
-                <img src="assets/img/brands/06.png" width="150" height="80" alt="Monzo" class="img-fluid">
-              </div>
-              <div class="swiper2-slide">
-                <img src="assets/img/brands/07.png" width="150" height="80" alt="Graze" class="img-fluid">
-              </div>
-              <!-- end imgs -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+  <div class="container">
+    {% include logo_swiper.html %}
   </div>
   <!-- STEP 1-->
   <div class="row more2-padding-top more-padding-bottom animate slide-in-from-left">
@@ -169,7 +131,7 @@ permalink: /how_it_works
         </div>
         <div class="col-md-12 zero-padding-right">
           <h3 class="text-secondary-darker text-center-mobile font-size-42">
-            {{site.data.works.section1.step2.text}}</h3>
+            {{site.data.works.section1.step2.title}}</h3>
         </div>
       </div>
       <div class="">
@@ -262,7 +224,7 @@ permalink: /how_it_works
   <div class="row animate slide-in-from-left">
     <div class="col-md-12 col-lg-12">
       <h2 class="text-secondary-darker text-center-mobile">
-        Coffee Tasting Visit
+        {{site.data.works.section3.title}}
       </h2>
     </div>
   </div>
@@ -273,14 +235,14 @@ permalink: /how_it_works
       <div class="col-md-12 col-lg-12">
         <div class="stage_row more-margin-top">
           <p class="font-size-14 zero-margin-bottom text-primary-blue uppercase">
-            stage 01
+            {{site.data.works.section3.stage01.above_title}}
           </p>
           <h3 class="h5 primary text-secondary-darker font-size-36 zero-margin-bottom
                       uppercase">
-            Set a date
+            {{site.data.works.section3.stage01.title}}
           </h3>
           <p class="zero-margin-bottom">
-            Choose a time and date that works for you
+            {{site.data.works.section3.stage01.subtitle}}
           </p>
         </div>
       </div>
@@ -301,14 +263,14 @@ permalink: /how_it_works
       <div class="col-md-12 col-lg-12">
         <div class="stage_row ">
           <p class="font-size-14 zero-margin-bottom text-primary-blue uppercase">
-            stage 02
+            {{site.data.works.section3.stage02.above_title}}
           </p>
           <h3 class="h5 primary text-secondary-darker font-size-36 zero-margin-bottom
                       uppercase">
-            guestlist
+            {{site.data.works.section3.stage02.title}}
           </h3>
           <p class="more-10-margin-bottom">
-              Pick 4-8 decision makers (and coffee<br> enthusiasts!) to join in
+            {{site.data.works.section3.stage02.subtitle}}
           </p>
         </div>
       </div>
@@ -328,14 +290,14 @@ permalink: /how_it_works
       <div class="col-md-12 col-lg-12">
         <div class="stage_row more-25-margin-top">
           <p class="font-size-14 zero-margin-bottom text-primary-blue uppercase">
-            stage 03
+            {{site.data.works.section3.stage03.above_title}}
           </p>
           <h3 class="h5 primary text-secondary-darker font-size-36 zero-margin-bottom
                       uppercase">
-            half-hour visit
+            {{site.data.works.section3.stage03.title}}
           </h3>
           <p class="more-10-margin-bottom">
-              We’ll talk about who we are, find out who you are<br> and leave time for questions
+            {{site.data.works.section3.stage03.subtitle}}
           </p>
         </div>
       </div>
@@ -355,15 +317,14 @@ permalink: /how_it_works
       <div class="col-md-12 col-lg-12">
         <div class="stage_row more-25-margin-top">
           <p class="font-size-14 zero-margin-bottom text-primary-blue uppercase">
-            stage 04
+            {{site.data.works.section3.stage04.above_title}}
           </p>
           <h3 class="h5 primary text-secondary-darker font-size-36 zero-margin-bottom
                       uppercase">
-            Tasting
+            {{site.data.works.section3.stage04.title}}
           </h3>
           <p class="more-10-margin-bottom">
-              ou’ll try the chocolatey ‘people’s choice’,<br> Planalto, and two other single origin coffees
-          </p>
+            {{site.data.works.section3.stage04.subtitle}}
         </div>
       </div>
     </div>
@@ -383,14 +344,14 @@ permalink: /how_it_works
       <div class="col-md-12 col-lg-12">
         <div class="stage_row more-25-margin-top">
           <p class="font-size-14 zero-margin-bottom text-primary-blue uppercase">
-            stage 05
+            {{site.data.works.section3.stage05.above_title}}
           </p>
           <h3 class="h5 primary text-secondary-darker font-size-36 zero-margin-bottom
                       uppercase">
-            decision time
+            {{site.data.works.section3.stage05.title}}
           </h3>
           <p class="more-10-margin-bottom">
-            Have a think, then have a chat with us - we’ll go<br> from there!
+            {{site.data.works.section3.stage05.subtitle}}
           </p>
         </div>
       </div>
@@ -399,7 +360,7 @@ permalink: /how_it_works
     <div class="row animate slide-in-from-top">
       <div class="col-md-12 content-padd-10">
         <div class="text-center more-25-margin-bottom more-margin-top">
-          <a href="#" class="btn btn-primary-no-arrow">load more articles</a>
+          <a href="{{site.data.works.section3.button.link}}" class="btn btn-primary-no-arrow">{{site.data.works.section3.button.text}}</a>
         </div>
       </div>
     </div>

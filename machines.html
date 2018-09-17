@@ -12,12 +12,11 @@ permalink: /machines
     <div class="row">
       <div class="col-lg-12">
         <h1 class="text-white more-margin-top">
-          World-class coffee that <br>
-          <span class="text-secondary-lighter">suits your budget</span>
+          {{site.data.machines.header.title.white}} <br>
+          <span class="text-secondary-lighter">{{site.data.machines.header.title.light_blue}}</span>
         </h1>
         <p class="text-white bold">
-          From £1.18 to £7.98 per employee per month. We don't try to be the 
-          <br>cheapest, just the best. 
+          {{site.data.machines.header.subtitle}}
         </p>
         <div class="row">
           <div class="col-md-5 col-sm-12 pricing-info-right">
@@ -47,82 +46,45 @@ permalink: /machines
 <!-- SECTION 1 -->
 <section class="section-home-1 more-margin-bottom">
   <div class="container">
-      
-    <div class="row animate slide-in-from-top">
-      <div class="col text-center">
-        <p class="xs text-secondary-lightest no-m-bot">{{site.data.index.section1.logos.text}}</p>
-      </div>
-    </div>
-    
-    <div class="row animate slide-in-from-top">
-      <div class="col">
-        <div class="swiper2 brands">
-          <div class="swiper2-container blur">
-            <div class="swiper2-wrapper">
-              <!--imgs -->
-              <div class="swiper2-slide">
-                <img src={{site.data.index.section1.logos.logo1}} width="150" height="80" alt="Zopa" class="img-fluid">
-              </div>
-              <div class="swiper2-slide">
-                <img src={{site.data.index.section1.logos.logo2}} width="150" height="80" alt="Trainline" class="img-fluid">
-              </div>
-              <div class="swiper2-slide">
-                <img src={{site.data.index.section1.logos.logo3}} width="150" height="80" alt="TransferWise" class="img-fluid">
-              </div>
-              <div class="swiper2-slide">
-                <img src={{site.data.index.section1.logos.logo4}} width="150" height="80" alt="Just Eat" class="img-fluid">
-              </div>
-              <div class="swiper2-slide">
-                <img src={{site.data.index.section1.logos.logo5}} width="150" height="80" alt="Vice" class="img-fluid">
-              </div>
-              <div class="swiper2-slide">
-                <img src={{site.data.index.section1.logos.logo6}} width="150" height="80" alt="Monzo" class="img-fluid">
-              </div>
-              <div class="swiper2-slide">
-                <img src={{site.data.index.section1.logos.logo7}} width="150" height="80" alt="Graze" class="img-fluid">
-              </div>
-              <!-- end imgs -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    {% include logo_swiper.html %}
     
     <div class="row text-left">
       <!-- EXPRESSO -->
       <div class="col-sm-6 col-lg-4 content-padd-10 more-10-margin-top animate slide-in-from-left">
         <div class="item-img-alt same-height">
           <div class="img">
-            <img src="../assets/img/machines/expresso.png" class="img-fluid">
+            <img src="{{site.data.machines.section1.machine1.image}}" class="img-fluid">
           </div>
           <div class="content">
             <h4 class="h4 text-secondary-darker bottom-border machine-title uppercase">
-              Espresso</h4>
+              {{site.data.machines.section1.machine1.title}}</h4>
             <div class="less-spacing more-20-margin-bottom more-20-padding-top">
               <p class="font-size-16"><b class="text-secondary-dark font-size-16">
-                Average monthly spend:</b> £4.29pp</p>
+                  {{site.data.machines.section1.machine1.top.bold}}</b>
+                  {{site.data.machines.section1.machine1.top.text}}
+              </p>
             </div>
             <br>
             <div class="less-spacing-list">
               <b class="font-size-16 zero-margin-bottom text-secondary-dark">
-                Pros:</b>
+                {{site.data.machines.section1.machine1.middle.subtitle}}</b>
               <p class="font-size-16 zero-margin-bottom">
-                - Barista Style coffee</p>
+                - {{site.data.machines.section1.machine1.middle.txt1}}</p>
               <p class="font-size-16 zero-margin-bottom">
-                - Semi and Fully automatic and high capacity</p>
+                - {{site.data.machines.section1.machine1.middle.txt2}}</p>
               <p class="font-size-16 zero-margin-bottom">
-                - Idiot proof</p>
+                - {{site.data.machines.section1.machine1.middle.txt3}}</p>
               <p class="font-size-16 zero-margin-bottom">
-                - Enjoy a range of 2 - 3 espresso at any time.</p>
+                - {{site.data.machines.section1.machine1.middle.txt4}}</p>
             </div>
             <br>
             <div class="less-spacing-list">
               <b class="font-size-16 zero-margin-bottom text-secondary-dark">
-                Cons:</b>
+                {{site.data.machines.section1.machine1.bottom.subtitle}}</b>
               <p class="font-size-16 zero-margin-bottom">
-                - Requires daily and weekly maintenance</p>
+                - {{site.data.machines.section1.machine1.bottom.txt1}}</p>
               <p class="font-size-16 zero-margin-bottom">
-                - Longer term commitment</p>
+                - {{site.data.machines.section1.machine1.bottom.txt2}}</p>
             </div>
           </div>
         </div>
@@ -131,38 +93,39 @@ permalink: /machines
       <div class="col-sm-6 col-lg-4 content-padd-10 more-10-margin-top animate slide-in-from-top">
         <div class="item-img-alt same-height">
           <div class="img">
-            <img src="../assets/img/machines/filter.png" class="img-fluid">
+            <img src="{{site.data.machines.section1.machine2.image}}" class="img-fluid">
           </div>
             <div class="content">
               <h4 class="h4 text-secondary-darker bottom-border machine-title uppercase">
-                Filter</h4>
+                {{site.data.machines.section1.machine2.title}}</h4>
               <div class="less-spacing more-20-margin-bottom more-20-padding-top">
                 <p class="font-size-16"><b class="text-secondary-dark font-size-16">
-                  Average monthly spend:</b> £3.26pp</p>
+                  {{site.data.machines.section1.machine2.top.bold}}</b>
+                  {{site.data.machines.section1.machine2.top.text}}</p>
               </div>
               <br>
               <div class="less-spacing-list">
                 <b class="font-size-16 zero-margin-bottom text-secondary-dark">
-                  Pros:</b>
+                  {{site.data.machines.section1.machine2.middle.subtitle}}</b>
                 <p class="font-size-16 zero-margin-bottom">
-                  - Full access to our select menu</p>
+                  - {{site.data.machines.section1.machine2.middle.txt1}}</p>
                 <p class="font-size-16 zero-margin-bottom">
-                  -  Perfect coffee, every time</p>
+                  - {{site.data.machines.section1.machine2.middle.txt2}}</p>
                 <p class="font-size-16 zero-margin-bottom">
-                  - Makes batches: good for meetings and social spaces</p>
+                  - {{site.data.machines.section1.machine2.middle.txt3}}</p>
                 <p class="font-size-16 zero-margin-bottom">
-                  - Short-term commitment</p>
+                  - {{site.data.machines.section1.machine2.middle.txt4}}</p>
                 <p class="font-size-16 zero-margin-bottom">
-                  - Little-to-no maintenance</p>
+                  - {{site.data.machines.section1.machine2.middle.txt5}}</p>
               </div>
               <br>
               <div class="less-spacing-list">
                 <b class="font-size-16 zero-margin-bottom text-secondary-dark">
-                  Cons:</b>
+                    {{site.data.machines.section1.machine2.bottom.subtitle}}</b>
                 <p class="font-size-16 zero-margin-bottom">
-                  - Manually operated</p>
+                  - {{site.data.machines.section1.machine2.bottom.txt1}}</p>
                 <p class="font-size-16 zero-margin-bottom">
-                  - Only makes black coffee</p>
+                  - {{site.data.machines.section1.machine2.bottom.txt2}}</p>
               </div>
             </div>
         </div>
@@ -171,34 +134,35 @@ permalink: /machines
       <div class="col-sm-6 col-lg-4 content-padd-10 more-10-margin-top animate slide-in-from-left">
         <div class="item-img-alt same-height">
           <div class="img">
-            <img src="../assets/img/machines/expresso_filter.png" class="img-fluid">
+            <img src="{{site.data.machines.section1.machine3.image}}" class="img-fluid">
           </div>
           <div class="content">
             <h4 class="h4 text-secondary-darker bottom-border machine-title uppercase">
-              expresso &amp; filter</h4>
+                {{site.data.machines.section1.machine3.title}}</h4>
             <div class="less-spacing more-20-margin-bottom more-20-padding-top">
               <p class="font-size-16"><b class="text-secondary-dark font-size-16">
-                Average monthly spend:</b> £4.12pp</p>
+                {{site.data.machines.section1.machine3.top.bold}}</b>
+                {{site.data.machines.section1.machine3.top.text}}</p>
             </div>
             <br>
             <div class="less-spacing-list">
               <b class="font-size-16 zero-margin-bottom text-secondary-dark">
-                Pros:</b>
+                {{site.data.machines.section1.machine3.middle.subtitle}}</b>
               <p class="font-size-16 zero-margin-bottom">
-                - Offices have the highest satisfaction rating from this option</p>
+                - {{site.data.machines.section1.machine3.middle.txt1}}</p>
               <p class="font-size-16 zero-margin-bottom">
-                -  Something for everyone: from barista-style treats to exploring new origins</p>
+                - {{site.data.machines.section1.machine3.middle.txt2}}</p>
               <p class="font-size-16 zero-margin-bottom">
-                - Wide selection of choices</p>
+                - {{site.data.machines.section1.machine3.middle.txt3}}</p>
               <p class="font-size-16 zero-margin-bottom">
-                - Self-serve and meeting room coffee covered</p>
+                - {{site.data.machines.section1.machine3.middle.txt4}}</p>
             </div>
             <br>
             <div class="less-spacing-list">
               <b class="font-size-16 zero-margin-bottom text-secondary-dark">
-                Cons:</b>
+                {{site.data.machines.section1.machine3.bottom.subtitle}}</b>
               <p class="font-size-16 zero-margin-bottom">
-                - Almost none!</p>
+                - {{site.data.machines.section1.machine3.bottom.txt1}}</p>
             </div>
           </div>
         </div>
@@ -208,7 +172,8 @@ permalink: /machines
 
     <div class="row animate slide-in-from-top">
       <div class="col-md-12 text-center more-margin-top">
-        <a href="#" class="btn btn-primary-no-arrow center-mobile">Treat your team</a>
+        <a href="{{site.data.machines.section1.button.link}}" 
+        class="btn btn-primary-no-arrow center-mobile">{{site.data.machines.section1.button.text}}</a>
       </div>
     </div>
 
@@ -222,12 +187,12 @@ permalink: /machines
       <div class="row">
         <div class="col-sm-10 col-lg-8">
           <h1 class="text-orange">
-            Free Office Coffee Tasting
+            {{site.data.machines.section2.title}}
           </h1>
-          <p class="text-white bold">See what we have to offer, for and average of £4.58 per person per month.We don't try to be the cheapest, just the best.</p>
+          <p class="text-white bold">{{site.data.machines.section2.text}}</p>
         </div>
         <div class="col-sm-2 col-lg-4">
-          <a href="#" class="btn btn-primary-only-arrow "></a>
+          <a href="{{site.data.machines.section2.button.link}}" class="btn btn-primary-only-arrow "></a>
         </div>
       </div>
     </div>

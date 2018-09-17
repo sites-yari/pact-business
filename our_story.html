@@ -21,18 +21,16 @@ permalink: /our_story
 				<div class="col-md-2 col-sm-0"></div>
 				<div class="col-md-8 col-sm-12">
 					<div class="image-area story-header-margin">
-						<img src="../assets/img/avatars/header_story.png" class="center-image-header">
+						<img src="{{site.data.story.section1.image}}" class="center-image-header">
 					</div>
 					<h1 class="more-margin-top text-secondary-darker">
-						Where it all began
+						{{ site.data.story.section1.title }}
 					</h1>
 					<p class="">
-						In 2012, armed with not much more than a coffee grinder, a set of envelopes 
-						and a passion for coffee, our Founder, Stephen, set up Pact in his kitchen. 
-						His dream was to introduce the UK to better coffee at home, improving millions 
-						of mornings and changing the coffee industry for the better.
+						{{ site.data.story.section1.text }}
 					</p>
-					<a href="#" class="btn btn-primary-no-arrow more-25-margin-top">our mission</a>
+					<a href="{{ site.data.story.section1.button.link }}" 
+							class="btn btn-primary-no-arrow more-25-margin-top">{{ site.data.story.section1.button.text }}</a>
 					<hr class="separator animate slide-in-from-top">
 				</div>
 				<div class="col-md-2 col-sm-0"></div>
@@ -40,40 +38,40 @@ permalink: /our_story
 		<div class="row sm-gutter compensate-m">
 				
 			<div class="col-sm-6 col-lg-4 animate slide-in-from-left">
-					<a href="#" class="item-img">
+					<a href="{{ site.data.story.section1.img01.link }}" class="item-img">
 						<div class="img">
 							<img src={{site.data.index.section1.column.left.image}} class="img-fluid">
 						</div>
 						<div class="content">
-							<h3 class="h5 primary m">{{site.data.index.section1.column.left.title}}</h3>
-							<p class="sm">{{site.data.index.section1.column.left.text}}</p>
-							<div class="cta">{{site.data.index.section1.column.left.button}}</div>
+							<h3 class="h5 primary m">{{ site.data.story.section1.img01.title }}</h3>
+							<p class="sm">{{ site.data.story.section1.img01.text }}</p>
+							<div class="cta">{{ site.data.story.section1.img01.cta }}</div>
 						</div>
 					</a>
 				</div>
 					
 				<div class="col-sm-6 col-lg-4 animate slide-in-from-left">
-					<a href="#" class="item-img">
+					<a href="{{ site.data.story.section1.img02.link }}" class="item-img">
 						<div class="img">
 							<img src={{site.data.index.section1.column.middle.image}} class="img-fluid">
 						</div>
 						<div class="content">
-							<h3 class="h5 primary m">{{site.data.index.section1.column.middle.title}}</h3>
-							<p class="sm">{{site.data.index.section1.column.middle.text}}</p>
-							<div class="cta">{{site.data.index.section1.column.middle.button}}</div>
+							<h3 class="h5 primary m">{{ site.data.story.section1.img02.title }}</h3>
+							<p class="sm">{{ site.data.story.section1.img02.text }}</p>
+							<div class="cta">{{ site.data.story.section1.img02.cta }}</div>
 						</div>
 					</a>
 				</div>
 					
 				<div class="col-sm-12 col-lg-4 animate slide-in-from-top">
-					<a href="#" class="item-img">
+					<a href="{{ site.data.story.section1.img03.link }}" class="item-img">
 						<div class="img full-sm-img-height">
 							<img src={{site.data.index.section1.column.right.image}} class="img-fluid">
 						</div>
 						<div class="content content-50-padding">
-							<h3 class="h5 primary m">{{site.data.index.section1.column.right.title}}</h3>
-							<p class="sm">{{site.data.index.section1.column.right.text}}</p>
-							<div class="cta">{{site.data.index.section1.column.right.button}}</div>
+							<h3 class="h5 primary m">{{ site.data.story.section1.img03.title }}</h3>
+							<p class="sm">{{ site.data.story.section1.img03.text }}</p>
+							<div class="cta">{{ site.data.story.section1.img03.cta }}</div>
 						</div>
 					</a>
 				</div>
@@ -90,28 +88,22 @@ permalink: /our_story
 	<div class="container animate slide-in-from-left">
 		<div class="row ">
 			<div class="col-lg-12">
-				<h2 class="text-secondary-darker -mobile">Our Mission</h2>
+				<h2 class="text-secondary-darker -mobile">{{ site.data.story.section2.title }}</h2>
 			</div>
 		</div>
 		<div class="row ">
 			<div class="col-md-2 col-sm-0"></div>
 			<div class="col-md-8 col-sm-12">
 				<p class="sm -mobile ">
-					Direct Trade means going to origin to source some of the world’s most 
-					incredible coffees. By meeting and negotiating with farmers directly, 
-					we're able to form personal long-lasting relationships, which means you 
-					can count on your favourite coffees returning to our menu with each harvest. 
-					Plus, having fewer steps in the process means better traceability, which is 
-					really important to us. With Direct Trade, Pact is able to create a direct link 
-					between the coffee producer and your cup of coffee at the end of the chain, and 
-					that’s pretty special.
+					{{ site.data.story.section2.text }}
 				</p>
 			</div>
 			<div class="col-md-2 col-sm-0"></div>
 		</div>
 		<div class="row ">
 			<div class="col-md-12 ">
-				<a href="#" class="btn btn-primary-no-arrow more3-margin-bottom">Get Started</a>
+				<a href="{{ site.data.story.section2.button.link }}" 
+						class="btn btn-primary-no-arrow more3-margin-bottom">{{ site.data.story.section2.button.text }}</a>
 			</div>
 		</div>
 	</div>
@@ -126,11 +118,11 @@ permalink: /our_story
 			<div class="col-md-3 col-sm-0"></div>	
 			<div class="col-md-6 col-sm-12">
 				<div class="image-area more2-margin-top" >
-					<img src="../assets/img/avatars/section_3_story.png" 
+					<img src="{{ site.data.story.section3.top.image }}" 
 								class="center-image-top">
 				</div>
 				<h3 class="text-white text-center-mobile more-25-margin-top">
-					Head of Coffee, Will Corby, travels around the world to sourcethe best beans around.
+					{{ site.data.story.section3.top.title }}
 				</h3>
 			</div>
 			<div class="col-md-3 col-sm-0"></div>	
@@ -143,7 +135,7 @@ permalink: /our_story
 <section class="section-home-4 text-center zero-padding-bottom zero-padding">
 	<div class="row">
 		<div class="col-lg-6 col-sm-12 zero-padding-right animate slide-in-from-left">
-			<img src="../assets/img/bg/full-will-says-b.png" class="fit-image-corners_story">
+			<img src="{{ site.data.story.section3.bottom.image }}" class="fit-image-corners_story">
 		</div>
 		<div class="col-lg-6 col-sm-12 animate slide-in-from-top">
 			<div class="row more-margin-top">
@@ -155,10 +147,10 @@ permalink: /our_story
 			<div class="row bg-fingerprint">
 				<div class="col-lg-11 col-sm-12">
 					<h3 class="text-secondary-darker text-center-mobile font-size-42">
-							Will says:</h3>
+						{{ site.data.story.section3.bottom.title }}</h3>
 					<quote class="text-secondary-darker text-center font-size-20">
-						“Coffee’s ability to change people’s lives and improve local economies is huge. This is Pact’s goal, to get coffee consumers to understand the value in speciality coffee and the impact their choice to buy it can have in communities at origin. It’s a win-win: customers get a fantastic cup of coffee and that revenue supports the livelihood of the communities who grow it.”
-						<span>Our head of coffee</span>
+						{{ site.data.story.section3.bottom.text }}
+						<span>{{ site.data.story.section3.bottom.bold_text }}</span>
 					</quote>
 				</div>
 				<div class="col-lg-1 col-sm-0"></div>
