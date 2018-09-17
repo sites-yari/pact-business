@@ -6012,6 +6012,7 @@ body.loaded header .scroll > div {
 
 /*------------- Margin ---------------------*/
 .margin-auto{margin:auto;}
+.neg-200-margin-top{ margin-top: -180px!important; }
 .more-10-margin-top{margin-top: 10px!important;}
 .more-10-margin-bottom{margin-bottom: 10px!important;}
 .more-15-margin-top{margin-top: 15px!important;}
@@ -6082,11 +6083,14 @@ body.loaded header .scroll > div {
 
 /*------------------ OTHERS ----------------------------*/
 .story {padding-top: 400px;}
+.terms {padding-top: 450px;}
+.padd-left-20{padding-left: 20px;}
 .padd-left60{padding-left: 60px;}
 .padd-sides {padding-left: 10px; padding-right: 10px;}
 .item-img-alt .content-less-space {padding: 20px 10px 100px;}
 .item-img-alt .content-less2-space {padding: 20px 10px 50px;}
 .item-img-alt .content-less2-space { padding: 10px 0px 50px; }
+.container-under{ padding: 10px; margin: 10px; }
 /*------------------ end OTHERES ------------------------*/
 /*=========================================================================
 ||||||||||||||||||||||||||| end More spacing ||||||||||||||||||||||||||||||
@@ -6100,7 +6104,7 @@ body.loaded header .scroll > div {
 ||||||||||||||||||||||||||| COLORS (text and bg) |||||||||||||||||||||||||||
  ===========================================================================*/
  /*-------------------------- BG ----------------------------*/
- .bg-dark{background-color: #004249;}
+ .bg-dark{background-color: #004249!important;}
  .bg-white{background-color: white!important;}
  .bg-color-footer{ background-color: #3e8d93!important; }
  .bgbox-lightgray{ background-color: #edeeed!important; }
@@ -6148,6 +6152,7 @@ body.loaded header .scroll > div {
 .bottom-border{border-bottom: 1px solid white!important;}
 .top-border-s-darker{border-top: 1px solid #3e8d93!important;}
 .top-border-secundary-light{border-top: 1px solid #58cdca!important;}
+.top-border-secundary-darker{border-top: 2px solid #004249!important;}
 .top-g-border{border-top: 1px solid #edeeed!important;}
 .temp-border{width: 100%; border: 2px solid white; text-align: center;}
 .temp-border-left{border-left: 1px solid white;}
@@ -6157,6 +6162,13 @@ body.loaded header .scroll > div {
   right:6%;
   left: 30%;
 }
+.info-border{
+  border-top: 1px solid #004249;
+  border-bottom: 1px solid #004249;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 @media(min-width: 576px) and (max-width: 992px){
   .top-border-s-darker-80{
     border-top: 1px solid #3e8d93;
@@ -6164,6 +6176,7 @@ body.loaded header .scroll > div {
     right:6%;
     left: 20%;
   }
+  .font-tablet-20{ font-size: 20px; }
 }
 @media(min-width: 462px) and (max-width: 576px){
   .top-border-s-darker-80{
@@ -6194,6 +6207,7 @@ body.loaded header .scroll > div {
 /*=========================================================================
 |||||||||||||||||||||||||||||||| CREATED AREA |||||||||||||||||||||||||||||
  ===========================================================================*/
+ .max-w-90{ max-width: 90%!important;}
 .auto-flex{ flex: auto!important; }
 .machine-title{    
   margin: 0px;
@@ -7418,7 +7432,133 @@ body.loaded header .blog-bg > .row > div {
   animation-name: fadeIn; 
 }
 
+/* <---------------------------------------------------| Terms and Conditions */
+header.terms {
+  height: 200px;
+  background-color: #004249;
+  background-size: cover; 
+}
+header.terms:before {background-color: #004249; }
+@media (min-width: 0) and (max-width: 991px) {
+  header.terms:before { background-position: -80px center; } 
+}
+header.terms > .terms-content { padding-top: 50px; }
+header.terms > .terms-content p { margin-bottom: 40px; }
+@media (min-width: 768px) {
+  header.terms > .terms-content p { margin-bottom: 50px; } 
+}
+header.terms > .terms-bg .content { padding-top: 50px; }
 
+@media (min-width: 992px) {
+  .terms {
+    height: 75%;
+    min-height: 200px; } 
+}
+@media (min-width: 992px) {
+  .terms.full-height > .terms-content { height: 100%; } 
+}
+.terms.full-height > .terms-content > .row.content {
+  padding-top: 45px;
+  padding-bottom: 65px; 
+}
+@media (min-width: 992px) {
+  .terms.full-height > .terms-content > .row.content {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-top: 30px;
+    padding-bottom: 0; } 
+}
+
+@media (min-width: 992px) {
+  .terms.full-height > .terms-content > .top {
+    position: absolute;
+    top: 0;
+    width: 100%; } 
+}
+.terms.full-height > .terms-content > .top h2 { margin: -10px 0 0; }
+.terms.full-height > .terms-content > .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; 
+}
+.terms > .terms-content {
+  z-index: 3;
+  position: relative; 
+}
+.terms > .terms-bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  display: none; 
+}
+@media (min-width: 992px) {
+  .terms > .terms-bg { display: block; } 
+}
+.terms > .terms-bg .content { padding: 0 40px; }
+@media (min-width: 1200px) {
+  .terms > .terms-bg .content { padding: 0 65px; } 
+}
+.terms > .terms-bg .content img { display: inline-block; }
+@media (min-width: 992px) {
+  .terms:before { width: 50%; } 
+}
+@media (min-width: 0) and (max-width: 991px) {
+  .terms:before {
+    background-position: right center;
+    -webkit-background-size: 800px auto;
+    -moz-background-size: 800px auto;
+    background-size: 800px auto; } 
+}
+header .terms-content > .row > div {
+  opacity: 0;
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  -o-animation-duration: 0.8s;
+  animation-duration: 0.8s; 
+}
+header .terms-bg > .row > div {
+  opacity: 0;
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  -o-animation-duration: 0.8s;
+  animation-duration: 0.8s; 
+}
+body.loaded header .terms-content > .row > div {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn; 
+}
+body.loaded header .terms-bg > .row > div {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn; 
+}
 
 
 
