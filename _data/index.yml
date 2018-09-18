@@ -42,7 +42,7 @@ section2:
   title: From our team, to yours
   image: assets/img/illustration/02.png
   button:
-    link: 
+    link: ../contact
     text: Get started
   theme1:
     title: Tailored for you 
@@ -53,19 +53,6 @@ section2:
   theme3:
     title: On-hand Support
     subtitle: Our Customer Champions are ready and willing to chat coffee 9am-5pm, seven days a week.
-
-section3:
-  title: what our clients say
-  image: assets/img/illustration/03.png
-  slide1:
-    text: “Using Pact has meant we no longer need to leave the building to get a cappuccino that cuts the mustard. This has improved morale no end – despite the queue at the coffee machine.”
-    bold_text: Beth at Capital Law
-  slide2:
-    text: “I love the personal touch Pact offer. The service is quick and reliable and they’re responsive, efficient and always willing to go the extra mile, which is difficult to get these days.”
-    bold_text: Sally Shadrooh AT WORKSPACE
-  slide3:
-    text: “We have a room full of coffee connoisseurs in the office, so they're a tough crowd to please but Pact keeps everyone happy. And the next day delivery, has definitely prevented a few crises!”
-    bold_text: Oyinda Bambgoose AT CHARLIE HR
 
 section7:
   title:
