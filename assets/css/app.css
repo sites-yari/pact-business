@@ -6219,11 +6219,21 @@ body.loaded header .scroll > div {
  ===========================================================================*/
  .blog-content:hover p,
  .blog-content:hover h3,
- .blog-content:hover a{color: #004249!important;}
- .blog-content:hover img{
+ .blog-content:hover a{color: #3e8d93!important;}
+ .blog-content .img-flash img{
+  -webkit-filter: sepia(0%);
+	filter: sepia(0%);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+ }
+ .blog-content:hover .img-flash img{
+  -webkit-filter: sepia(40%);
+	filter: sepia(40%);
+ }
+ .blog-content:hover .img-zoom img{
   -ms-transform: scale(1.01); /* IE 9 */
   -webkit-transform: scale(1.01); /* Safari 3-8 */
-  transform: scale(1.01); 
+  transform: scale(1.1); 
  }
  .max-w-90{ max-width: 90%!important;}
 .auto-flex{ flex: auto!important; }
@@ -6570,6 +6580,12 @@ body.loaded header .scroll > div {
   .mobile-work-section1{height:600px;}
 }
 .machines-slider-img{width: 50%;}
+.machines-slider-img-border{
+  width: 50%;
+  border: 0px solid;
+  border-radius: 50%;
+}
+
 .btn.full-width2 {
   width: 100%;
   min-width: 300px;
