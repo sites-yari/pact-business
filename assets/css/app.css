@@ -6125,7 +6125,7 @@ body.loaded header .scroll > div {
 .text-light-gray{ color: #edeeed!important; }
 .text-secundary-darker{color: #004249!important;}
 .text-blue-icon{color: #73bcba!important;}
-.text-black{ color: black!important; }
+.text-p-color{ color: #666666!important; }
 @media(min-width: 0px) and (max-width: 992px){
   .mobile-log-item{ color: #004249!important;}
 }
@@ -6217,6 +6217,14 @@ body.loaded header .scroll > div {
 /*=========================================================================
 |||||||||||||||||||||||||||||||| CREATED AREA |||||||||||||||||||||||||||||
  ===========================================================================*/
+ .blog-content:hover p,
+ .blog-content:hover h3,
+ .blog-content:hover a{color: #004249!important;}
+ .blog-content:hover img{
+  -ms-transform: scale(1.01); /* IE 9 */
+  -webkit-transform: scale(1.01); /* Safari 3-8 */
+  transform: scale(1.01); 
+ }
  .max-w-90{ max-width: 90%!important;}
 .auto-flex{ flex: auto!important; }
 .machine-title{    
