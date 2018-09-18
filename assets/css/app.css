@@ -6096,6 +6096,10 @@ body.loaded header .scroll > div {
 .item-img-alt .content-less2-space {padding: 20px 10px 50px;}
 .item-img-alt .content-less2-space { padding: 10px 0px 50px; }
 .container-under{ padding: 10px; margin: 10px; }
+.left-table{ padding-left: 50px!important; padding-right: 0px!important;}
+.right-table{ padding-left: 0px!important; padding-right: 50px!important;}
+.right2-table{ padding-left: 20px!important; padding-right: 50px!important;}
+
 /*------------------ end OTHERES ------------------------*/
 /*=========================================================================
 ||||||||||||||||||||||||||| end More spacing ||||||||||||||||||||||||||||||
