@@ -6125,6 +6125,7 @@ body.loaded header .scroll > div {
 .text-light-gray{ color: #edeeed!important; }
 .text-secundary-darker{color: #004249!important;}
 .text-blue-icon{color: #73bcba!important;}
+.text-black{ color: black!important; }
 @media(min-width: 0px) and (max-width: 992px){
   .mobile-log-item{ color: #004249!important;}
 }
@@ -6343,8 +6344,13 @@ body.loaded header .scroll > div {
   object-fit: cover;
   margin:auto;
 }
+.fit-image-corners-up{
+  height: 350px;
+  margin:auto;
+  margin-top: 60px;
+}
 @media (min-width:768px){
-  .fit-image-corners_story{
+  .fit-image-corners_story,{
     height: 600px;
     object-fit: cover;
     width: 100%;

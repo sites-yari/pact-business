@@ -1,14 +1,16 @@
 <div class="col-md-8 col-sm-12 content-padd-10 animate slide-in-from-left">
-  <div class="invisible-box-blog">
-    <div class="img-big-blog">
-      <img src="{{post.image_path}}" class="img-fluid">
+  <a href="{{post.url}}">
+    <div class="invisible-box-blog">
+      <div class="img-big-blog">
+        <img src="{{post.image_path}}" class="img-fluid">
+      </div>
+      <div class="info-blog ">
+        <p class="more-10-margin-bottom text-primary-blue more-25-margin-top 
+                  uppercase font-size-14">{{post.date-shown}}</p>
+        <h3 class="h4 post-title-big-box">{{post.title}}</h3>
+        <p class="post-text-big-box text-secundary-darker">{{post.excerpt | strip_html |  truncatewords: 40}}</p>
+        <p class="text-primary-blue"><i class="fa fa-plus"></i> read more</p>
+      </div>
     </div>
-    <div class="info-blog ">
-      <p class="more-10-margin-bottom text-primary-blue more-25-margin-top 
-                uppercase font-size-14">{{post.date-shown}}</p>
-      <h3 class="h4 post-title-big-box">{{post.title}}</h3>
-      <p class="post-text-big-box">{{post.excerpt | strip_html |  truncatewords: 40}}</p>
-      <a href="{{post.url}}" class="text-primary-blue"><i class="fa fa-plus"></i> read more</a>
-    </div>
-  </div>
+  </a>
 </div>
