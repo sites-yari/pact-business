@@ -24,3 +24,226 @@ collections:
       - { label: "Class", name: "class", widget: "hidden", default: "blog" } 
       - { label: "Main Image", name: "image_path", widget: "image" }
       - { label: "Body Text", name: "body", widget: "markdown" }
+
+  - name: "data" #|=====================| DATA |====================================================|
+    label: "Data"
+    editor:
+      preview: true
+    files:
+        #---| INDEX |---
+      - name: "index"
+        label: "Homepage"
+        file: "_data/index.yml"
+        description: Everything only used in the Homepage
+        fields:
+          - label: Header #------- Header
+            name: header
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: object
+                fields:
+                  - { label: "White Text", name: "white", widget: "string" }
+                  - { label: "Light Blue Text", name: "blue_light", widget: "string" }
+              - label: Under the Title
+                name: text
+                widget: object
+                fields:
+                  - { label: "Top Text", name: "top", widget: "string" }
+                  - { label: "Bottom Text", name: "bottom", widget: "string" }
+              - { label: "Button Text", name: "button_text", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+          - label: Section 1 #------- Sect 1
+            name: section1
+            widget: object
+            fields:
+              - label: Logos
+                name: logos
+                widget: object
+                fields:
+                  - { label: "Small top Text", name: "text", widget: "string" }
+                  - { label: "Logo 1", name: "logo1", widget: "image" }
+                  - { label: "Logo 2", name: "logo2", widget: "image" }
+                  - { label: "Logo 3", name: "logo3", widget: "image" }
+                  - { label: "Logo 4", name: "logo4", widget: "image" }
+                  - { label: "Logo 5", name: "logo5", widget: "image" }
+                  - { label: "Logo 6", name: "logo6", widget: "image" }
+                  - { label: "Logo 7", name: "logo7", widget: "image" }
+              - label: Title
+                name: title
+                widget: object
+                fields:
+                  - { label: "Top Text", name: "top", widget: "string" }
+                  - { label: "Bottom Text", name: "bottom", widget: "string" }
+              - label: Columns
+                name: column
+                widget: object
+                fields:
+                  - label: Left Column
+                    name: left
+                    widget: object
+                    fields:
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                      - { label: "Button text", name: "button", widget: "string" }
+                  - label: Middle Column
+                    name: middle
+                    widget: object
+                    fields:
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                      - { label: "Button text", name: "button", widget: "string" }
+                  - label: Right Column
+                    name: right
+                    widget: object
+                    fields:
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                      - { label: "Button text", name: "button", widget: "string" }
+          - label: Section 2 #------- Sect 2
+            name: section
+            widget: object
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - label: Button
+                name: button
+                widget: object
+                fields:
+                  - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+              - label: Theme 1
+                name: theme1
+                widget: object
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "subtitle", widget: "string" }
+              - label: Theme 2
+                name: theme2
+                widget: object
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "subtitle", widget: "string" }
+              - label: Theme 3
+                name: theme3
+                widget: object
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "subtitle", widget: "string" }
+      #---| How it Works |---
+      - name: "works"
+        label: "How it Works"
+        file: "_data/works.yml"
+        description: Everything only used in the How it works
+        fields:
+          - label: Header #------- Header
+            name: header
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: object
+                fields:
+                  - { label: "White Text", name: "white", widget: "string" }
+                  - { label: "Light Blue Text", name: "blue_light", widget: "string" }
+              - { label: "Text number 1", name: "one_text", widget: "string" }
+              - { label: "Text number 2", name: "two_text", widget: "string" }
+              - { label: "Text number 3", name: "tree_text", widget: "string" }
+          - label: Section 1 #------- Sect 1
+            name: section1
+            widget: object
+            fields:
+              - label: Step 1
+                name: step1
+                widget: object
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Top Title", name: "top_title", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+                  - label: Button
+                    name: button
+                    widget: object
+                    fields:
+                      - { label: "Link", name: "link", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+              - label: Step 2
+                name: step2
+                widget: object
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Top Title", name: "top_title", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+                  - label: Button
+                    name: button
+                    widget: object
+                    fields:
+                      - { label: "Link", name: "link", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+              - label: Step 3
+                name: step3
+                widget: object
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Top Title", name: "top_title", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+                  - label: Button
+                    name: button
+                    widget: object
+                    fields:
+                      - { label: "Link", name: "link", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+          - label: Section 3 #------- Sect 3
+            name: section3
+            widget: object
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: Stage 01
+                name: stage01
+                widget: object
+                fields:
+                  - { label: "Top Title", name: "above_title", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - label: Stage 02
+                name: stage02
+                widget: object
+                fields:
+                  - { label: "Top Title", name: "above_title", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - label: Stage 03
+                name: stage03
+                widget: object
+                fields:
+                  - { label: "Top Title", name: "above_title", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - label: Stage 04
+                name: stage04
+                widget: object
+                fields:
+                  - { label: "Top Title", name: "above_title", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - label: Stage 05
+                name: stage05
+                widget: object
+                fields:
+                  - { label: "Top Title", name: "above_title", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - label: Button
+                name: button
+                widget: object
+                fields:
+                  - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+
+

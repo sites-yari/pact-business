@@ -6313,9 +6313,14 @@ body.loaded header .scroll > div {
   border: 0px solid #f5c351;
   height: 700px;
 }
-.invisible-box-blog .img-big-blog img{
+.invisible-box-blog .img-big-blog{
   height: 450px;
   width: 100%;
+}
+.invisible-box-blog .img-big-blog img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .invisible-box-blog .info-blog{
   margin-left: 20px;
