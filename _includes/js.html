@@ -5,6 +5,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="../../assets/js/app.js"></script>
 
+<script>
+var user_ip = "not caught"
+document.addEventListener('DOMContentLoaded', function() {
+  $.getJSON('https://jsonip.com/?callback=?', function(data) {
+   user_ip = data.ip
+  })
+}, false);
+</script>
 
 <script>
     if ($('.swiper-container').length > 0) { //some-slider-wrap-in
@@ -28,7 +36,7 @@
               },
           });
       });
-  
+
       // Now you can call the update on a specific instance in the "swiperInstances" object
       // e.g.
       swiperInstances[3].update();
@@ -40,18 +48,18 @@
       }, 50);
   }
   </script>
-  
+
   <script>
   $(function() {
     $("#accordion").accordion({
       heightStyle: "content",
       //   active: false,
       collapsible: true
-    }); 
+    });
     $("#accordion2").accordion({
       heightStyle: "content",
       collapsible: true
-    }); 
+    });
     $("#accordion3").accordion({
       heightStyle: "content",
       collapsible: true
@@ -59,13 +67,67 @@
   });
     </script>
 
+<script>
 
+// handle click and sending form data
+$('#submit_button').on("click", function(){
+  // Form ids associated with pathname
+const formIDS = new Map([
+  ['/', 'd27d6015-4f87-49d1-bf38-bd9707dba52d'],
+  ['/how_it_works', '81deeed6-ba7d-4f70-ba2a-2a56c6c0b5f1'],
+  ['/our_story', 'e5316853-3689-40d8-bc33-2a0b28286a13'],
+  ['/machines', '1d0358d8-5583-4b96-8b05-9c6cbb582915'],
+  ['/pricing', '84dd217d-9c47-442f-bc9d-32d260ae9afc'],
+  ['/contact', 'f578e4db-d5f1-4a68-a54a-ff9d72d7e40e'],
+]);
+  // find information
+  console.log(user_ip)
+  const email = $('#email').val()
+  const from_page = window.location.pathname
+  const formID = formIDS.get(from_page)
+  //set request params
+  const url = `https://forms.hubspot.com/uploads/form/v2/2941246/${formID}`
+  const data = {
+  name: $('#full_name').val(),
+  email:email,
+  phone: $('#phone_nr').val(),
+  company: $('#company_name').val(),
+  number_of_staff: $('#nr_of_staff').val(),
+  how_can_we_help_you_: $('#how_can_we_help').val(),
+  free_coffee_tasting: $('#checkbox-1').prop("checked"),
+  'hs_context': JSON.stringify({
+        "ipAddress": user_ip,
+        "pageUrl": window.location.href,
+        "pageName": from_page,
+    }),
+  }
+    console.log('url->', url)
+    console.log('data->', data)
+
+    $.ajax({
+        url: url,
+        type: "POST",
+        crossDomain: true,
+        dataType: "json",
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        data: data,
+        success: function(response) {
+            console.log(response);
+        },
+        error: function(xhr, status) {
+          console.log(xhr);
+        }
+    });
+
+  })
+
+  </script>
 
 
 <!-- <div class="lunchbox">
-  <div id="swiper1" class="swiper-container"> 
+  <div id="swiper1" class="swiper-container">
     <div class="swiper-wrapper">
-  
+
       <div class="swiper-slide">
       </div>
       <div class="swiper-slide">
@@ -78,8 +140,8 @@
     </div>
     <div class="swiper-pagination"></div>
   </div>
-  
+
   <div id="js-prev1" class="swiper-button-prev"></div>
   <div id="js-next1" class="swiper-button-next"></div>
-    
+
 </div> -->
