@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Coffee matters: how a good cup of coffee can transform company culture'
-date-shown: Posted by Tamsin on 10 May 2018
+date-shown: 10 May 2018
 permalink: /spilling_beans/coffee-matters-company-culture
 category: ' '
 class: blog
