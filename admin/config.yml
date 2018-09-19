@@ -246,9 +246,111 @@ collections:
                 fields:
                   - { label: "Link", name: "link", widget: "string" }
                   - { label: "Text", name: "text", widget: "string" }
+          - label: Section 2 #------- Sect 2
+            name: section2
+            widget: object
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - label: Area
+                name: area
+                widget: object
+                fields:
+                  - { label: "One", name: "one", widget: "string" }
+                  - { label: "Two", name: "two", widget: "string" }
+                  - { label: "Tree", name: "tree", widget: "string" }
+                  - { label: "Four", name: "four", widget: "string" }
+                  - { label: "Five", name: "five", widget: "string" }
+                  - { label: "Six", name: "six", widget: "string" }
+              - label: Button
+                name: button
+                widget: object
+                fields:
+                  - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+          - label: Section 4 #------- Sect 4
+            name: section4
+            widget: object
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - label: Theme
+                name: theme
+                widget: object
+                fields:
+                  - label: One
+                    name: one
+                    widget: object
+                    fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                  - label: Two
+                    name: two
+                    widget: object
+                    fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                  - label: Tree
+                    name: tree
+                    widget: object
+                    fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                  - label: Four
+                    name: four
+                    widget: object
+                    fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                  - label: Five
+                    name: five
+                    widget: object
+                    fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                  - label: Six
+                    name: six
+                    widget: object
+                    fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+              - label: Button
+                name: button
+                widget: object
+                fields:
+                  - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
       # -
       # -
-      # -
+      #---| Princing |---
+      - name: "pricing"
+        label: "Pricing"
+        file: "_data/pricing.yml"
+        description: Everything only used in the Pricing
+        fields:
+          - label: Header #------- Header
+            name: header
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: object
+                fields:
+                  - { label: "White Text", name: "white", widget: "string" }
+                  - { label: "Light Blue Text", name: "blue_light", widget: "string" }
+              - { label: "Text number 1", name: "one_text", widget: "string" }
+          - label: Section 1
+            name: section1
+            widget: object
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: Text
+                name: text
+                widget: object
+                fields:
+                  - { label: "Top text", name: "top", widget: "string" }
+                  - { label: "Bottom text", name: "bottom", widget: "string" }
       #---| SECTION - Coffee supply chain |---
       - name: "section_coffee_supply_chain"
         label: "Section - Coffee supply chain"
