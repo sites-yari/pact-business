@@ -110,10 +110,12 @@ const formIDS = new Map([
         headers: {'Content-Type': 'application/x-www-form-urlencoded'},
         data: data,
         success: function(response) {
-            console.log(response); // D-FORGET redirect
+          window.location.pathname = '/thank_you'
+            console.log(response);
         },
         error: function(xhr, status) {
-          console.log(xhr); // D-FORGET redirect
+          window.location.pathname = '/thank_you'
+          console.log(xhr);
         }
     });
 
