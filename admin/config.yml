@@ -18,6 +18,7 @@ collections:
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Title", name: "title", widget: "string" }
+      - {label: "Publish Date (do not touch unless necessary)", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
       - { label: "Public Date", name: "date-shown", widget: "string" }
       - { label: "Visible Link", name: "permalink", widget: "string", default: "/spilling_beans/(name-here)"}
       - { label: "Category", name: "category", widget: "select", options: [ " ", "tasting" , "more to add"] }
@@ -255,7 +256,7 @@ collections:
         description: Everything only used in the Coffee supply chain
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Text  ", name: "text  ", widget: "string" }
+          - { label: "Text  ", name: "text", widget: "string" }
           - { label: "Image", name: "image", widget: "image" }
           - label: Top Coffee Stats #------- Stats TOP
             name: coffee_stat_top
@@ -289,7 +290,7 @@ collections:
                   - { label: "Percentage", name: "percentage", widget: "string" }
                   - { label: "Text", name: "of", widget: "string" }
           - label: Bottom Coffee Stats #------- Stats BOTTOM
-            name: coffee_stat_botttom
+            name: coffee_stat_bottom
             widget: object
             fields:
               - { label: "Title", name: "title", widget: "string" }
@@ -341,21 +342,21 @@ collections:
                 name: slide1
                 widget: object
                 fields:
-                  - { label: "Text  ", name: "text  ", widget: "string" }
-                  - { label: "Bold Text  ", name: "bold_text  ", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+                  - { label: "Bold Text", name: "bold_text", widget: "string" }
               - label: Slide 02
                 name: slide2
                 widget: object
                 fields:
-                  - { label: "Text  ", name: "text  ", widget: "string" }
-                  - { label: "Bold Text  ", name: "bold_text  ", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+                  - { label: "Bold Text", name: "bold_text", widget: "string" }
               - label: Slide 03
                 name: slide3
                 widget: object
                 fields:
-                  - { label: "Text  ", name: "text  ", widget: "string" }
-                  - { label: "Bold Text  ", name: "bold_text  ", widget: "string" }
-      #---| SECTION - Swiper Orange |---
+                  - { label: "Text", name: "text", widget: "string" }
+                  - { label: "Bold Text", name: "bold_text", widget: "string" }
+      #---| SECTION - Blue Boxes |---
       - name: "section_blue_boxes"
         label: "Section - Why might Pact be perfect for you?"
         file: "_data/section_blue_boxes.yml"
@@ -366,7 +367,7 @@ collections:
             widget: object
             fields:
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Small Title", name: "small_title", widget: "string" }
+              - { label: "Small Title", name: "small_title", widget: "string", required: false}
               - { label: "Subitle", name: "subtitle", widget: "string" }
               - label: Button
                 name: button

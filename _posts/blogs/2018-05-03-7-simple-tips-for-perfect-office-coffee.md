@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 7 simple tips for perfect office coffee
+date: 2018-05-03 11:35:54 +0100
 date-shown: 03 May 2018
 permalink: /spilling_beans/perfect-office-coffee
 category: ' '

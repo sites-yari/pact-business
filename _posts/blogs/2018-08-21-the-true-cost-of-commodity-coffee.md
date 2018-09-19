@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The True Cost of Commodity Coffee
+date: 2018-08-21 11:35:54 +0100
 date-shown: 21 August 2018
 permalink: /spilling_beans/the-true-cost-of-commodity-coffee
 category: ' '

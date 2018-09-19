@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Make Offices Great: practicalities, perks and Pact'
+date: 2018-07-31 11:35:54 +0100
 date-shown: 31 July 2018
 permalink: /spilling_beans/making-offices-great
 category: ' '

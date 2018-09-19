@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Caffeinated and cost-efficient: the hidden value of office coffee'
+date: 2018-06-25 11:35:54 +0100
 date-shown: 25 June 2018
 permalink: /spilling_beans/hidden-value-of-office-coffee
 category: ' '
