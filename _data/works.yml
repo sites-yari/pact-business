@@ -1,65 +1,67 @@
 header:
+  one_text: Tell us what you need
   title:
     white: How to bring good coffee
-    light_blue: to your team
-  one_text: Tell us what you need
+  tree_text: 'Enjoy office coffee, <br>on your terms'
   two_text: Coffee Tasting Visit
-  tree_text: Enjoy office coffee, <br>on your terms
-
 section1:
-  step1: 
-    image: ../assets/img/illustration/step_1.png
-    top_title: Step.1
-    title: Tell us what you need
-    text: Our team loves to chat coffee. We can work out what you want, and which options would be best for you - based on your office and its needs.
+  step1:
     button:
-      link: "#"
+      link: '#'
       text: get in touch
-  step2: 
-    image: ../assets/img/illustration/step_2.png
-    top_title: Step.2
-    title: Coffee tasting visit
-    text: We’ll arrange a 30-minute visit with you, to tell your stakeholders what we’re about and show off a few of our delicious brews!
+    image: ../assets/img/illustration/step_1.png
+    text: >-
+      Our team loves to chat coffee. We can work out what you want, and which
+      options would be best for you - based on your office and its needs.
+    title: Tell us what you need
+    top_title: Step.1
+  step2:
     button:
-      link: "#"
+      link: '#'
       text: free coffee tasting
-  step3: 
-    image: ../assets/img/illustration/step_3.png
-    top_title: Step.3
-    title: Enjoy office coffee, on your terms
-    text: Make the most of having great coffee in your company’s kitchen. Just shout if anything needs tweaking - from machine maintenance to delivery frequency.
+    image: ../assets/img/illustration/step_2.png
+    text: >-
+      We’ll arrange a 30-minute visit with you, to tell your stakeholders what
+      we’re about and show off a few of our delicious brews!
+    title: Coffee tasting visit
+    top_title: Step.2
+  step3:
     button:
-      link: "#"
+      link: '#'
       text: get started
-
+    image: ../assets/img/illustration/step_3.png
+    text: >-
+      Make the most of having great coffee in your company’s kitchen. Just shout
+      if anything needs tweaking - from machine maintenance to delivery
+      frequency.
+    title: 'Enjoy office coffee, on your terms'
+    top_title: Step.3
 section3:
-  title: Coffee Tasting Visit
-  stage01: 
+  button:
+    link: '#'
+    text: treat your team
+  stage01:
     above_title: stage 01
-    title: set a date 
-    subtitle: Choose a titme and date that works for you
+    subtitle: Choose a time and date that works for you
+    title: set a date
   stage02:
     above_title: stage 02
-    title: guestlist
     subtitle: Pick 4-8 decision makers (and coffee <br>enthusiasts!) to join in
+    title: guestlist
   stage03:
     above_title: stage 03
+    subtitle: >-
+      We’ll talk about who we are, find out who <i>you<i/> are <br>and leave
+      time for questions
     title: half-hour visit
-    subtitle: We’ll talk about who we are, find out who you are <br>and leave time for questions
   stage04:
     above_title: stage 04
+    subtitle: >-
+      You’ll try the chocolatey ‘people’s choice’, <br>Planalto, and two other
+      single origin coffees
     title: tasting
-    subtitle: You’ll try the chocolatey ‘people’s choice’, <br>Planalto, and two other single origin coffees
   stage05:
     above_title: stage 05
+    subtitle: 'Have a think, then have a chat with us - we’ll go <br>from there!'
     title: decision time
-    subtitle: Have a think, then have a chat with us - we’ll go <br>from there!
-  button:
-    link: "#"
-    text: load more articles
-
-section6: form here
-
-
-
-  
+  title: Coffee Tasting Visit
