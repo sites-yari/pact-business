@@ -7832,6 +7832,42 @@ animation-name: fadeIn; }
   background-color: #f3ad49;
   border-color: #f5c351; }
 
+  /* ==============================| NO ARROW - reverce color |======================== */
+.btn.btn-primary-no-arrow-r {
+  text-align: center;
+  color: white;
+  background-color: #f3ad49;
+  border: solid 1px #f5c351;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  border-radius: 25px; }
+.btn.btn-primary-no-arrow-r:after {
+  content: " ";
+  width: 38px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 38px 24px;
+  position: absolute;
+  right: 30px;
+  top: 13px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s; }
+@media (min-width: 0) and (max-width: 991px) {
+  .btn.btn-primary-no-arrow-r:after { right: 20px; } 
+}
+.btn.btn-primary-no-arrow-r:hover, 
+.btn.btn-primary-no-arrow-r:focus, 
+.btn.btn-primary-no-arrow-r:not(:disabled):not(.disabled):active, 
+.btn.btn-primary-no-arrow-r:not(:disabled):not(.disabled).active {
+  color: #f5c351;
+  background-color: white;
+  border-color: #f5c351; }
+
 /* ===============================| WITH ARROW|================== */
 .btn.btn-primary-only-arrow {
   text-align: center;
