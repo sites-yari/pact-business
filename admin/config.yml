@@ -245,5 +245,191 @@ collections:
                 fields:
                   - { label: "Link", name: "link", widget: "string" }
                   - { label: "Text", name: "text", widget: "string" }
-
+      -
+      -
+      -
+      #---| SECTION - Coffee supply chain |---
+      - name: "section_coffee_supply_chain"
+        label: "Section - Coffee supply chain"
+        file: "_data/section_coffee_supply_chain.yml"
+        description: Everything only used in the Coffee supply chain
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Text  ", name: "text  ", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
+          - label: Top Coffee Stats #------- Stats TOP
+            name: coffee_stat_top
+            widget: object
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - label: Color 1
+                name: color1
+                widget: object
+                fields:
+                  - { label: "Percentage", name: "percentage", widget: "string" }
+                  - { label: "Text", name: "of", widget: "string" }
+              - label: Color 2
+                name: color2
+                widget: object
+                fields:
+                  - { label: "Percentage", name: "percentage", widget: "string" }
+                  - { label: "Text", name: "of", widget: "string" }
+              - label: Color 3
+                name: color3
+                widget: object
+                fields:
+                  - { label: "Percentage", name: "percentage", widget: "string" }
+                  - { label: "Text", name: "of", widget: "string" }
+              - label: Color 4
+                name: color4
+                widget: object
+                fields:
+                  - { label: "Percentage", name: "percentage", widget: "string" }
+                  - { label: "Text", name: "of", widget: "string" }
+          - label: Bottom Coffee Stats #------- Stats BOTTOM
+            name: coffee_stat_botttom
+            widget: object
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - label: Color 1
+                name: color1
+                widget: object
+                fields:
+                  - { label: "Percentage", name: "percentage", widget: "string" }
+                  - { label: "Text", name: "of", widget: "string" }
+              - label: Color 2
+                name: color2
+                widget: object
+                fields:
+                  - { label: "Percentage", name: "percentage", widget: "string" }
+                  - { label: "Text", name: "of", widget: "string" }
+              - label: Color 3
+                name: color3
+                widget: object
+                fields:
+                  - { label: "Percentage", name: "percentage", widget: "string" }
+                  - { label: "Text", name: "of", widget: "string" }
+              - label: Color 4
+                name: color4
+                widget: object
+                fields:
+                  - { label: "Percentage", name: "percentage", widget: "string" }
+                  - { label: "Text", name: "of", widget: "string" }
+              - label: Color 5
+                name: color5
+                widget: object
+                fields:
+                  - { label: "Percentage", name: "percentage", widget: "string" }
+                  - { label: "Text", name: "of", widget: "string" }
+      #---| SECTION - Swiper Orange |---
+      - name: "section_swiper_orange"
+        label: "Section - What our clients say"
+        file: "_data/section_swiper_orange.yml"
+        description: Everything only used in the What ourclients say
+        fields:
+          - label: Section info #------- Stats TOP
+            name: section
+            widget: object
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - label: Slide 01
+                name: slide1
+                widget: object
+                fields:
+                  - { label: "Text  ", name: "text  ", widget: "string" }
+                  - { label: "Bold Text  ", name: "bold_text  ", widget: "string" }
+              - label: Slide 02
+                name: slide2
+                widget: object
+                fields:
+                  - { label: "Text  ", name: "text  ", widget: "string" }
+                  - { label: "Bold Text  ", name: "bold_text  ", widget: "string" }
+              - label: Slide 03
+                name: slide3
+                widget: object
+                fields:
+                  - { label: "Text  ", name: "text  ", widget: "string" }
+                  - { label: "Bold Text  ", name: "bold_text  ", widget: "string" }
+      #---| SECTION - Swiper Orange |---
+      - name: "section_blue_boxes"
+        label: "Section - Why might Pact be perfect for you?"
+        file: "_data/section_blue_boxes.yml"
+        description: Everything only used in the Why might Pact be perfect for you?
+        fields:
+          - label: Top blue Area #------- Blue area
+            name: top
+            widget: object
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Small Title", name: "small_title", widget: "string" }
+              - { label: "Subitle", name: "subtitle", widget: "string" }
+              - label: Button
+                name: button
+                widget: object
+                fields:
+                  - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+          - label: Home / Machines / Princing #------- home_machines_and_pricing
+            name: home_machines_and_pricing
+            widget: object
+            fields:
+              - label: Boxes
+                name: boxes
+                widget: object
+                fields:
+                  - label: Box 01
+                    name: box1
+                    widget: object
+                    fields:
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                  - label: Box 02
+                    name: box2
+                    widget: object
+                    fields:
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                  - label: Box 03
+                    name: box3
+                    widget: object
+                    fields:
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+          - label: How it works / Our story #------- works_and_story
+            name: works_and_story
+            widget: object
+            fields:
+              - label: Boxes
+                name: boxes
+                widget: object
+                fields:
+                  - label: Box 01
+                    name: box1
+                    widget: object
+                    fields:
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                  - label: Box 02
+                    name: box2
+                    widget: object
+                    fields:
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                  - label: Box 03
+                    name: box3
+                    widget: object
+                    fields:
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
 
