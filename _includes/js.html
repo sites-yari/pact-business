@@ -81,7 +81,6 @@ const formIDS = new Map([
   ['/contact', 'f578e4db-d5f1-4a68-a54a-ff9d72d7e40e'],
 ]);
   // find information
-  console.log(user_ip)
   const email = $('#email').val()
   const from_page = window.location.pathname
   const formID = formIDS.get(from_page)
@@ -101,8 +100,6 @@ const formIDS = new Map([
         "pageName": from_page,
     }),
   }
-    console.log('url->', url)
-    console.log('data->', data)
 
     $.ajax({
         url: url,
@@ -112,10 +109,10 @@ const formIDS = new Map([
         headers: {'Content-Type': 'application/x-www-form-urlencoded'},
         data: data,
         success: function(response) {
-            console.log(response);
+            console.log(response); // D-FORGET redirect
         },
         error: function(xhr, status) {
-          console.log(xhr);
+          console.log(xhr); // D-FORGET redirect
         }
     });
 
