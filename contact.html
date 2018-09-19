@@ -115,18 +115,18 @@ permalink: /contact
 					<div class="contacts">
 						<form>
 							<div class="form-group">
-								<input type="text" class="form-control-white" placeholder="Full Name *">
+								<input id ="full_name" type="text" class="form-control-white" placeholder="Full Name *">
 							</div>
 		
 							<div class="row md-gutter">
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control-white" placeholder="Email *">
+										<input id ="email" type="text" class="form-control-white" placeholder="Email *">
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control-white" placeholder="Phone No. *">
+										<input id ="phone_nr" type="text" class="form-control-white" placeholder="Phone No. *">
 									</div>
 								</div>
 							</div>
@@ -134,12 +134,12 @@ permalink: /contact
 							<div class="row md-gutter">
 								<div class="col-md-6">
 									<div class="form-group">
-											<input type="text" class="form-control-white" placeholder="Company *">
+											<input id ="company_name" type="text" class="form-control-white" placeholder="Company *">
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<select class="form-control-white">
+										<select id ="nr_of_staff" class="form-control-white">
 											<option  disabled selected value>No. of Staff</option>
 											<option>5</option>
 											<option>10</option>
@@ -150,7 +150,7 @@ permalink: /contact
 							</div>
 		
 							<div class="form-group">
-								<select class="form-control-white">
+								<select id ="prefered_contact_method" class="form-control-white">
 									<option disabled selected value>Preferred method of contact</option>
 									<option>Phone</option>
 									<option>Email</option>
@@ -160,7 +160,7 @@ permalink: /contact
 							<div class="row md-gutter">
 								<div class="col-lg-12">
 									<div class="form-group">
-										<textarea class="form-control-white" placeholder="How can we help you?"></textarea>
+										<textarea id ="how_can_we_help" class="form-control-white" placeholder="How can we help you?"></textarea>
 									</div>
 								</div>
 							</div>
@@ -177,7 +177,7 @@ permalink: /contact
 									</div>
 								</div>
 								<div class="col-md-6">
-									<a href="#" class="btn btn-secondary-dark full-width center-mobile">Treat your team</a>
+									<a id="submit_button" href="#" class="btn btn-secondary-dark full-width center-mobile">Treat your team</a>
 								</div>
 							</div>
 						</form>
