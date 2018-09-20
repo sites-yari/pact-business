@@ -469,7 +469,7 @@ collections:
                       - { label: "Subtitle", name: "subtitle", widget: "string" }
                       - { label: "Text 1", name: "txt1", widget: "string" }
                       - { label: "Text 2", name: "txt2", widget: "string" }
-            - label: Machine 02
+              - label: Machine 02
                 name: machine2
                 widget: object
                 fields:
@@ -498,7 +498,7 @@ collections:
                       - { label: "Subtitle", name: "subtitle", widget: "string" }
                       - { label: "Text 1", name: "txt1", widget: "string" }
                       - { label: "Text 2", name: "txt2", widget: "string" }
-            - label: Machine 03
+              - label: Machine 03
                 name: machine3
                 widget: object
                 fields:
