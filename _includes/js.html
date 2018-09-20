@@ -7,15 +7,19 @@
 
 
 <script>
-    if ($('.swiper-container').length > 0) { //some-slider-wrap-in
-      let swiperInstances = [];
-      $(".swiper-container").each(function(index, element){ //some-slider-wrap-in
+    if ($('.swiper2-container').length > 0) { //some-slider-wrap-in
+      let swiper2Instances = [];
+      $(".swiper2-container").each(function(index, element){ //some-slider-wrap-in
           const $this = $(this);
           $this.addClass("instance-" + index); //instance need to be unique (ex: some-slider)
-          $this.parent().find(".swiper-pagination").addClass("pagination-" + index);
-          $this.parent().find(".swiper-button-prev").addClass("prev-" + index); //prev must be unique (ex: some-slider-prev)
-          $this.parent().find(".swiper-button-next").addClass("next-" + index); //next must be unique (ex: some-slider-next)
-          swiperInstances[index] = new Swiper(".instance-" + index, { //instance need to be unique (ex: some-slider)
+          $this.parent().find(".swiper2-pagination").addClass("pagination-" + index);
+          $this.parent().find(".swiper2-button-prev").addClass("prev-" + index); //prev must be unique (ex: some-slider-prev)
+          $this.parent().find(".swiper2-button-next").addClass("next-" + index); //next must be unique (ex: some-slider-next)
+          swiper2Instances[index] = new Swiper2(".instance-" + index, {
+            speed: 1000,
+            autoHeight: true,
+            effect: 'cube',
+             //instance need to be unique (ex: some-slider)
               // your settings ...
               navigation: {
                   prevEl: ".prev-" + index,  //prev must be unique (ex: some-slider-prev)
@@ -29,12 +33,12 @@
           });
       });
   
-      // Now you can call the update on a specific instance in the "swiperInstances" object
+      // Now you can call the update on a specific instance in the "swiper2Instances" object
       // e.g.
-      swiperInstances[3].update();
+      swiper2Instances[3].update();
       //or all of them
       setTimeout(function () {
-          for (const slider of swiperInstances) {
+          for (const slider of swiper2Instances) {
               slider.update();
           }
       }, 50);

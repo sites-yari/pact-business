@@ -8596,6 +8596,24 @@ button.swiper2-pagination-bullet {
   color: white;
   font-size:20px;
 }
+.swiper2-button-next{
+  background-image: url(../img/icons/secondary-dark/btn-arrow-right.svg);
+  right: 40px;
+  left: auto;
+  top: 95%;
+  width: 58px;
+  height: 44px;
+  background-size: 58px 44px;
+}
+
+.swiper2-button-prev {
+  background-image: url(../img/icons/secondary-dark/btn-arrow-left.svg);
+  left: 40px;
+  top: 95%;
+  width: 58px;
+  height: 44px;
+  background-size: 58px 44px;
+}
 .swiper-button-next{
   background-image: url(../img/icons/secondary-dark/btn-arrow-right.svg);
   right: 40px;
