@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Direct trade office coffee: Where CSR meets world-class beans'
-date: 2018-09-19 11:35:54 +0100
+date: 2017-11-03 11:35:54 +0100
 date-shown: 03 November 2017
 permalink: /spilling_beans/direct-trade-coffee-for-the-office
 category: ' '

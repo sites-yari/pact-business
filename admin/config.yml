@@ -246,6 +246,42 @@ collections:
                 fields:
                   - { label: "Link", name: "link", widget: "string" }
                   - { label: "Text", name: "text", widget: "string" }
+      # -
+      # -
+      #---| Princing |---
+      - name: "pricing"
+        label: "Pricing"
+        file: "_data/pricing.yml"
+        description: Everything only used in the Pricing
+        fields:
+          - label: Header #------- Header
+            name: header
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: object
+                fields:
+                  - { label: "White Text", name: "white", widget: "string" }
+                  - { label: "Light Blue Text", name: "blue_light", widget: "string" }
+              - { label: "Text", name: "text", widget: "string" }
+          - label: Section 1
+            name: section1
+            widget: object
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: Text
+                name: text
+                widget: object
+                fields:
+                  - { label: "Top text", name: "top", widget: "string" }
+                  - { label: "Bottom text", name: "bottom", widget: "string" }
+              - label: Button
+                name: button
+                widget: object
+                fields:
+                  - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
           - label: Section 2 #------- Sect 2
             name: section2
             widget: object
@@ -321,36 +357,6 @@ collections:
                 fields:
                   - { label: "Link", name: "link", widget: "string" }
                   - { label: "Text", name: "text", widget: "string" }
-      # -
-      # -
-      #---| Princing |---
-      - name: "pricing"
-        label: "Pricing"
-        file: "_data/pricing.yml"
-        description: Everything only used in the Pricing
-        fields:
-          - label: Header #------- Header
-            name: header
-            widget: object
-            fields:
-              - label: Title
-                name: title
-                widget: object
-                fields:
-                  - { label: "White Text", name: "white", widget: "string" }
-                  - { label: "Light Blue Text", name: "blue_light", widget: "string" }
-              - { label: "Text", name: "text", widget: "string" }
-          - label: Section 1
-            name: section1
-            widget: object
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - label: Text
-                name: text
-                widget: object
-                fields:
-                  - { label: "Top text", name: "top", widget: "string" }
-                  - { label: "Bottom text", name: "bottom", widget: "string" }
       #---| SECTION - Coffee supply chain |---
       - name: "section_coffee_supply_chain"
         label: "Section - Coffee supply chain"
