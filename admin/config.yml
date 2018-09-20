@@ -18,9 +18,939 @@ collections:
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Title", name: "title", widget: "string" }
+      - {label: "Publish Date (do not touch unless necessary)", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
       - { label: "Public Date", name: "date-shown", widget: "string" }
       - { label: "Visible Link", name: "permalink", widget: "string", default: "/spilling_beans/(name-here)"}
       - { label: "Category", name: "category", widget: "select", options: [ " ", "tasting" , "more to add"] }
       - { label: "Class", name: "class", widget: "hidden", default: "blog" } 
       - { label: "Main Image", name: "image_path", widget: "image" }
       - { label: "Body Text", name: "body", widget: "markdown" }
+
+  - name: "data" #|=====================| DATA |====================================================|
+    label: "Data"
+    editor:
+      preview: true
+    files:
+        #---| INDEX |---
+      - name: "index"
+        label: "Homepage"
+        file: "_data/index.yml"
+        description: Everything only used in the Homepage
+        fields:
+          - label: Header #------- Header
+            name: header
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: object
+                fields:
+                  - { label: "White Text", name: "white", widget: "string" }
+                  - { label: "Light Blue Text", name: "blue_light", widget: "string" }
+              - label: Under the Title
+                name: text
+                widget: object
+                fields:
+                  - { label: "Top Text", name: "top", widget: "string" }
+                  - { label: "Bottom Text", name: "bottom", widget: "string" }
+              - { label: "Button Text", name: "button_text", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+          - label: Section 1 #------- Sect 1
+            name: section1
+            widget: object
+            fields:
+              - label: Logos
+                name: logos
+                widget: object
+                fields:
+                  - { label: "Small top Text", name: "text", widget: "string" }
+                  - { label: "Logo 1", name: "logo1", widget: "image" }
+                  - { label: "Logo 2", name: "logo2", widget: "image" }
+                  - { label: "Logo 3", name: "logo3", widget: "image" }
+                  - { label: "Logo 4", name: "logo4", widget: "image" }
+                  - { label: "Logo 5", name: "logo5", widget: "image" }
+                  - { label: "Logo 6", name: "logo6", widget: "image" }
+                  - { label: "Logo 7", name: "logo7", widget: "image" }
+              - label: Title
+                name: title
+                widget: object
+                fields:
+                  - { label: "Top Text", name: "top", widget: "string" }
+                  - { label: "Bottom Text", name: "bottom", widget: "string" }
+              - label: Columns
+                name: column
+                widget: object
+                fields:
+                  - label: Left Column
+                    name: left
+                    widget: object
+                    fields:
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                      - { label: "Button text", name: "button", widget: "string" }
+                  - label: Middle Column
+                    name: middle
+                    widget: object
+                    fields:
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                      - { label: "Button text", name: "button", widget: "string" }
+                  - label: Right Column
+                    name: right
+                    widget: object
+                    fields:
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                      - { label: "Button text", name: "button", widget: "string" }
+          - label: Section 2 #------- Sect 2
+            name: section
+            widget: object
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - label: Button
+                name: button
+                widget: object
+                fields:
+                  - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+              - label: Theme 1
+                name: theme1
+                widget: object
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "subtitle", widget: "string" }
+              - label: Theme 2
+                name: theme2
+                widget: object
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "subtitle", widget: "string" }
+              - label: Theme 3
+                name: theme3
+                widget: object
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "subtitle", widget: "string" }
+      #---| How it Works |---
+      - name: "works"
+        label: "How it Works"
+        file: "_data/works.yml"
+        description: Everything only used in the How it works
+        fields:
+          - label: Header #------- Header
+            name: header
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: object
+                fields:
+                  - { label: "White Text", name: "white", widget: "string" }
+                  - { label: "Light Blue Text", name: "blue_light", widget: "string" }
+              - { label: "Text number 1", name: "one_text", widget: "string" }
+              - { label: "Text number 2", name: "two_text", widget: "string" }
+              - { label: "Text number 3", name: "tree_text", widget: "string" }
+          - label: Section 1 #------- Sect 1
+            name: section1
+            widget: object
+            fields:
+              - label: Step 1
+                name: step1
+                widget: object
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Top Title", name: "top_title", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+                  - label: Button
+                    name: button
+                    widget: object
+                    fields:
+                      - { label: "Link", name: "link", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+              - label: Step 2
+                name: step2
+                widget: object
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Top Title", name: "top_title", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+                  - label: Button
+                    name: button
+                    widget: object
+                    fields:
+                      - { label: "Link", name: "link", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+              - label: Step 3
+                name: step3
+                widget: object
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Top Title", name: "top_title", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+                  - label: Button
+                    name: button
+                    widget: object
+                    fields:
+                      - { label: "Link", name: "link", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+          - label: Section 3 #------- Sect 3
+            name: section3
+            widget: object
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: Stage 01
+                name: stage01
+                widget: object
+                fields:
+                  - { label: "Top Title", name: "above_title", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - label: Stage 02
+                name: stage02
+                widget: object
+                fields:
+                  - { label: "Top Title", name: "above_title", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - label: Stage 03
+                name: stage03
+                widget: object
+                fields:
+                  - { label: "Top Title", name: "above_title", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - label: Stage 04
+                name: stage04
+                widget: object
+                fields:
+                  - { label: "Top Title", name: "above_title", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - label: Stage 05
+                name: stage05
+                widget: object
+                fields:
+                  - { label: "Top Title", name: "above_title", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - label: Button
+                name: button
+                widget: object
+                fields:
+                  - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+      #---| Our Story |---
+      - name: "story"
+        label: "Our Story"
+        file: "_data/story.yml"
+        description: Everything only used in the Our_story
+        fields:
+          - label: Section 1 #------- Sect 01
+            name: section1
+            widget: object
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "string" }
+              - label: Button
+                name: button
+                widget: object
+                fields:
+                  - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+              - label: Column 1
+                name: img01
+                widget: object
+                fields:
+                  - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+                  - { label: "CTA", name: "cta", widget: "string" }
+              - label: Column 2
+                name: img02
+                widget: object
+                fields:
+                  - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+                  - { label: "CTA", name: "cta", widget: "string" }
+              - label: Column 3
+                name: img03
+                widget: object
+                fields:
+                  - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+                  - { label: "CTA", name: "cta", widget: "string" }
+          - label: Section 2 #------- Sect 02
+            name: section2
+            widget: object
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "string" }
+              - label: Button
+                name: button
+                widget: object
+                fields:
+                  - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+          - label: Section 3 #------- Sect 03
+            name: section3
+            widget: object
+            fields:
+              - label: Top
+                name: top
+                widget: object
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Title", name: "title", widget: "string" }
+              - label: Bottom
+                name: bottom
+                widget: object
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+                  - { label: "Bold Text", name: "bold_text", widget: "string" }
+          - label: Section 6 #------- Sect 06
+            name: section6
+            widget: object
+            fields:
+              - label: Slide 01
+                name: slide01
+                widget: object
+                fields:
+                  - label: About the image
+                    name: image
+                    widget: object
+                    fields:
+                      - label: images
+                        name: change1
+                        widget: object
+                        fields:
+                          - { label: "Pc version", name: "pc", widget: "image" }
+                          - { label: "Mobile version", name: "mobile", widget: "image" }
+                      # - label: Change 2
+                      #   name: change2
+                      #   widget: object
+                      #   fields:
+                      #     - { label: "Pc version", name: "pc", widget: "image" }
+                      #     - { label: "Mobile version", name: "mobile", widget: "image" }
+                  - label: Title
+                    name: title
+                    widget: object
+                    fields:
+                      - { label: "Top", name: "top", widget: "string" }
+                      - { label: "Middle", name: "middle", widget: "string" }
+                      - { label: "Bottom", name: "bottom", widget: "string" }
+                  - label: Slot 1
+                    name: slot1
+                    widget: object
+                    fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                  - label: Slot 2
+                    name: slot2
+                    widget: object
+                    fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+              - label: Slide 02
+                name: slide02
+                widget: object
+                fields:
+                  - label: About the image
+                    name: image
+                    widget: object
+                    fields:
+                      - { label: "Pc version", name: "pc", widget: "image" }
+                      - { label: "Mobile version", name: "mobile", widget: "image" }
+                  - label: Title
+                    name: title
+                    widget: object
+                    fields:
+                      - { label: "Top", name: "top", widget: "string" }
+                      - { label: "Middle", name: "middle", widget: "string" }
+                      - { label: "Bottom", name: "bottom", widget: "string" }
+                  - label: Slot 1
+                    name: slot1
+                    widget: object
+                    fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                  - label: Slot 2
+                    name: slot2
+                    widget: object
+                    fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+              - label: Slide 03
+                name: slide03
+                widget: object
+                fields:
+                  - label: About the image
+                    name: image
+                    widget: object
+                    fields:
+                      - { label: "Pc version", name: "pc", widget: "image" }
+                      - { label: "Mobile version", name: "mobile", widget: "image" }
+                  - label: Title
+                    name: title
+                    widget: object
+                    fields:
+                      - { label: "Top", name: "top", widget: "string" }
+                      - { label: "Middle", name: "middle", widget: "string" }
+                      - { label: "Bottom", name: "bottom", widget: "string" }
+                  - label: Slot 1
+                    name: slot1
+                    widget: object
+                    fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                  - label: Slot 2
+                    name: slot2
+                    widget: object
+                    fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+      #---| Machines |---
+      - name: "machines"
+        label: "Machines"
+        file: "_data/machines.yml"
+        description: Everything only used in the Pricing
+        fields:
+          - label: Header #------- Header
+            name: header
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: object
+                fields:
+                  - { label: "White Text", name: "white", widget: "string" }
+                  - { label: "Light Blue Text", name: "light_blue", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - label: Section 1 #------- Sect 01
+            name: section1
+            widget: object
+            fields:
+              - label: Machine 01
+                name: machine1
+                widget: object
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - label: Top
+                    name: top
+                    widget: object
+                    fields:
+                      - { label: "Bold Text", name: "bold", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                  - label: Middle
+                    name: middle
+                    widget: object
+                    fields:
+                      - { label: "Subtitle", name: "subtitle", widget: "string" }
+                      - { label: "Text 1", name: "txt1", widget: "string" }
+                      - { label: "Text 2", name: "txt2", widget: "string" }
+                      - { label: "Text 3", name: "txt3", widget: "string" }
+                      - { label: "Text 4", name: "txt4", widget: "string" }
+                  - label: Bottom
+                    name: bottom
+                    widget: object
+                    fields:
+                      - { label: "Subtitle", name: "subtitle", widget: "string" }
+                      - { label: "Text 1", name: "txt1", widget: "string" }
+                      - { label: "Text 2", name: "txt2", widget: "string" }
+              - label: Machine 02
+                name: machine2
+                widget: object
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - label: Top
+                    name: top
+                    widget: object
+                    fields:
+                      - { label: "Bold Text", name: "bold", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                  - label: Middle
+                    name: middle
+                    widget: object
+                    fields:
+                      - { label: "Subtitle", name: "subtitle", widget: "string" }
+                      - { label: "Text 1", name: "txt1", widget: "string" }
+                      - { label: "Text 2", name: "txt2", widget: "string" }
+                      - { label: "Text 3", name: "txt3", widget: "string" }
+                      - { label: "Text 4", name: "txt4", widget: "string" }
+                      - { label: "Text 5", name: "txt5", widget: "string" }
+                  - label: Bottom
+                    name: bottom
+                    widget: object
+                    fields:
+                      - { label: "Subtitle", name: "subtitle", widget: "string" }
+                      - { label: "Text 1", name: "txt1", widget: "string" }
+                      - { label: "Text 2", name: "txt2", widget: "string" }
+              - label: Machine 03
+                name: machine3
+                widget: object
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - label: Top
+                    name: top
+                    widget: object
+                    fields:
+                      - { label: "Bold Text", name: "bold", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                  - label: Middle
+                    name: middle
+                    widget: object
+                    fields:
+                      - { label: "Subtitle", name: "subtitle", widget: "string" }
+                      - { label: "Text 1", name: "txt1", widget: "string" }
+                      - { label: "Text 2", name: "txt2", widget: "string" }
+                      - { label: "Text 3", name: "txt3", widget: "string" }
+                      - { label: "Text 4", name: "txt4", widget: "string" }
+                  - label: Bottom
+                    name: bottom
+                    widget: object
+                    fields:
+                      - { label: "Subtitle", name: "subtitle", widget: "string" }
+                      - { label: "Text 1", name: "txt1", widget: "string" }
+          - label: Section 2 #------- Sect 02
+            name: section2
+            widget: object
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "string" }
+              - label: Button
+                name: button
+                widget: object
+                fields:
+                  - { label: "Link", name: "link", widget: "string" }
+          - label: Section 5 #------- Sect 05
+            name: section5
+            widget: object
+            fields:
+              - label: Slide 01
+                name: slide01
+                widget: object
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "string" }
+                  - label: Set-up
+                    name: set-up
+                    widget: object
+                    fields:
+                      - { label: "Text", name: "text", widget: "string" }
+                      - { label: "Space 1", name: "space01", widget: "string" }
+                      - { label: "Space 2", name: "space02", widget: "string" }
+                      - { label: "Space 3", name: "space03", widget: "string" }
+                  - label: Q.1
+                    name: question01
+                    widget: object
+                    fields:
+                      - { label: "Question", name: "q", widget: "string" }
+                      - { label: "Answer", name: "r", widget: "string" }
+                  - label: Q.2
+                    name: question02
+                    widget: object
+                    fields:
+                      - { label: "Question", name: "q", widget: "string" }
+                      - { label: "Answer", name: "r", widget: "string" }
+                  - label: Q.3
+                    name: question03
+                    widget: object
+                    fields:
+                      - { label: "Question", name: "q", widget: "string" }
+                      - { label: "Answer", name: "r", widget: "string" }
+                  - label: Q.4
+                    name: question04
+                    widget: object
+                    fields:
+                      - { label: "Question", name: "q", widget: "string" }
+                      - { label: "Answer", name: "r", widget: "string" }
+              - label: Slide 02
+                name: slide02
+                widget: object
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "string" }
+                  - label: Set-up
+                    name: set-up
+                    widget: object
+                    fields:
+                      - { label: "Text", name: "text", widget: "string" }
+                      - { label: "Space 1", name: "space01", widget: "string" }
+                      - { label: "Space 2", name: "space02", widget: "string" }
+                  - label: Q.1
+                    name: question01
+                    widget: object
+                    fields:
+                      - { label: "Question", name: "q", widget: "string" }
+                      - { label: "Answer", name: "r", widget: "string" }
+                  - label: Q.2
+                    name: question02
+                    widget: object
+                    fields:
+                      - { label: "Question", name: "q", widget: "string" }
+                      - { label: "Answer", name: "r", widget: "string" }
+                  - label: Q.3
+                    name: question03
+                    widget: object
+                    fields:
+                      - { label: "Question", name: "q", widget: "string" }
+                      - { label: "Answer", name: "r", widget: "string" }
+                  - label: Q.4
+                    name: question04
+                    widget: object
+                    fields:
+                      - { label: "Question", name: "q", widget: "string" }
+                      - { label: "Answer", name: "r", widget: "string" }
+                  - label: Q.5
+                    name: question05
+                    widget: object
+                    fields:
+                      - { label: "Question", name: "q", widget: "string" }
+                      - { label: "Answer", name: "r", widget: "string" }
+              - label: Slide 03
+                name: slide03
+                widget: object
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "string" }
+                  - label: Set-up
+                    name: set-up
+                    widget: object
+                    fields:
+                      - { label: "Text", name: "text", widget: "string" }
+                      - { label: "Space 1", name: "space01", widget: "string" }
+                  - label: Q.1
+                    name: question01
+                    widget: object
+                    fields:
+                      - { label: "Question", name: "q", widget: "string" }
+                      - { label: "Answer", name: "r", widget: "string" }
+                  - label: Q.2
+                    name: question02
+                    widget: object
+                    fields:
+                      - { label: "Question", name: "q", widget: "string" }
+                      - { label: "Answer", name: "r", widget: "string" }
+                  - label: Q.3
+                    name: question03
+                    widget: object
+                    fields:
+                      - { label: "Question", name: "q", widget: "string" }
+                      - { label: "Answer", name: "r", widget: "string" }
+                  - label: Q.4
+                    name: question04
+                    widget: object
+                    fields:
+                      - { label: "Question", name: "q", widget: "string" }
+                      - { label: "Answer", name: "r", widget: "string" }
+      #---| Princing |---
+      - name: "pricing"
+        label: "Pricing"
+        file: "_data/pricing.yml"
+        description: Everything only used in the Pricing
+        fields:
+          - label: Header #------- Header
+            name: header
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: object
+                fields:
+                  - { label: "White Text", name: "white", widget: "string" }
+                  - { label: "Light Blue Text", name: "blue_light", widget: "string" }
+              - { label: "Text", name: "text", widget: "string" }
+          - label: Section 1
+            name: section1
+            widget: object
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: Text
+                name: text
+                widget: object
+                fields:
+                  - { label: "Top text", name: "top", widget: "string" }
+                  - { label: "Bottom text", name: "bottom", widget: "string" }
+              - label: Button
+                name: button
+                widget: object
+                fields:
+                  - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+          - label: Section 2 #------- Sect 2
+            name: section2
+            widget: object
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - label: Area
+                name: area
+                widget: object
+                fields:
+                  - { label: "One", name: "one", widget: "string" }
+                  - { label: "Two", name: "two", widget: "string" }
+                  - { label: "Tree", name: "tree", widget: "string" }
+                  - { label: "Four", name: "four", widget: "string" }
+                  - { label: "Five", name: "five", widget: "string" }
+                  - { label: "Six", name: "six", widget: "string" }
+              - label: Button
+                name: button
+                widget: object
+                fields:
+                  - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+          - label: Section 4 #------- Sect 4
+            name: section4
+            widget: object
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - label: Theme
+                name: theme
+                widget: object
+                fields:
+                  - label: One
+                    name: one
+                    widget: object
+                    fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                  - label: Two
+                    name: two
+                    widget: object
+                    fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                  - label: Tree
+                    name: tree
+                    widget: object
+                    fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                  - label: Four
+                    name: four
+                    widget: object
+                    fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                  - label: Five
+                    name: five
+                    widget: object
+                    fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                  - label: Six
+                    name: six
+                    widget: object
+                    fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+              - label: Button
+                name: button
+                widget: object
+                fields:
+                  - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+      #---| SECTION - Coffee supply chain |---
+      - name: "section_coffee_supply_chain"
+        label: "Section - Coffee supply chain"
+        file: "_data/section_coffee_supply_chain.yml"
+        description: Everything only used in the Coffee supply chain
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Text  ", name: "text", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
+          - label: Top Coffee Stats #------- Stats TOP
+            name: coffee_stat_top
+            widget: object
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - label: Color 1
+                name: color1
+                widget: object
+                fields:
+                  - { label: "Percentage", name: "percentage", widget: "string" }
+                  - { label: "Text", name: "of", widget: "string" }
+              - label: Color 2
+                name: color2
+                widget: object
+                fields:
+                  - { label: "Percentage", name: "percentage", widget: "string" }
+                  - { label: "Text", name: "of", widget: "string" }
+              - label: Color 3
+                name: color3
+                widget: object
+                fields:
+                  - { label: "Percentage", name: "percentage", widget: "string" }
+                  - { label: "Text", name: "of", widget: "string" }
+              - label: Color 4
+                name: color4
+                widget: object
+                fields:
+                  - { label: "Percentage", name: "percentage", widget: "string" }
+                  - { label: "Text", name: "of", widget: "string" }
+          - label: Bottom Coffee Stats #------- Stats BOTTOM
+            name: coffee_stat_bottom
+            widget: object
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - label: Color 1
+                name: color1
+                widget: object
+                fields:
+                  - { label: "Percentage", name: "percentage", widget: "string" }
+                  - { label: "Text", name: "of", widget: "string" }
+              - label: Color 2
+                name: color2
+                widget: object
+                fields:
+                  - { label: "Percentage", name: "percentage", widget: "string" }
+                  - { label: "Text", name: "of", widget: "string" }
+              - label: Color 3
+                name: color3
+                widget: object
+                fields:
+                  - { label: "Percentage", name: "percentage", widget: "string" }
+                  - { label: "Text", name: "of", widget: "string" }
+              - label: Color 4
+                name: color4
+                widget: object
+                fields:
+                  - { label: "Percentage", name: "percentage", widget: "string" }
+                  - { label: "Text", name: "of", widget: "string" }
+              - label: Color 5
+                name: color5
+                widget: object
+                fields:
+                  - { label: "Percentage", name: "percentage", widget: "string" }
+                  - { label: "Text", name: "of", widget: "string" }
+      #---| SECTION - Swiper Orange |---
+      - name: "section_swiper_orange"
+        label: "Section - What our clients say"
+        file: "_data/section_swiper_orange.yml"
+        description: Everything only used in the What ourclients say
+        fields:
+          - label: Section info #------- Stats TOP
+            name: section
+            widget: object
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - label: Slide 01
+                name: slide1
+                widget: object
+                fields:
+                  - { label: "Text", name: "text", widget: "string" }
+                  - { label: "Bold Text", name: "bold_text", widget: "string" }
+              - label: Slide 02
+                name: slide2
+                widget: object
+                fields:
+                  - { label: "Text", name: "text", widget: "string" }
+                  - { label: "Bold Text", name: "bold_text", widget: "string" }
+              - label: Slide 03
+                name: slide3
+                widget: object
+                fields:
+                  - { label: "Text", name: "text", widget: "string" }
+                  - { label: "Bold Text", name: "bold_text", widget: "string" }
+      #---| SECTION - Blue Boxes |---
+      - name: "section_blue_boxes"
+        label: "Section - Why might Pact be perfect for you?"
+        file: "_data/section_blue_boxes.yml"
+        description: Everything only used in the Why might Pact be perfect for you?
+        fields:
+          - label: Top blue Area #------- Blue area
+            name: top
+            widget: object
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Small Title", name: "small_title", widget: "string", required: false}
+              - { label: "Subitle", name: "subtitle", widget: "string" }
+              - label: Button
+                name: button
+                widget: object
+                fields:
+                  - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+          - label: Home / Machines / Princing #------- home_machines_and_pricing
+            name: home_machines_and_pricing
+            widget: object
+            fields:
+              - label: Boxes
+                name: boxes
+                widget: object
+                fields:
+                  - label: Box 01
+                    name: box1
+                    widget: object
+                    fields:
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                  - label: Box 02
+                    name: box2
+                    widget: object
+                    fields:
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                  - label: Box 03
+                    name: box3
+                    widget: object
+                    fields:
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+          - label: How it works / Our story #------- works_and_story
+            name: works_and_story
+            widget: object
+            fields:
+              - label: Boxes
+                name: boxes
+                widget: object
+                fields:
+                  - label: Box 01
+                    name: box1
+                    widget: object
+                    fields:
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                  - label: Box 02
+                    name: box2
+                    widget: object
+                    fields:
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+                  - label: Box 03
+                    name: box3
+                    widget: object
+                    fields:
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+

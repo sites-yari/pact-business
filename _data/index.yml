@@ -42,7 +42,7 @@ section2:
   title: From our team, to yours
   image: assets/img/illustration/02.png
   button:
-    link: 
+    link: ../contact
     text: Get started
   theme1:
     title: Tailored for you 
@@ -53,19 +53,6 @@ section2:
   theme3:
     title: On-hand Support
     subtitle: Our Customer Champions are ready and willing to chat coffee 9am-5pm, seven days a week.
-
-section3:
-  title: what our clients say
-  image: assets/img/illustration/03.png
-  slide1:
-    text: “Using Pact has meant we no longer need to leave the building to get a cappuccino that cuts the mustard. This has improved morale no end – despite the queue at the coffee machine.”
-    bold_text: Beth at Capital Law
-  slide2:
-    text: “Nulla suscipit lectus ut bibendum molestie. Donec in efficitur mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.”
-    bold_text: Lipsum at vitrai amet
-  slide3:
-    text: “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate sit amet diam vel posuere. Nunc elementum faucibus ligula, rhoncus tempor sapien fringilla nec lipsum sit amet.”
-    bold_text: Vitrai at Consectetur
 
 section7:
   title:

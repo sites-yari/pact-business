@@ -172,8 +172,8 @@ permalink: /machines
 
     <div class="row animate slide-in-from-top">
       <div class="col-md-12 text-center more-margin-top">
-        <a href="{{site.data.machines.section1.button.link}}"
-        class="btn btn-primary-no-arrow center-mobile">{{site.data.machines.section1.button.text}}</a>
+        <a href="{{site.data.machines.section1.button.link}}" 
+        class="btn btn-primary-no-arrow-r center-mobile">{{site.data.machines.section1.button.text}}</a>
       </div>
     </div>
 
@@ -210,33 +210,37 @@ permalink: /machines
   <!-- SECTION 5 -->
   <section class="section-home-2 bg-secondary-darker animate slide-in-from-left">
       <div class="container">
-        <div class="swiper2 testimonials fade">
+        <div class="swiper2 fade">
           <div class="swiper2-container">
             <div class="swiper2-wrapper">
               <!-- Slide 1 -->
               <div class="swiper2-slide">
                 <div class="row text-left">
-                  <div class="col-lg-3 col-sm-12 text-center-tablet">
-                    <img src="../assets/img/icons/hello_fresh.png"
+                  <div class="col-lg-3 col-sm-10 text-center-tablet">
+                    <img src="{{site.data.machines.section5.slide01.image}}" 
                           class="machines-slider-img text-center-mobile more-25-margin-bottom">
-                    <h2 class="text-orange ">Hello Fresh</h2>
-                    <p class="text-secondary-dark bold">A consumer services company of 100 people</p>
-                    <p class="font-size-14 bold">their set-up</p>
+                    <h2 class="text-orange ">{{site.data.machines.section5.slide01.title}}</h2>
+                    <p class="text-secondary-dark bold">
+                        {{site.data.machines.section5.slide01.subtitle}}
+                    </p>
+                    <p class="font-size-14 bold">{{site.data.machines.section5.slide01.set-up.text}}</p>
                     <div class="text-white">
-                      <p class="font-size-14 zero-margin-bottom">- One Expresso machine</p>
-                      <p class="font-size-14 zero-margin-bottom">- One WMF 1500</p>
-                      <p class="font-size-14 more-padding-bottom">- Two different expressos</p>
+                      <p class="font-size-14 zero-margin-bottom">- {{site.data.machines.section5.slide01.set-up.space01}}</p>
+                      <p class="font-size-14 zero-margin-bottom">- {{site.data.machines.section5.slide01.set-up.space02}}</p>
+                      <p class="font-size-14 more-padding-bottom">- {{site.data.machines.section5.slide01.set-up.space03}}</p>
                     </div>
                   </div>
-
-                  <div class="col-lg-6 col-sm-12">
+                  
+                  <div class="col-lg-6 col-sm-10">
                     <div class="row">
                       <div class="">
-                          <div class="swiper2-pagination testimonials" style="top: 0px;"></div>
+                          <div class="swiper2-button-next" style="top: 0px; padding-top: 40px;"></div>
+                          <div class="swiper2-button-prev" style="top: 0px; padding-top: 40px;"></div> 
+                          <div class="swiper2-pagination" style="top: 0px; padding-top: 8px;"></div>
                       </div>
                     </div>
                     <div class="row more3-margin-top">
-                      <div class="col-lg-6 col-sm-9 zero-padding mobile-content-padd-40">
+                      <div class="col-lg-6 col-sm-10 zero-padding mobile-content-padd-40">
                         <ul class="">
 
                           <li class="machines-li-height">
@@ -248,11 +252,10 @@ permalink: /machines
                             <div>
                               <div>
                                 <p class="bold more-margin-top">
-                                  What was the coffee set-up at the office before you signed up
-                                  with Pact Coffee?
+                                  {{site.data.machines.section5.slide01.question01.q}}
                                 </p>
                                 <p class="text-white">
-                                  Trialling suppliers in the hopes of finding the perfect blend!
+                                  {{site.data.machines.section5.slide01.question01.r}}
                                 </p>
                               </div>
                             </div>
@@ -266,12 +269,10 @@ permalink: /machines
                             <div>
                               <div>
                                 <p class="bold more-margin-top">
-                                  What made you choose Pact Coffee?
+                                  {{site.data.machines.section5.slide01.question02.q}}
                                 </p>
                                 <p class="text-white">
-                                  The Hello Fresh Team really enjoy the flavour of Pact Coffee,
-                                  we also love that its ethically sourced! We like that Pact are
-                                  a young company with a similar culture and vibe to our own.
+                                  {{site.data.machines.section5.slide01.question02.r}}
                                 </p>
                               </div>
                             </div>
@@ -280,7 +281,7 @@ permalink: /machines
                         </ul>
 
                       </div>
-                      <div class="col-lg-6 col-sm-9 zero-padding mobile-content-padd-40">
+                      <div class="col-lg-6 col-sm-10 zero-padding mobile-content-padd-40">
                         <ul class="">
 
                           <li class="machines-li-height">
@@ -292,12 +293,10 @@ permalink: /machines
                             <div>
                               <div>
                                 <p class="bold more-margin-top">
-                                  What’s the response been like in the office so far?
+                                  {{site.data.machines.section5.slide01.question03.q}}
                                 </p>
                                 <p class="text-white">
-                                  Both employees and guests have been incredibly complimentary of
-                                  the coffee - they noticed a change and we regularly reference
-                                  Pact coffee being the reason for the improvement!
+                                  {{site.data.machines.section5.slide01.question03.r}}
                                 </p>
                               </div>
                             </div>
@@ -311,15 +310,10 @@ permalink: /machines
                             <div>
                               <div>
                                 <p class="bold more-margin-top">
-                                  We believe that great-tasting, ethically sourced coffee plays
-                                  a role in developing company culture by facilitating team bonding
-                                  and making teams feel valued. What’s it like working at Hello
-                                  Fresh?
+                                  {{site.data.machines.section5.slide01.question04.q}}
                                 </p>
                                 <p class="text-white">
-                                  Hello Fresh is a company with a brilliant culture - everyone loves
-                                  and appreciates food, and it shows in our environment as we often
-                                  bond in the kitchen over a hot cup of Pact coffee!
+                                  {{site.data.machines.section5.slide01.question04.r}}
                                 </p>
                               </div>
                             </div>
@@ -336,21 +330,23 @@ permalink: /machines
               <div class="swiper2-slide">
                 <div class="row text-left">
                   <div class="col-lg-3 col-sm-12">
-                    <img src="../assets/img/icons/shack15.png"
+                    <img src="{{site.data.machines.section5.slide02.image}}" 
                           class="machines-slider-img text-center-mobile more-25-margin-bottom">
-                    <h2 class="text-orange">SHACK15</h2>
-                    <p class="text-secondary-dark bold">A tech incubator company of 30+ people</p>
-                    <p class="font-size-14 bold">their set-up</p>
+                    <h2 class="text-orange">{{site.data.machines.section5.slide02.title}}</h2>
+                    <p class="text-secondary-dark bold">{{site.data.machines.section5.slide02.subtitle}}</p>
+                    <p class="font-size-14 bold">{{site.data.machines.section5.slide02.set-up.text}}</p>
                     <div class="text-white">
-                      <p class="font-size-14 zero-margin-bottom">- Bean to cup machine</p>
-                      <p class="font-size-14 more-padding-bottom">- Rotating espresso selection </p>
+                      <p class="font-size-14 zero-margin-bottom">- {{site.data.machines.section5.slide02.set-up.space01}}</p>
+                      <p class="font-size-14 more-padding-bottom">- {{site.data.machines.section5.slide02.set-up.space02}}</p>
                     </div>
                   </div>
 
                   <div class="col-lg-6 col-sm-12">
                     <div class="row">
                       <div class="">
-                          <div class="swiper2-pagination testimonials" style="top: 0px;"></div>
+                        <div class="swiper2-button-next" style="top: 0px; padding-top: 40px;"></div>
+                        <div class="swiper2-button-prev" style="top: 0px; padding-top: 40px;"></div> 
+                        <div class="swiper2-pagination" style="top: 0px; padding-top: 8px;"></div>
                       </div>
                     </div>
                     <div class="row more3-margin-top">
@@ -366,13 +362,10 @@ permalink: /machines
                             <div>
                               <div>
                                 <p class="bold more-margin-top">
-                                    What was the coffee set-up at the office before you signed up with
-                                    Pact at Work?
+                                  {{site.data.machines.section5.slide02.question01.q}}
                                 </p>
                                 <p class="text-white">
-                                  Prior to signing up with Pact, we were using a coffee machine supplier
-                                  which was fine but there was no excitement around the coffee and their
-                                  service wasn’t personalised to us.
+                                  {{site.data.machines.section5.slide02.question01.r}}
                                 </p>
                               </div>
                             </div>
@@ -386,13 +379,10 @@ permalink: /machines
                             <div>
                               <div>
                                 <p class="bold more-margin-top">
-                                  What made you choose Pact Coffee?
+                                  {{site.data.machines.section5.slide02.question02.q}}
                                 </p>
                                 <p class="text-white">
-                                  What we loved about Pact is the connection to the farmers, they’ve made
-                                  a real effort to let us know about the coffees, where they’re from and
-                                  who is growing them and that’s become a real talking point with our
-                                  members.
+                                  {{site.data.machines.section5.slide02.question02.r}}
                                 </p>
                               </div>
                             </div>
@@ -413,13 +403,10 @@ permalink: /machines
                             <div>
                               <div>
                                 <p class="bold more-margin-top">
-                                  What makes Pact at Work work for you?
+                                  {{site.data.machines.section5.slide02.question03.q}}
                                 </p>
                                 <p class="text-white">
-                                  The whole process of working with Pact has been smooth thanks to the
-                                  Pact team. We love the flexibility of the deliveries, getting the
-                                  amount of fresh coffee that we need on a weekly basis and the fact
-                                  that we get to try out a variety of different coffees.
+                                  {{site.data.machines.section5.slide02.question03.r}}
                                 </p>
                               </div>
                             </div>
@@ -433,12 +420,10 @@ permalink: /machines
                             <div>
                               <div>
                                 <p class="bold more-margin-top">
-                                  What’s the response been like in the office so far?
+                                  {{site.data.machines.section5.slide02.question04.q}}
                                 </p>
                                 <p class="text-white">
-                                  The unlimited coffee is a key benefit for our members; we’ve had
-                                  great feedback on the coffee and they definitely appreciate not
-                                  needing to head to the coffee shop to get their caffeine hit.
+                                  {{site.data.machines.section5.slide02.question04.r}}
                                 </p>
                               </div>
                             </div>
@@ -452,16 +437,10 @@ permalink: /machines
                             <div>
                               <div>
                                 <p class="bold more-margin-top">
-                                  At Pact Coffee, we believe that great-tasting, ethically sourced
-                                  coffee plays a role in developing company culture by facilitating
-                                  team bonding and making teams feel valued. What’s it like working
-                                  at SHACK15?
+                                  {{site.data.machines.section5.slide02.question05.q}}
                                 </p>
                                 <p class="text-white">
-                                  It’s important to us to offer the best to our members, we’re creating
-                                  a community and being able to take time out and enjoy a cup of coffee
-                                  is definitely part of that. The workspace is changing, it’s less
-                                  office and more community.
+                                  {{site.data.machines.section5.slide02.question05.r}}
                                 </p>
                               </div>
                             </div>
@@ -478,20 +457,22 @@ permalink: /machines
               <div class="swiper2-slide">
                 <div class="row text-left">
                   <div class="col-lg-3 col-sm-12">
-                    <img src="../assets/img/icons/carless.png"
-                          class="machines-slider-img text-center-mobile more-25-margin-bottom">
-                    <h2 class="text-orange">Haltermann Carless</h2>
-                    <p class="text-secondary-dark bold">An oil and energy company of 40 people</p>
-                    <p class="font-size-14 bold">their set-up</p>
+                    <img src="{{site.data.machines.section5.slide03.image}}" 
+                          class="machines-slider-img-border text-center-mobile more-25-margin-bottom">
+                    <h2 class="text-orange">{{site.data.machines.section5.slide03.title}}</h2>
+                    <p class="text-secondary-dark bold">{{site.data.machines.section5.slide03.subtitle}}</p>
+                    <p class="font-size-14 bold">{{site.data.machines.section5.slide03.set-up.text}}</p>
                     <div class="text-white">
-                      <p class="font-size-14 more-padding-bottom">- One WMF 1100</p>
+                      <p class="font-size-14 more-padding-bottom">- {{site.data.machines.section5.slide03.set-up.space01}}</p>
                     </div>
                   </div>
 
                   <div class="col-lg-6 col-sm-12">
                     <div class="row">
                       <div class="">
-                          <div class="swiper2-pagination testimonials" style="top: 0px;"></div>
+                        <div class="swiper2-button-next" style="top: 0px; padding-top: 40px;"></div>
+                        <div class="swiper2-button-prev" style="top: 0px; padding-top: 40px;"></div> 
+                        <div class="swiper2-pagination" style="top: 0px; padding-top: 8px;"></div>
                       </div>
                     </div>
                     <div class="row more3-margin-top">
@@ -507,13 +488,10 @@ permalink: /machines
                             <div>
                               <div>
                                 <p class="bold more-margin-top">
-                                  What was the coffee set-up at the office before you signed up with
-                                  Pact Coffee?
+                                  {{site.data.machines.section5.slide03.question01.q}}
                                 </p>
                                 <p class="text-white">
-                                  We were previously under contract with a coffee machine supplier,
-                                  but the coffee machine was constantly breaking down and the company
-                                  weren’t very easy to deal with.
+                                  {{site.data.machines.section5.slide03.question01.r}}
                                 </p>
                               </div>
                             </div>
@@ -527,11 +505,10 @@ permalink: /machines
                             <div>
                               <div>
                                 <p class="bold more-margin-top">
-                                  What kind of office are you?
+                                  {{site.data.machines.section5.slide03.question02.q}}
                                 </p>
                                 <p class="text-white">
-                                  We’re a fairly small team of just 40 staff, a lot of whom are
-                                  often out and about and at meetings.
+                                  {{site.data.machines.section5.slide03.question02.r}}
                                 </p>
                               </div>
                             </div>
@@ -552,13 +529,10 @@ permalink: /machines
                             <div>
                               <div>
                                 <p class="bold more-margin-top">
-                                  What is it about the service provided by Pact at Work that works
-                                  for you?
+                                  {{site.data.machines.section5.slide03.question03.q}}
                                 </p>
                                 <p class="text-white">
-                                  We find Pact easy to use: it’s very straightforward to tweak the
-                                  requirements in terms of quantities. We like that flexibility. We’ve
-                                  also received very good customer service from Lucy.
+                                  {{site.data.machines.section5.slide03.question03.r}}
                                 </p>
                               </div>
                             </div>
@@ -572,11 +546,10 @@ permalink: /machines
                             <div>
                               <div>
                                 <p class="bold more-margin-top">
-                                  What’s the response been like in the office so far?
+                                  {{site.data.machines.section5.slide03.question04.q}}
                                 </p>
                                 <p class="text-white">
-                                  We’ve had good feedback on the coffee from both the team and external
-                                  clients who come in for meetings.
+                                  {{site.data.machines.section5.slide03.question04.r}}
                                 </p>
                               </div>
                             </div>
