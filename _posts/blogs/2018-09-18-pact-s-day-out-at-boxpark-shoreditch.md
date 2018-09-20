@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Pact''s day out... at Boxpark, Shoreditch!'
-date: 2018-09-18 11:35:54 +0100
+date: '2018-09-18 11:35:54 +0100'
 date-shown: 18 September 2018
 permalink: /spilling_beans/pacts-day-out-at-boxpark-shoreditch
 category: ' '
