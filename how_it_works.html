@@ -30,7 +30,7 @@ permalink: /how_it_works
             <hr class="web-img-hide" style="width: 40%;">
           </div>
           <!-- nº 2 -->
-          <div class="col-lg-4 col-md-6 col-sm-12 temp-zero-p-left 
+          <div class="col-lg-4 col-md-6 col-sm-12 temp-zero-p-left
                       temp-zero-p-right tablet-img-hide">
             <div class="bg-number2 mobile-margin-top">
               <p class="lg bg_machines_number uppercase">
@@ -48,7 +48,7 @@ permalink: /how_it_works
           </div>
 
           <div class="col-lg-1 tablet-img-hide">
-            <div class="bg-bar more-10-padding-top 
+            <div class="bg-bar more-10-padding-top
                         mobile-img-hide tablet-img-hide"></div>
             <hr class="web-img-hide" style="width: 40%;">
           </div>
@@ -74,7 +74,7 @@ permalink: /how_it_works
       </div>
 		</div>
 	</div>
-	
+
 	<div class="container scroll container_width0">
     <div>
       <button class="scroll-to" data-scroll=".section-home-1"></button>
@@ -230,7 +230,7 @@ permalink: /how_it_works
     </div>
   </div>
   <!-- stages -->
- 
+
     <!-- stage1 -->
     <div class="row animate slide-in-from-left">
       <div class="col-md-12 col-lg-12">
@@ -389,88 +389,82 @@ permalink: /how_it_works
         </h1>
         <p class="text-white text-center">
           <b>
-            To get started, please email us on <a class="link-secondary-lighter" 
-            href="{{site.data.general_info.email.link}}">{{site.data.general_info.email.name}}</a> 
-            or call us on <br class="d-none d-lg-block"><a href="{{site.data.general_info.phone.link}}" 
-            class="link-secondary-lighter">{{site.data.general_info.phone.number}}</a>. 
+            To get started, please email us on <a class="link-secondary-lighter"
+            href="{{site.data.general_info.email.link}}">{{site.data.general_info.email.name}}</a>
+            or call us on <br class="d-none d-lg-block"><a href="{{site.data.general_info.phone.link}}"
+            class="link-secondary-lighter">{{site.data.general_info.phone.number}}</a>.
             Alternatively use the contact form below:
           </b>
         </p>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col animate slide-in-from-top">
-        <form>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Full Name *">
-          </div>
-
-          <div class="row md-gutter">
-            <div class="col-md-6">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Email *">
-              </div>
+		<div class="row">
+        <div class="col animate slide-in-from-top">
+          <form>
+            <div class="form-group">
+              <input id ="full_name" type="text" class="form-control" placeholder="Full Name *">
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Phone No. *">
-              </div>
-            </div>
-          </div>
 
-          <div class="row md-gutter">
-            <div class="col-md-6">
-              <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Company *">
+            <div class="row md-gutter">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input id ="email" type="text" class="form-control" placeholder="Email *">
+                </div>
               </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <select class="form-control">
-                  <option  disabled selected value>No. of Staff</option>
-                  <option>5</option>
-                  <option>10</option>
-                  <option>15</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <select class="form-control">
-              <option disabled selected value>Preferred method of contact</option>
-              <option>Phone</option>
-              <option>Email</option>
-            </select>
-          </div>
-
-          <div class="row md-gutter">
-            <div class="col-lg-12">
-              <div class="form-group">
-                  <textarea class="form-control" placeholder="How can we help you?"></textarea>
-              </div>
-            </div>
-          </div>
-
-          <div class="row md-gutter">
-            <div class="col-md-6">
-              <div class="form-group m-top">
-                <div class="checkbox-control">
-                  <input type="checkbox"  value="1" id="checkbox-1" name="" >
-                  <label for="checkbox-1">
-                    <span>I would like a <b>free coffee tasting</b></span>
-                  </label>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input id ="phone_nr" type="text" class="form-control" placeholder="Phone No. *">
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <a href="#" class="btn btn-primary full-width center-mobile">Treat your team</a>
+
+            <div class="row md-gutter">
+              <div class="col-md-6">
+                <div class="form-group">
+                    <input id ="company_name" type="text" class="form-control" placeholder="Company *">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <select id ="nr_of_staff" class="form-control">
+                    <option  disabled selected value>No. of Staff</option>
+                  	<option>1-10</option>
+                    <option>11-50</option>
+                    <option>51-100</option>
+                    <option>101-250</option>
+                    <option>250+</option>
+                  </select>
+                </div>
+              </div>
             </div>
-          </div>
-        </form>
+
+            <div class="row md-gutter">
+              <div class="col-lg-12">
+                <div class="form-group">
+                    <textarea id ="how_can_we_help" class="form-control" placeholder="How can we help you?"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="row md-gutter">
+              <div class="col-md-6">
+                <div class="form-group m-top">
+                  <div class="checkbox-control">
+                    <input type="checkbox"  value="1" id="checkbox-1" name="" >
+                    <label for="checkbox-1">
+                      <span>I would like a <b>free coffee tasting</b></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <a id="submit_button" class="btn btn-primary full-width center-mobile">Treat your team</a>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
   </div>
 </section>
 <!-- end SECTION 6 -->
