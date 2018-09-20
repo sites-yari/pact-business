@@ -38,7 +38,7 @@ section1:
     title: Filter
     top:
       bold: 'Average monthly spend: '
-      text: £3.26pp
+      text: £4.01pp
   machine3:
     bottom:
       subtitle: 'Cons: '
