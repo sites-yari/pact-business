@@ -56,6 +56,9 @@ section1:
     top:
       bold: 'Average monthly spend: '
       text: £4.12pp
+  button:
+    link: "#"
+    text: treat your team
 section2:
   button:
     link: '#'
