@@ -524,6 +524,12 @@ collections:
                     fields:
                       - { label: "Subtitle", name: "subtitle", widget: "string" }
                       - { label: "Text 1", name: "txt1", widget: "string" }
+              - label: Button
+                name: button
+                widget: object
+                fields:
+                  - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
           - label: Section 2 #------- Sect 02
             name: section2
             widget: object
