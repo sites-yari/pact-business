@@ -3,7 +3,7 @@ header:
     Choices, choices. Don’t worry - we’ll guide you through the pros and cons
     and <br>help you choose the best option for your business.
   title:
-    light_blue: or Expresso?
+    light_blue: or Espresso?
     white: 'Filter, Bean-to-Cup'
 section1:
   machine1:
@@ -75,13 +75,13 @@ section5:
       q: What made you choose Pact Coffee?
       r: >-
         The Hello Fresh Team really enjoy the flavour of Pact Coffee, we also
-        love that its ethically sourced! We like that Pact are a young company
+        love that it's ethically sourced! We like that Pact are a young company
         with a similar culture and vibe to our own.
     question03:
       q: What’s the response been like in the office so far?
       r: >-
         Both employees and guests have been incredibly complimentary of the
-        coffee - they noticed a change and we regularly reference Pact coffee
+        coffee - they noticed a change and we regularly reference Pact Coffee
         being the reason for the improvement!
     question04:
       q: >-
@@ -91,12 +91,12 @@ section5:
       r: >-
         Hello Fresh is a company with a brilliant culture - everyone loves and
         appreciates food, and it shows in our environment as we often bond in
-        the kitchen over a hot cup of Pact coffee!
+        the kitchen over a hot cup of Pact Coffee!
     set-up:
       space01: One Expresso machine
       space02: One WMF 1500
       space03: Two different expressos
-      text: their set-up
+      text: Their set-up
     subtitle: A consumer services company of 100 people
     title: Hello Fresh
   slide02:
@@ -104,7 +104,7 @@ section5:
     question01:
       q: >-
         What was the coffee set-up at the office before you signed up with Pact
-        at Work?
+        Coffee?
       r: >-
         Prior to signing up with Pact, we were using a coffee machine supplier
         which was fine but there was no excitement around the coffee and their
@@ -112,17 +112,13 @@ section5:
     question02:
       q: What made you choose Pact Coffee?
       r: >-
-        What we loved about Pact is the connection to the farmers, they’ve made
-        a real effort to let us know about the coffees, where they’re from and
-        who is growing them and that’s become a real talking point with our
-        members.
+        We love the connection to the farmers, Pact have made an effort to let
+        us know where the coffees are from and who grows them. It’s become a
+        real talking point. We also love the flexibility of the deliveries,
+        getting the amount of fresh coffee we need on a weekly basis.
     question03:
-      q: What makes Pact at Work work for you?
-      r: >-
-        The whole process of working with Pact has been smooth thanks to the
-        Pact team. We love the flexibility of the deliveries, getting the amount
-        of fresh coffee that we need on a weekly basis and the fact that we get
-        to try out a variety of different coffees.
+      q: ''
+      r: ''
     question04:
       q: What’s the response been like in the office so far?
       r: >-
@@ -142,7 +138,7 @@ section5:
     set-up:
       space01: Bean to cup machine
       space02: Rotating espresso selection
-      text: their set-up
+      text: Their set-up
     subtitle: A tech incubator company of 30+ people
     title: SHACK15
   slide03:
@@ -175,6 +171,6 @@ section5:
         clients who come in for meetings.
     set-up:
       space01: One WMF 1100
-      text: their set-up
+      text: Their set-up
     subtitle: An oil and energy company of 40 people
     title: Haltermann Carless
