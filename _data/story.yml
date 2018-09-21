@@ -1,91 +1,166 @@
 section1:
-  image: ../assets/img/avatars/header_story.png
-  title: Where it all began
-  text: In 2012, armed with not much more than a coffee grinder, a set of envelopes and a passion for coffee, our Founder, Stephen, set up Pact in his kitchen. His dream was to introduce the UK to better coffee at home, improving millions of mornings and changing the coffee industry for the better.
   button:
-    link: "#"
+    link: '#'
     text: our mission
+  image: ../assets/img/avatars/header_story.png
   img01:
-    link: "#"
-    title: Hassle-free service.
-    text: We’ll make it easy for you to set up your account, hand-tailored to your needs. You can manage orders online or with our Customer Champions.
     cta: how it works
+    link: '#'
+    text: >-
+      We’ll make it easy for you to set up your account, hand-tailored to your
+      needs. You can manage orders online or with our Customer Champions.
+    title: Hassle-free service.
   img02:
-    link: "#"
-    title: Using the best machines.
-    text: "Choose from a range of different coffee machines: whether you’re a filter fanatic or espresso enthusiast, we’ll find the right choice for you."
     cta: machines
+    link: '#'
+    text: >-
+      Choose from a range of different coffee machines: whether you’re a filter
+      fanatic or espresso enthusiast, we’ll find the right choice for you.
+    title: Using the best machines.
   img03:
-    link: "#"
-    title: At a reasonable price.
-    text: Our rates are low for coffee that’s this good. Customers typically pay £1-£5 per employee each month… that would hardly buy them a coffee out per day!
     cta: pricing
-
+    link: '#'
+    text: >-
+      Our rates are low for coffee that’s this good. Customers typically pay
+      £1-£5 per employee each month… that would hardly buy them a coffee out per
+      day!
+    title: At a reasonable price.
+  text: >-
+    In 2012, armed with not much more than a coffee grinder, a set of envelopes
+    and a passion for coffee, our Founder, Stephen, set up Pact in his kitchen.
+    His dream was to introduce the UK to better coffee at home, improving
+    millions of mornings and changing the coffee industry for the better.
+  title: Where it all began
 section2:
-  title: Our Mission
-  text: "In a phrase: to make coffee a force for good. We do this through Direct Trade - going straight to the source to find the world’s most incredible coffees. Paying fairer than Fair trade rates, we help good farmers become great farmers with our personalised training and small investments. This means we can keep bringing back your favourite speciality coffees, year after year."
   button:
-    link:  "#"
-    text: Get Started
-
+    link: '#'
+    text: treat your team
+  text: >-
+    In a phrase: to make coffee a force for good. We do this through Direct
+    Trade - going straight to the source to find the world’s most incredible
+    coffees. Paying fairer than Fair trade rates, we help good farmers become
+    great farmers with our personalised training and small investments. This
+    means we can keep bringing back your favourite speciality coffees, year
+    after year.
+  title: Our Mission
 section3:
+  bottom:
+    bold_text: Our head of coffee
+    image: ../assets/img/bg/full-will-says-b.png
+    text: >-
+      “Coffee’s ability to change people’s lives and improve local economies is
+      huge. This is Pact’s goal, to get coffee consumers to understand the value
+      in speciality coffee and the impact their choice to buy it can have in
+      communities at origin. It’s a win-win: customers get a fantastic cup of
+      coffee and that revenue supports the livelihood of the communities who
+      grow it.”
+    title: 'Will says:'
   top:
     image: ../assets/img/avatars/section_3_story.png
-    title: Head of Coffee, Will Corby, travels around the world to source the best beans around.
-  bottom:
-    image: ../assets/img/bg/full-will-says-b.png
-    title: "Will says:"
-    text: "“Coffee’s ability to change people’s lives and improve local economies is huge. This is Pact’s goal, to get coffee consumers to understand the value in speciality coffee and the impact their choice to buy it can have in communities at origin. It’s a win-win: customers get a fantastic cup of coffee and that revenue supports the livelihood of the communities who grow it.”"
-    bold_text: Our head of coffee
-
+    title: >-
+      Head of Coffee, Will Corby, travels around the world to source the best
+      beans around.
 section6:
   slide01:
     image:
       change1:
-        pc: ../assets/img/avatars/meet_maria.jpg
         mobile: ../assets/img/avatars/mobile_meet_maria.png
-      change2:
-        pc: "#"
-        mobile: "#"
-    title:
-      top: Meet
-      middle: José Ramon Collazos 
-      bottom: and Maria del Rosario
+        pc: ../assets/img/avatars/meet_maria.jpg
     slot1:
+      text: >-
+        Coffee is José and Maria’s passion. Based near Acevedo, Colombia, José
+        bought his farm in 1989, when the whole area was barren - but since he’s
+        been in the industry all his life, that wasn’t a hurdle for him. For
+        José, coffee is a lot of things: a source of income for him and his wife
+        Maria, a way to strengthen the community and a drink to bond and build
+        friendships over. That focus on relationships is why he values his
+        connection with Head of Coffee Will so much. More than a business
+        arrangement, Will is a friend - and one that comes to visit (all the way
+        from London) around twice a year!
       title: The Farmers
-      text: "Coffee is José and Maria’s passion. Based near Acevedo, Colombia, José bought his farm in 1989, when the whole area was barren - but since he’s been in the industry all his life, that wasn’t a hurdle for him. For José, coffee is a lot of things: a source of income for him and his wife Maria, a way to strengthen the community and a drink to bond and build friendships over. That focus on relationships is why he values his connection with Head of Coffee Will so much. More than a business arrangement, Will is a friend - and one that comes to visit (all the way from London) around twice a year!"
     slot2:
+      text: >-
+        With just 33 hectares of coffee-producing land, José and Maria have
+        provided us with 10 different coffees over the years, but are now
+        branching out to bigger lots. From a plot of barren land to a thriving
+        farm that employs around 80 people, a mix of permanent staff and
+        seasonal cherry-pickers, José has made sure that his success is felt by
+        his whole team. Since working with Pact, he’s been able to build new
+        housing and new bathrooms for the people who work on the farm. As he
+        says, his priority is “to make them feel happy at the farm, to feel at
+        home” - and according to Will, Maria’s cooking definitely helps with
+        that!
       title: The Farm
-      text: "With just 33 hectares of coffee-producing land, José and Maria have provided us with 10 different coffees over the years, but are now branching out to bigger lots. From a plot of barren land to a thriving farm that employs around 80 people, a mix of permanent staff and seasonal cherry-pickers, José has made sure that his success is felt by his whole team. Since working with Pact, he’s been able to build new housing and new bathrooms for the people who work on the farm. As he says, his priority is “to make them feel happy at the farm, to feel at home” - and according to Will, Maria’s cooking definitely helps with that!"
+    title:
+      bottom: Growers of Buenos Aires
+      middle: José Ramon Collazos and Maria del Rosario
+      top: Meet
   slide02:
     image:
-      pc: ../assets/img/avatars/meet_sergio.jpg
       mobile: ../assets/img/avatars/mobile_meet_sergio.jpg
-    title:
-      top: Meet
-      middle: Sergio Mantovanni
-      bottom: grower of Planalto
+      pc: ../assets/img/avatars/meet_sergio.jpg
     slot1:
+      text: >-
+        Inheriting the Planalto estate from his wife Mariza’s father, José
+        Armando Franco, Sergio and Mariza had a legacy to uphold. Not only has
+        the farm been growing coffee for over 25 years, José himself was
+        responsible for the move from commodity to speciality beans - as the
+        movement for quality coffee grew, he recognised that their healthy trees
+        and perfect terroir would make the move to speciality a wise one. Based
+        south of Minas Gerais, Brazil, Sergio has proven his commitment to
+        improving the quality of his coffee - from working closely with Will, to
+        investing in his team by paying for them to attend specialised
+        processing workshops.
       title: The Farmer
-      text: "Inheriting the Planalto estate from his wife Mariza’s father, José Armando Franco, Sergio and Mariza had a legacy to uphold. Not only has the farm been growing coffee for over 25 years, José himself was responsible for the move from commodity to speciality beans - as the movement for quality coffee grew, he recognised that their healthy trees and perfect terroir would make the move to speciality a wise one. Based south of Minas Gerais, Brazil, Sergio has proven his commitment to improving the quality of his coffee - from working closely with Will, to investing in his team by paying for them to attend specialised processing workshops."
     slot2:
+      text: >-
+        We refer to it as the Planalto estate for a reason: this is not a small
+        farm. At a massive 908 hectares, with 430 hectares of coffee-producing
+        land, Sergio and Mariza manage to produce around 12,000 bags a year -
+        that’s 35 bags per hectare. There’s a lot that helps them get to that
+        number; from the 3600 foot altitude and surrounding natural forest
+        creating the perfect microclimate, to the large team of workers. There
+        are 40 permanent staff at Planalto, with an additional 50 during the
+        harvesting period. By providing them with good housing, water and waste
+        services, access to education and wages that are above regional
+        standards, Sergio and Mariza show them what a valuable part of the farm
+        they really are.
       title: The Farm
-      text: "We refer to it as the Planalto estate for a reason: this is not a small farm. At a massive 908 hectares, with 430 hectares of coffee-producing land, Sergio and Mariza manage to produce around 12,000 bags a year - that’s 35 bags per hectare. There’s a lot that helps them get to that number; from the 3600 foot altitude and surrounding natural forest creating the perfect microclimate, to the large team of workers. There are 40 permanent staff at Planalto, with an additional 50 during the harvesting period. By providing them with good housing, water and waste services, access to education and wages that are above regional standards, Sergio and Mariza show them what a valuable part of the farm they really are."
+    title:
+      bottom: grower of Planalto
+      middle: Sergio Mantovanni
+      top: Meet
   slide03:
     image:
-      pc: ../assets/img/avatars/meet_marcus.png
       mobile: ../assets/img/avatars/mobile_meet_marcus.png
-    title:
-      top: Meet
-      middle: Marcus Carvalho
-      bottom: grower of fazenda chapada
+      pc: ../assets/img/avatars/meet_marcus.png
     slot1:
+      text: >-
+        Marcus Carvalho spent the earlier part of his career as a professional
+        football player in Brazil. But after marrying Maria José Barros
+        Junqueira, Maria’s father passing away meant that they inherited a farm.
+        And Marcus really got stuck in. His hard work meant that his coffee
+        scores and volume produced went up, winning him recognition in the
+        coffee field - not just in his coffee fields! Sadly, Marcus’ wife was
+        the victim of a car accident, which understandably turned his life
+        upside down. While he considered abandoning the farm in his grief, he
+        decided to honor the hard work and memory of his wife and her father by
+        continuing to keep it going.
       title: The Farmer
-      text: "Marcus Carvalho spent the earlier part of his career as a professional football player in Brazil. But after marrying Maria José Barros Junqueira, Maria’s father passing away meant that they inherited a farm. And Marcus really got stuck in. His hard work meant that his coffee scores and volume produced went up, winning him recognition in the coffee field - not just in his coffee fields! Sadly, Marcus’ wife was the victim of a car accident, which understandably turned his life upside down. While he considered abandoning the farm in his grief, he decided to honor the hard work and memory of his wife and her father by continuing to keep it going."
     slot2:
+      text: >-
+        Marcus himself says it best: “as my farm is small, I cannot accept
+        produce defects. All my coffees have to get more that 80 points”. And at
+        just 60 hectares of farmland, 27 of which produces coffee, he’s got a
+        point. This attitude means he averages around 84 points for his coffee,
+        but his forward-thinking approach to his workforce also contributes to
+        this. When he first got started, Marcus realised he was having trouble
+        finding people to help harvest cherries due to competition from
+        neighbouring farms. Quality is impacted by an early or late harvest, so
+        he knew it was worth paying more to get the right workers at the right
+        time.
       title: The Farm
-      text: "Marcus himself says it best: “as my farm is small, I cannot accept produce defects. All my coffees have to get more that 80 points”. And at just 60 hectares of farmland, 27 of which produces coffee, he’s got a point. This attitude means he averages around 84 points for his coffee, but his forward-thinking approach to his workforce also contributes to this. When he first got started, Marcus realised he was having trouble finding people to help harvest cherries due to competition from neighbouring farms. Quality is impacted by an early or late harvest, so he knew it was worth paying more to get the right workers at the right time."
-
-section9: form here
-
-  
+    title:
+      bottom: grower of fazenda chapada
+      middle: Marcus Carvalho
+      top: Meet
