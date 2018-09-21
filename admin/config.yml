@@ -490,7 +490,6 @@ collections:
                       - { label: "Text 2", name: "txt2", widget: "string" }
                       - { label: "Text 3", name: "txt3", widget: "string" }
                       - { label: "Text 4", name: "txt4", widget: "string" }
-                      - { label: "Text 5", name: "txt5", widget: "string" }
                   - label: Bottom
                     name: bottom
                     widget: object
