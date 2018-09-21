@@ -1,10 +1,9 @@
 header:
-  text: >-
-    On average, £3.55 per team member each month. We don’t try to be the
-    <br>cheapest, just the best.
-  title:
+  text: On average, £3.55 per team member each month. We don’t try to be the <br>cheapest, just the best.
+  title: 
     blue_light: suits your budget
     white: World-class coffee that
+
 section1:
   text:
     bottom: >-
@@ -15,3 +14,47 @@ section1:
       They say ‘you get what you pay for’. Why settle for that? We’re offering
       speciality grade coffee for typically just £1-£5 per employee, per month.
   title: Our pricing
+  button:
+    link: "#"
+    text: get started
+
+section2:
+  title: Hassle-free, end-to-end service
+  subtitle: "Here’s how we’ll make it easy for you to provide your office with world-class coffee:"
+  area:
+    one: We’ll work out what your office needs and find the best coffee, machines and delivery schedule for you.
+    two: We’ll make sure it’s easy to order extra coffee, or pause your deliveries.
+    tree: We’ll offer next working day delivery for those ‘about to run out’ emergencies.
+    four: We’ll make certain that billing and invoicing is straightforward.
+    five: We’ll offer dedicated support via phone or email from 9am-5pm, seven days a week (except Bank Holidays).
+    six: We’ll keep your machines in tip-top condition, with quick repairs and regular maintenance. 
+  button:
+    link: "#"
+    text: treat your team
+
+section4:
+  title: At work, coffee matters
+  subtitle: "Our coffee isn’t a commodity and neither is your team. Show your staff you care about whether they’re enjoying the daily grind (in more ways than one), with something as simple as a cup of speciality coffee. It’s a cost-efficient, hassle-free way to say “you’re valued”."
+  image: ../assets/img/icons/plus.png
+  theme:
+    one:
+      title: "Tried & Tested:"
+      text: We’re already encouraging teams to work and coffee break together, creating stronger company cultures.
+    two:
+      title: "Profile-raising:"
+      text: Impress clients, customers and your own team with just a good cup of coffee. 
+    tree:
+      title: "Easy:"
+      text: We’ll install, service and repair your machines for seamless team caffeination. 
+    four:
+      title: "Ethical:"
+      text: Serving our directly traded, ethically sourced coffee counts towards your company’s CSR - together, we’re making coffee a force for good.
+    five:
+      title: "Rewarding:"
+      text: Great coffee at work, great coffee at home - your employees can enjoy discounted Pact Coffee home delivery.
+    six:
+      title: "Team-building:"
+      text: Keep catching up over coffee with social events, cupping sessions and coffee classes.
+  button:
+    link: "#"
+    text: free coffee tasting
