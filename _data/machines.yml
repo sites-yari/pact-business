@@ -51,14 +51,11 @@ section1:
         Something for everyone: from barista-style treats to exploring new
         origins
       txt3: Wide selection of choices
-      txt4: Self-serve and meeting room coffee covered
+      txt4: Self-serve <i>and</i> meeting room coffee covered
     title: Espresso & Filter
     top:
       bold: 'Average monthly spend: '
       text: £4.12pp
-  button:
-    link: "#"
-    text: treat your team
 section2:
   button:
     link: '#'
