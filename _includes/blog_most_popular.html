@@ -1,10 +1,32 @@
+{% if page.class == "spilling_the_beans" %}
 <div class="text-center more-25-margin-bottom">
-  <select onChange="window.location.href=this.value" class="btn btn-secondary-dark-down">
+  <select onChange="window.location.href=this.value" class="btn btn-secondary-dark-down"
+          style="width:100%;">
     <option  disabled selected value>Category</option>
     <option value="spilling_the_beans-tasting">tasting</option>
     <option value="../../home">home page</option>
   </select>
 </div>
+{% elsif page.class == "spilling_the_beans_cat1" %}
+<div class="text-center more-25-margin-bottom">
+  <select onChange="window.location.href=this.value" class="btn btn-secondary-dark-down"
+          style="width:100%;">
+    <option  disabled selected value>tasting</option>
+    <option value="spilling_the_beans">Category</option>
+    <option value="../../home">home page</option>
+  </select>
+</div>
+{% elsif page.class == "spilling_the_beans_cat2" %}
+<div class="text-center more-25-margin-bottom">
+  <select onChange="window.location.href=this.value" class="btn btn-secondary-dark-down"
+          style="width:100%;">
+    <option  disabled selected value>Home page</option>
+    <option value="spilling_the_beans">Category</option>
+    <option value="../../home">tasting</option>
+  </select>
+</div>
+{% else %}
+{% endif %}
 <div class="box-blog more-25-padding-top">
   <h4 class="text-secondary-darker">Most Popular</h4>
   {% for post in blog offset:0 limit:5 %}
