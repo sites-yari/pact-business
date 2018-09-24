@@ -91,7 +91,8 @@ const formIDS = new Map([
   const email = $('#email').val()
   const phone = $('#phone_nr').val()
   const from_page = window.location.pathname
-  const formID = formIDS.get(from_page)
+  const formID = 'e7c94b08-74e5-4a3a-a7ba-ff0237dc9fea'
+  // formIDS.get(from_page)
   //set request params
   const url = `https://forms.hubspot.com/uploads/form/v2/2941246/${formID}`
   const data = {

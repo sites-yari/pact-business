@@ -3,7 +3,7 @@ layout: post
 title: 'Growing awareness: Pact in the Press'
 date: 2018-07-18 11:35:54 +0100
 date-shown: 18 July 2018
-permalink: /spilling_beans/pact-in-the-press
+permalink: /spilling_the_beans/pact-in-the-press
 category: ' '
 class: blog
 image_path: /assets/img/upload/ripe-cherries.jpg

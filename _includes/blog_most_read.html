@@ -12,65 +12,27 @@
       <!-- Part 0 -->
       <div class="col-md-1 col-sm-0"></div>
       <!-- Part 1 -->
-      <div class="col-md-2 col-sm-12 m content-padd-10">
-        <div class="item-img-alt same-less-height-no-bg">
-          <div class="img">
-            <img src="../assets/img/bg/post_2.jpg" class="img-fluid">
-          </div>
-          <div class="content-less2-space text-left">
-            <p class="more-10-margin-top font-size-12 more-10-margin-bottom text-primary-blue">AUGUST 17, 2018</p>
-            <p class="font-size-14 bold zero-margin-bottom text-secondary-darker">Java Jargon Buster: our coffee chat, explained!</p>
-          </div>
+      {% for post in blog offset:0 limit:5 %}
+        <div class="col-lg-2 col-sm-12 m content-padd-10">
+          <a href="{{ post.url }}" class="blog-content">
+            <div class="item-img-alt same-less-height-no-bg">
+              <div class="img">
+                <div class="v-small-box-img">
+                  <div class="img-zoom">
+                    <img src="{{post.image_path}}" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="content-less2-space text-left">
+                <p class="more-10-margin-top font-size-12 more-10-margin-bottom 
+                          text-primary-blue">{{post.date-shown}}</p>
+                <p class="font-size-14 bold zero-margin-bottom 
+                          text-secondary-darker">{{post.title}}</p>
+              </div>
+            </div>
+          </a>
         </div>
-      </div>
-      <!-- Part 2 -->
-      <div class="col-md-2 col-sm-12 m content-padd-10">
-        <div class="item-img-alt same-less-height-no-bg">
-          <div class="img">
-            <img src="../assets/img/bg/post_3.jpg" class="img-fluid">
-          </div>
-          <div class="content-less2-space text-left">
-            <p class="more-10-margin-top font-size-12 more-10-margin-bottom text-primary-blue">AUGUST 17, 2018</p>
-            <p class="font-size-14 bold zero-margin-bottom text-secondary-darker">Java Jargon Buster: our coffee chat, explained!</p>
-          </div>
-        </div>
-      </div>
-      <!-- Part 3 -->
-      <div class="col-md-2 col-sm-12 m content-padd-10">
-        <div class="item-img-alt same-less-height-no-bg">
-          <div class="img">
-            <img src="../assets/img/bg/post_4.jpg" class="img-fluid">
-          </div>
-          <div class="content-less2-space text-left">
-            <p class="more-10-margin-top font-size-12 more-10-margin-bottom text-primary-blue">AUGUST 17, 2018</p>
-            <p class="font-size-14 bold zero-margin-bottom text-secondary-darker">Java Jargon Buster: our coffee chat, explained!</p>
-          </div>
-        </div>
-      </div>
-      <!-- Part 4 -->
-      <div class="col-md-2 col-sm-12 m content-padd-10">
-        <div class="item-img-alt same-less-height-no-bg">
-          <div class="img">
-            <img src="../assets/img/bg/post_1.jpg" class="img-fluid">
-          </div>
-          <div class="content-less2-space text-left">
-            <p class="more-10-margin-top font-size-12 more-10-margin-bottom text-primary-blue">AUGUST 17, 2018</p>
-            <p class="font-size-14 bold zero-margin-bottom text-secondary-darker">Java Jargon Buster: our coffee chat, explained!</p>
-          </div>
-        </div>
-      </div>
-      <!-- Part 5 -->
-      <div class="col-md-2 col-sm-12 m content-padd-10">
-        <div class="item-img-alt same-less-height-no-bg">
-          <div class="img">
-            <img src="../assets/img/bg/post_2.jpg" class="img-fluid">
-          </div>
-          <div class="content-less2-space text-left">
-            <p class="more-10-margin-top font-size-12 more-10-margin-bottom text-primary-blue">AUGUST 17, 2018</p>
-            <p class="font-size-14 bold zero-margin-bottom text-secondary-darker">Java Jargon Buster: our coffee chat, explained!</p>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
       <!-- Part 0 -->
       <div class="col-md-1 col-sm-0"></div>
 

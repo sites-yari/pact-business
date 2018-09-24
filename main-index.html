@@ -1,0 +1,252 @@
+---
+layout: default
+title: Homepage
+class: homepage
+permalink: /home
+---
+    
+<!-- Content here -->
+<!-- HEADER -->
+<header class="half">
+	<div class="container v-align half-content">
+		<div class="row">
+			<div class="col-md-8 col-lg-6">
+				<h1 class="text-white">
+					{{site.data.index.header.title.white}}<br>
+					<span class="text-secondary-lighter">{{site.data.index.header.title.blue_light}}</span>
+				</h1>
+				<p class="lg text-white">
+					<b>{{site.data.index.header.text.top}}
+					<br class="d-none d-lg-block">{{site.data.index.header.text.bottom}}</b>
+				</p>
+				<button class="scroll-to btn btn-primary" data-scroll=".section-home-7">{{site.data.index.header.button_text}}</button>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fluid half-bg">
+		<div class="row">
+			<div class="col-lg-6 offset-lg-6">
+				<div class="content">
+						<img src={{site.data.index.header.image}} width="700" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container scroll">
+		<div>
+			<button class="scroll-to" data-scroll=".section-home-1"></button>
+		</div>
+	</div>
+</header>
+
+<!-- SECTION 1 -->
+<section class="section-home-1">
+	<div class="container">
+		{% include logo_swiper.html %}
+				
+		<div class="row animate slide-in-from-top">
+			<div class="col-lg-8 offset-lg-2 text-center m">
+				<hr class="separator"> 
+				<h2 class="h2 text-secondary-darker no-m-bot">{{site.data.index.section1.title.top}}
+					<br class="d-none d-md-block">{{site.data.index.section1.title.bottom}}
+				</h2>
+				<hr class="separator">
+			</div>
+		</div>
+		
+		<div class="row sm-gutter">
+			<div class="col-sm-6 col-lg-4 animate slide-in-from-left">
+				<a href="../how_it_works#coffee-tasting-visit" class="item-img">
+					<div class="img">
+						<img src={{site.data.index.section1.column.left.image}} class="img-fluid">
+					</div>
+					<div class="content">
+						<h3 class="h5 primary m">{{site.data.index.section1.column.left.title}}</h3>
+						<p class="sm">{{site.data.index.section1.column.left.text}}</p>
+						<div class="cta">{{site.data.index.section1.column.left.button}}</div>
+					</div>
+				</a>
+			</div>
+				
+			<div class="col-sm-6 col-lg-4 animate slide-in-from-left">
+				<a href="../our_story" class="item-img">
+					<div class="img">
+						<img src={{site.data.index.section1.column.middle.image}} class="img-fluid">
+					</div>
+					<div class="content">
+						<h3 class="h5 primary m">{{site.data.index.section1.column.middle.title}}</h3>
+						<p class="sm">{{site.data.index.section1.column.middle.text}}</p>
+						<div class="cta">{{site.data.index.section1.column.middle.button}}</div>
+					</div>
+				</a>
+			</div>
+				
+			<div class="col-sm-6 col-lg-4 animate slide-in-from-top">
+				<a href="../how_it_works" class="item-img">
+					<div class="img">
+						<img src={{site.data.index.section1.column.right.image}} class="img-fluid">
+					</div>
+					<div class="content">
+						<h3 class="h5 primary m">{{site.data.index.section1.column.right.title}}</h3>
+						<p class="sm">{{site.data.index.section1.column.right.text}}</p>
+						<div class="cta">{{site.data.index.section1.column.right.button}}</div>
+					</div>
+				</a>
+			</div>
+				
+		</div>
+	</div>
+</section>
+<!-- end SECTION 1 -->
+
+<!-- SECTION 2 -->
+<section class="section-home-2 bg-secondary-darker">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 animate slide-in-from-left">
+				<h2 class="text-secondary-light m-lg text-center-mobile">{{site.data.index.section2.title}}</h2>
+				<img src="{{site.data.index.section2.image}}" width="700" class="img-fluid text-center-mobile">
+			</div>
+			
+			<div class="col-md-6 ">
+				<ul class="numbered-list">
+					<li class="animate slide-in-from-left">
+						<h3 class="h1">1</h3>
+						<div>
+								<h3 class="h4 primary uppercase">{{site.data.index.section2.theme1.title}}</h3>
+								<p>{{site.data.index.section2.theme1.subtitle}}</p>
+						</div>
+					</li>
+					<li class="animate slide-in-from-left">
+						<h3 class="h1">2</h3>
+						<div>
+								<h3 class="h4 primary uppercase">{{site.data.index.section2.theme2.title}}</h3>
+								<p>{{site.data.index.section2.theme2.subtitle}}</p>
+						</div>
+					</li>
+					<li class="animate slide-in-from-left">
+						<h3 class="h1">3</h3>
+						<div>
+								<h3 class="h4 primary uppercase">{{site.data.index.section2.theme3.title}}</h3>
+								<p>{{site.data.index.section2.theme3.subtitle}}</p>
+						</div>
+					</li>
+				</ul>
+				<a href="{{site.data.index.section2.button.link}}" 
+				class="btn btn-primary f-right center-mobile animate slide-in-from-left">
+				{{site.data.index.section2.button.text}}</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end SECTION 2 -->
+
+<!-- SECTION 3 -->
+{% include section_swiper_orange.html %}
+<!-- end SECTION 3 -->
+
+<!-- SECTION 4-->
+<!-- end SECTION 4 -->
+<!-- SECTION 5 -->
+{% include section_blue_boxes.html %}
+<!-- end SECTION 5 -->
+
+<!-- SECTION 6 -->
+{% include section_coffee_supply_chain.html %}
+<!-- end SECTION 6 -->
+
+<!-- SECTION 7 -->
+<section class="section-home-7 bg-pattern-dark line-top">
+	<div class="container container-sm">
+
+		<div class="row m-lg">
+			<div class="col animate slide-in-from-top">
+				<h1 class="text-white text-center">
+					{{site.data.index.section7.title.top}} <br class="d-none d-lg-block">
+					<span class="text-secondary-lighter">{{site.data.index.section7.title.bottom}}</span>
+				</h1>
+				<p class="text-white text-center">
+					<b>
+						To get started, please email us on <a class="link-secondary-lighter" 
+						href="{{site.data.general_info.email.link}}">{{site.data.general_info.email.name}}</a> 
+						or call us on <br class="d-none d-lg-block"><a href="{{site.data.general_info.phone.link}}" 
+						class="link-secondary-lighter">{{site.data.general_info.phone.number}}</a>. 
+						Alternatively, use the contact form below:
+					</b>
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col animate slide-in-from-top">
+				<form>
+					<div class="form-group">
+						<input id ="full_name" type="text" class="form-control" placeholder="Full Name *">
+					</div>
+
+					<div class="row md-gutter">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input id ="email" type="text" class="form-control" placeholder="Email *">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input id ="phone_nr" type="text" class="form-control" placeholder="Phone No. *">
+							</div>
+						</div>
+					</div>
+
+					<div class="row md-gutter">
+						<div class="col-md-6">
+							<div class="form-group">
+									<input id ="company_name" type="text" class="form-control" placeholder="Company *">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<select id ="nr_of_staff" class="form-control">
+									<option  disabled selected value>No. of Staff</option>
+									<option>1-10</option>
+									<option>11-50</option>
+                  <option>51-100</option>
+                  <option>101-250</option>
+									<option>250+</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="row md-gutter">
+						<div class="col-lg-12">
+							<div class="form-group">
+									<textarea id ="how_can_we_help" class="form-control" placeholder="How can we help you?"></textarea>
+							</div>
+						</div>
+					</div>
+
+					<div class="row md-gutter">
+						<div class="col-md-6">
+							<div class="form-group m-top">
+								<div class="checkbox-control">
+									<input type="checkbox"  value="1" id="checkbox-1" name="" >
+									<label for="checkbox-1">
+										<span>I would like a <b>free coffee tasting</b></span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<a id="submit_button" class="btn btn-primary full-width center-mobile">Treat your team</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end SECTION 7 -->
+
+
