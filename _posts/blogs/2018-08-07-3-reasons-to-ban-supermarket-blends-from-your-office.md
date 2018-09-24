@@ -4,7 +4,7 @@ title: 3 reasons to ban supermarket blends from your office
 date: 2018-08-07 11:35:54 +0100
 date-shown: 07 August 2018
 permalink: >-
-  /spilling_beans/3-reasons-why-you-should-ban-supermarket-blends-from-your-office
+  /spilling_the_beans/3-reasons-why-you-should-ban-supermarket-blends-from-your-office
 category: 'tasting'
 class: blog
 image_path: /assets/img/upload/latte_heart.jpg

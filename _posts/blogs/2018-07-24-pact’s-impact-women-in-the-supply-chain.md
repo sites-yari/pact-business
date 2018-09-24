@@ -3,7 +3,7 @@ layout: post
 title: 'Pact’s Impact: Women in the Supply Chain'
 date: 2018-07-24 11:35:54 +0100
 date-shown: 24 July 2018
-permalink: /spilling_beans/pacts-impact-women-in-the-supply-chain
+permalink: /spilling_the_beans/pacts-impact-women-in-the-supply-chain
 category: ' '
 class: blog
 image_path: /assets/img/upload/bbbbb.jpg

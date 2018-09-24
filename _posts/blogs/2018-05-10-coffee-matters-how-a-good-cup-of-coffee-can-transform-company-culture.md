@@ -3,7 +3,7 @@ layout: post
 title: 'Coffee matters: how a good cup of coffee can transform company culture'
 date: 2018-05-10 11:35:54 +0100
 date-shown: 10 May 2018
-permalink: /spilling_beans/coffee-matters-company-culture
+permalink: /spilling_the_beans/coffee-matters-company-culture
 category: ' '
 class: blog
 image_path: /assets/img/upload/latte_heart.jpg

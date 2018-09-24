@@ -20,7 +20,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - {label: "Publish Date (do not touch unless necessary)", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
       - { label: "Public Date", name: "date-shown", widget: "string" }
-      - { label: "Visible Link", name: "permalink", widget: "string", default: "/spilling_beans/(name-here)"}
+      - { label: "Visible Link", name: "permalink", widget: "string", default: "/spilling_the_beans/(name-here)"}
       - { label: "Category", name: "category", widget: "select", options: [ " ", "tasting" , "more to add"] }
       - { label: "Class", name: "class", widget: "hidden", default: "blog" } 
       - { label: "Main Image", name: "image_path", widget: "image" }

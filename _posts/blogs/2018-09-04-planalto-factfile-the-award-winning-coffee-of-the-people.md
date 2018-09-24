@@ -3,7 +3,7 @@ layout: post
 title: 'Planalto Factfile: the award-winning coffee of the people!'
 date: 2018-09-04 11:35:54 +0100
 date-shown: 04 September 2018
-permalink: /spilling_beans/planalto-factfile-the-award-winning-coffee-of-the-people
+permalink: /spilling_the_beans/planalto-factfile-the-award-winning-coffee-of-the-people
 category: ' '
 class: blog
 image_path: /assets/img/upload/great.png
