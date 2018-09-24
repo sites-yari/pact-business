@@ -6217,6 +6217,9 @@ body.loaded header .scroll > div {
 /*=========================================================================
 |||||||||||||||||||||||||||||||| CREATED AREA |||||||||||||||||||||||||||||
  ===========================================================================*/
+ .popular-posts:hover p{
+  color: #3e8d93;
+ }
  .blog-content:hover p,
  .blog-content:hover h3,
  .blog-content:hover a{color: #3e8d93!important;}
@@ -6317,14 +6320,20 @@ body.loaded header .scroll > div {
   height:250px;
   width:100%;
 }
+.v-small-box-img{
+  height:150px;
+  width:100%;
+}
 .invisible-box-blog .img-big-blog{
   height: 450px;
   width: 100%;
 }
 .invisible-box-blog .img-big-blog .img-flash,
-.small-box-img .img-zoom{ height: 100%;}
+.small-box-img .img-zoom,
+.v-small-box-img .img-zoom{ height: 100%;}
 .invisible-box-blog .img-big-blog img,
-.small-box-img img{
+.small-box-img img,
+.v-small-box-img img{
   height: 100%;
   width: 100%;
   object-fit: cover;
