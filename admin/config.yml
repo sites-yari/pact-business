@@ -31,6 +31,18 @@ collections:
     editor:
       preview: true
     files:
+        #---| gatedINDEX |---
+      - name: "gated_index"
+        label: "Gated Landing Page"
+        file: "_data/gated_index.yml"
+        description: Everything only used in the gated page
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Brand", name: "image_logo", widget: "image" }
+          - { label: "Illustration", name: "image_illust", widget: "image" }
+          - { label: "Top Text", name: "text_one", widget: "string" }
+          - { label: "Bottom Text", name: "text_two", widget: "string" }
         #---| INDEX |---
       - name: "index"
         label: "Homepage"
