@@ -6219,6 +6219,22 @@ body.loaded header .scroll > div {
 /*=========================================================================
 |||||||||||||||||||||||||||||||| CREATED AREA |||||||||||||||||||||||||||||
  ===========================================================================*/
+ /* ___________! GATED logo !___________ */
+ .gated-logo-top{margin-top:-100%;}
+.gated-logo-top img.gated-brand{width: 150px; margin: auto;}
+@media (min-width: 0px) and (max-width: 450px){ .gated-logo-top{padding-top: 100px;}}
+@media (min-width: 450px) and (max-width: 576px){.gated-logo-top{padding-top: 100px;}}
+@media (min-width: 576px) and (max-width: 650px){.gated-logo-top{padding-top: 100px;}}
+@media (min-width: 650px) and (max-width: 768px){.gated-logo-top{padding-top: 200px;}}
+@media (min-width: 768px) and (max-width: 992px){.gated-logo-top{padding-top: 150px;}}
+@media (min-width: 992px) and (max-width: 1200px){.gated-logo-top{padding-top: 0px;}}
+@media (min-width: 1200px) and (max-width: 1500px){.gated-logo-top{padding-top: 50px;}}
+@media (min-width: 1500px) and (max-width: 2000px){.gated-logo-top{padding-top: 100px;}}
+@media (min-width: 2000px) and (max-width: 3000px){.gated-logo-top{padding-top: 200px;}}
+@media (min-width: 3000px){.gated-logo-top{padding-top: 300px;}}
+
+ /* _________! end GATED logo !_________ */
+
  .popular-posts:hover p{
   color: #3e8d93;
  }
@@ -6269,11 +6285,6 @@ body.loaded header .scroll > div {
   padding-top: 5px;
   padding-bottom: 20px;
   font-size: 20px;
-}
-.gated-logo-top{margin-top:-100%;}
-.gated-logo-top img.gated-brand{
-  width: 150px;
-  margin: auto;
 }
 @media (min-width: 769px){
   .pricing-info-left{
