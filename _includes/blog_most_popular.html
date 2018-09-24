@@ -1,12 +1,18 @@
 <div class="text-center more-25-margin-bottom">
-  <a href="#" class="btn btn-secondary-dark-down" style="width: 100%;">Categories</a>
+  <select onChange="window.location.href=this.value" class="btn btn-secondary-dark-down">
+    <option  disabled selected value>Category</option>
+    <option value="spilling_the_beans-tasting">tasting</option>
+    <option value="../../home">home page</option>
+  </select>
 </div>
 <div class="box-blog more-25-padding-top">
   <h4 class="text-secondary-darker">Most Popular</h4>
   {% for post in blog offset:0 limit:5 %}
-  <div class="blog-posts more-25-margin-bottom">
-    <p class="text-primary-blue more-10-margin-top font-size-14 uppercase">{{post.date-shown}}</p>
-    <p class="font-size-16 bold text-secondary-darker">{{post.title}}</p>
-  </div>
+  <a href="{{ post.url }}" class="popular-posts">
+    <div class="blog-posts more-25-margin-bottom">
+      <p class="text-primary-blue more-10-margin-top font-size-14 uppercase">{{post.date-shown}}</p>
+      <p class="font-size-16 bold text-secondary-darker">{{post.title}}</p>
+    </div>
+  </a>
   {% endfor %}
 </div>

@@ -1,0 +1,91 @@
+---
+layout: default
+title: Spilling the Beans
+class: spilling_the_beans
+permalink: /spilling_the_beans-tasting
+---
+
+<!-- Content here -->
+<!-- HEADER -->
+<header class="blog"> 
+	<div class="container v-less-align blog-content text-center ">
+	</div>
+</header>
+
+<!-- SECTION 1 -->
+	{% assign blog = site.posts | where: "category", "tasting" %}
+	<section class="section-home-5 m-top-negative no-p top-blog ">
+		<div class="container">
+
+			<div class="row sm-gutter compensate-m text-left">
+				<!-- left -->
+				<div class="col-md-4 col-sm-12 content-padd-10 mobile-remove animate slide-in-from-top">
+					{% include blog_most_popular.html %}
+				</div>
+        <!-- right -->
+        {% for post in blog limit:1 %}
+          {% include blog_main_post.html %}
+        {% endfor %}
+      </div>
+  
+      <div class="row animate text-left slide-in-from-top more-margin-top">
+        {% for post in blog offset:1 limit:3 %}
+          {% include blog_small_boxes.html %}
+        {% endfor %}
+      </div>
+          
+    </div>
+  </section>
+  <!-- END section 1 -->
+  
+  <!-- SECTION 2 -->
+  {% include blog_most_read.html %}
+  <!-- end SECTION 2 -->
+  
+  <!-- SECTION 3 -->
+  <section class="section-home-2 line-top  more2-padding-top more-padding-bottom">
+    <div class="container text-center">
+  
+      <div class="row animate text-left slide-in-from-top more-margin-top">
+        {% for post in blog offset:4 limit:6 %}
+          {% include blog_small_boxes.html %}
+        {% endfor %}
+      </div>
+      
+      <div class="row sm-gutter compensate-m text-left">
+        <div class="col-md-12 content-padd-10">
+          <div class="text-center more-25-margin-bottom animate slide-in-from-top">
+            <a href="#" class="btn btn-primary-no-arrow">load more articles</a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  <!-- end SECTION 3 -->
+  
+  <!-- SECTION 4 -->
+  <section class="section-home-2 bg-image-blog content-whole-margin-10">
+    <div class="container text-center">
+  
+      <div class="row animate slide-in-from-left">
+        <div class="col-lg-8 offset-lg-2 text-center m">
+          <hr class="separator bg-color-footer"> 
+          <h2 class="h2 text-secondary-darker no-m-bot text-orange font-size-36">
+            <span class="font-size-20">Schedule Your</span><br>
+            Office Coffee Tasting
+          </h2>
+          <p class="text-white font-size-20 more-25-margin-top">
+            We'll arrange a 30-minute visit with you, to tell your<br> stakeholders what we're
+            about and show off a few of our<br> delicious brews!
+          </p>
+          <div class="text-center more-25-margin-bottom more-margin-top">
+            <a href="#" class="btn btn-primary">load more articles</a>
+          </div>
+          <hr class="separator bg-color-footer">
+        </div>
+      </div>
+    
+    </div>
+  </section>
+  <!-- end SECTION 4 -->
