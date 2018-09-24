@@ -3,7 +3,7 @@ layout: post
 title: '6 Companies That Do Good, By Doing Well'
 date: 2018-09-11 11:35:54 +0100
 date-shown: 11 September 2018
-permalink: /spilling_beans/6-companies-that-do-good-by-doing-well
+permalink: /spilling_the_beans/6-companies-that-do-good-by-doing-well
 category: ' '
 class: blog
 image_path: /assets/img/upload/latte_heart.jpg

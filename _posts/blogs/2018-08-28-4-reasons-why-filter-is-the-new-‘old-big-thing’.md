@@ -3,7 +3,7 @@ layout: post
 title: 4 Reasons Why Filter is the New ‘Old Big Thing’
 date: 2018-08-28 11:35:54 +0100
 date-shown: 28 August 2018
-permalink: /spilling_beans/4-reasons-why-filter-is-the-new-old-big-thing
+permalink: /spilling_the_beans/4-reasons-why-filter-is-the-new-old-big-thing
 category: ' '
 class: blog
 image_path: /assets/img/upload/v60-filter-quiz.jpg

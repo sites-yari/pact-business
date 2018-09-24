@@ -3,7 +3,7 @@ layout: post
 title: Five ways Pact at Work office coffee fuels a happy workplace
 date: 2017-10-09 11:35:54 +0100
 date-shown: 09 October 2017
-permalink: /spilling_beans/five-ways-pact-at-work-office-coffee-fuels-a-happy-workplace
+permalink: /spilling_the_beans/five-ways-pact-at-work-office-coffee-fuels-a-happy-workplace
 category: ' '
 class: blog
 image_path: /assets/img/upload/dsc01387.jpg
