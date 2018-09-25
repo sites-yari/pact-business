@@ -4,14 +4,32 @@
 <script src="../../assets/js/jquery/jquery.swiper.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="../../assets/js/app.js"></script>
-
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-firestore.js"></script>
 <script>
-var user_ip = "not caught"
-document.addEventListener('DOMContentLoaded', function() {
-  $.getJSON('https://jsonip.com/?callback=?', function(data) {
-   user_ip = data.ip
-  })
-}, false);
+// Firebase config
+  var config = {
+    apiKey: "AIzaSyC0_dcU2_lffrjHwuxUJleQ4D7cg-AdVxk",
+    authDomain: "pfb-db.firebaseapp.com",
+    databaseURL: "https://pfb-db.firebaseio.com",
+    projectId: "pfb-db",
+    storageBucket: "",
+    messagingSenderId: "986105380013"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(config);
+  var db = firebase.firestore();
+  // required by firebase to avoid deprecated warning
+  db.settings({
+  timestampsInSnapshots: true
+});
+//Identify IP
+  var user_ip = "not caught"
+  document.addEventListener('DOMContentLoaded', function() {
+    $.getJSON('https://jsonip.com/?callback=?', function(data) {
+    user_ip = data.ip
+    })
+  }, false);
 </script>
 
 <script>
@@ -39,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
               },
           });
       });
-  
+
       // Now you can call the update on a specific instance in the "swiper2Instances" object
       // e.g.
       swiper2Instances[3].update();
@@ -139,6 +157,55 @@ const formIDS = new Map([
 
   </script>
 
+<script>
+const blogName = '/spilling_the_beans'
+const page = window.location.pathname
+var postViews = 1 // variable to display #views in the blog Victor
+if(page == blogName){
+  var blogsref = db.collection("BlogPosts");
+  blogsref.orderBy("views").limit(6)
+  blogsref.get().then(function(querySnapshot) {
+    querySnapshot.forEach(function(doc) {
+        // doc.data() is never undefined for query doc snapshots
+       // Victor aki faz o que quiseres ;) , ja vem ordenadas pelo view count, ve os console logs se ajudar
+			 console.log("printdoc->", doc.id, " => ", doc.data());
+  });
+});
+}else if(page.startsWith(blogName)){
+
+const blogpost = page.replace(new RegExp(blogName + "/"), '');
+var views = 0;
+var docRef = db.collection("BlogPosts").doc(blogpost);
+
+docRef.get().then(function(doc) {
+if (doc.exists) {
+  views =  doc.data().views + 1;
+  postViews = views
+  db.collection("BlogPosts").doc(blogpost).set({
+    views: views,
+    })
+    .then(function() {
+    console.log("Document successfully written!");
+    })
+    .catch(function(error) {
+      console.error("Error writing document: ", error);
+    })
+} else {
+  // no doc, make new with 1 view
+  db.collection("BlogPosts").doc(blogpost).set({
+    views: 1,
+    })
+    .then(function() {
+    console.log("New view successfully written!");
+    })
+    .catch(function(error) {
+      console.error("Error writing document: ", error);
+    })}
+}).catch(function(error) {
+  console.log("Error getting document:", error);
+});
+}
+</script>
 
 <!-- <div class="lunchbox">
   <div id="swiper1" class="swiper-container">
