@@ -57,11 +57,11 @@ section1:
       bold: 'Average monthly spend: '
       text: £4.12pp
   button:
-    link: "#"
+    link: ".section-home-7"
     text: treat your team
 section2:
   button:
-    link: '#'
+    link: '.section-home-7'
   text: >-
     See what we have to offer, for an average of £4.58 per person per month. We
     don’t try to be the cheapest, just the best.

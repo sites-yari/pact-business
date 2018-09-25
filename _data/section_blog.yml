@@ -4,5 +4,5 @@ section_area:
     bottom: Spilling the Beans
   subtitle: "Find out what we've been chatting about in our coffee breaks..."
   button:
-    link: "#"
+    link: "../spilling_the_beans-main"
     text: view more articles

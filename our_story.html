@@ -29,8 +29,10 @@ permalink: /our_story
 					<p class="">
 						{{ site.data.story.section1.text }}
 					</p>
-					<a href="{{ site.data.story.section1.button.link }}" 
-							class="btn btn-primary-no-arrow-r more-25-margin-top">{{ site.data.story.section1.button.text }}</a>
+					<button data-scroll="{{ site.data.story.section1.button.link }}" 
+							class="btn btn-primary-no-arrow-r more-25-margin-top scroll-to">
+							{{ site.data.story.section1.button.text }}
+				</button>
 					<hr class="separator animate slide-in-from-top">
 				</div>
 				<div class="col-md-2 col-sm-0"></div>
@@ -84,7 +86,7 @@ permalink: /our_story
 <!-- end SECTION 1 -->
 
 <!-- SECTION 2 -->
-<section class="section-home-4 text-center more-30-padding-top">
+<section id="our_mission"class="section-home-4 text-center more-30-padding-top">
 	<div class="container animate slide-in-from-left">
 		<div class="row ">
 			<div class="col-lg-12">
@@ -102,8 +104,10 @@ permalink: /our_story
 		</div>
 		<div class="row ">
 			<div class="col-md-12 ">
-				<a href="{{ site.data.story.section2.button.link }}" 
-						class="btn btn-primary-no-arrow-r more3-margin-bottom">{{ site.data.story.section2.button.text }}</a>
+				<button data-scroll="{{ site.data.story.section2.button.link }}" 
+						class="btn btn-primary-no-arrow-r more3-margin-bottom scroll-to">
+						{{ site.data.story.section2.button.text }}
+			</button>
 			</div>
 		</div>
 	</div>
