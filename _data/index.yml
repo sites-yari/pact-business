@@ -1,16 +1,36 @@
 header:
-  title:
-    white: Speciality coffee 
-    blue_light: tailored to your team
-  text:
-    top: We deliver office coffee that’s world class and 
-    bottom: sourced direct from the farmer
   button_text: Treat your team
   image: assets/img/illustration/01.png
-
+  text:
+    bottom: sourced direct from the farmer
+    top: We deliver office coffee that’s world class and
+  title:
+    blue_light: tailored to your team
+    white: Speciality coffee
 section1:
+  column:
+    left:
+      button: Free coffee tasting
+      image: assets/img/home/img-1.jpg
+      text: >-
+        We travel far and wide, scouring the globe to source the most special of
+        speciality coffee that’s we can find.
+      title: The best product.
+    middle:
+      button: our story
+      image: assets/img/home/img-2.jpg
+      text: >-
+        Trading directly with growers means they can afford to reinvest in their
+        farms, making more quality coffee for you to enjoy.
+      title: Done the right way.
+    right:
+      button: how it works
+      image: assets/img/home/img-3.jpg
+      text: >-
+        Our coffee is grown with love, roasted with scientific precision and
+        sent out immediately after being ground.
+      title: With care.
   logos:
-    text: trusted by
     logo1: assets/img/brands/01.png
     logo2: assets/img/brands/02.png
     logo3: assets/img/brands/03.png
@@ -18,49 +38,26 @@ section1:
     logo5: assets/img/brands/05.png
     logo6: assets/img/brands/06.png
     logo7: assets/img/brands/07.png
+    text: trusted by
   title:
-    top: Our coffee isn’t a commodity 
     bottom: and neither is your team
-  column:
-    left:
-      image: assets/img/home/img-1.jpg
-      title: The best product.
-      text: We travel far and wide, scouring the globe to source the most special of speciality coffee that’s around.
-      button: Free coffee tasting
-    middle:
-      image: assets/img/home/img-2.jpg
-      title: Done the right way.
-      text: Trading directly with growers means they can afford to reinvest in their farms, making more quality coffee for you to enjoy.
-      button: our story
-    right:
-      image: assets/img/home/img-3.jpg
-      title: With care.
-      text: Our coffee is grown with love, roasted with scientific precision and sent out immediately after being ground.
-      button: how it works
-
+    top: Our coffee isn’t a commodity
 section2:
-  title: From our team, to yours
-  image: assets/img/illustration/02.png
   button:
     link: ../contact
     text: Get started
+  image: assets/img/illustration/02.png
   theme1:
-    title: Tailored for you 
-    subtitle: Together, we'll design a bespoke package that suits your team to a tee.
+    subtitle: 'Together, we''ll design a bespoke package that suits your team to a tee.'
+    title: Tailored for you
   theme2:
+    subtitle: >-
+      Kicking things off with a bang, a coffee launch will let your office know
+      that we've arrived!
     title: Coffee launch
-    subtitle: Kicking things off with a bang, a coffee launch will let your office know that we've arrived!
   theme3:
+    subtitle: >-
+      Our Customer Champions are ready and willing to chat coffee 9am-5pm, seven
+      days a week.
     title: On-hand Support
-    subtitle: Our Customer Champions are ready and willing to chat coffee 9am-5pm, seven days a week.
-
-section7:
-  title:
-    top: It only takes a second
-    bottom: to get started
-  
-
-
-
-
-
+  title: 'From our team, to yours'
