@@ -970,4 +970,15 @@ collections:
                       - { label: "Image", name: "image", widget: "image" }
                       - { label: "Title", name: "title", widget: "string" }
                       - { label: "Text", name: "text", widget: "string" }
-
+        #---| CoffeeTasting |---
+      - name: "coffee_tasting"
+        label: "Coffee tasting Page"
+        file: "_data/coffee_tasting.yml"
+        description: Everything only used in the coffee tasting page
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Brand", name: "image_logo", widget: "image" }
+          - { label: "Illustration", name: "image_illust", widget: "image" }
+          - { label: "Top Text", name: "text_one", widget: "string" }
+          - { label: "Bottom Text", name: "text_two", widget: "string" }
