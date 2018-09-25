@@ -911,6 +911,7 @@ collections:
                 widget: object
                 fields:
                   - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Our Story Link", name: "our_story_link", widget: "string" }
                   - { label: "Text", name: "text", widget: "string" }
           - label: Home / Machines / Princing #------- home_machines_and_pricing
             name: home_machines_and_pricing

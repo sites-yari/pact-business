@@ -16,9 +16,17 @@
         </p>
       </div>
       <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-2 zero-padding-left animate slide-in-from-left">
-        <a href="{{site.data.section_blue_boxes.top.button.link}}" 
-            class="btn btn-secondary-dark full-width2 center-mobile">
-          {{site.data.section_blue_boxes.top.button.text}}</a>
+          {% if page.class == "our_story" %}
+            <a href="{{site.data.section_blue_boxes.top.button.our_story_link}}" 
+              class="btn btn-secondary-dark full-width2 center-mobile">
+              {{site.data.section_blue_boxes.top.button.text}}
+            </a>
+          {% else %}
+            <a href="{{site.data.section_blue_boxes.top.button.link}}" 
+              class="btn btn-secondary-dark full-width2 center-mobile">
+              {{site.data.section_blue_boxes.top.button.text}}
+            </a>
+          {% endif %}
       </div>
     </div>
 

@@ -7,7 +7,7 @@ header:
     white: World-class coffee that
 section1:
   button:
-    link: '#'
+    link: '../contact'
     text: get in touch
   text:
     bottom: >-
@@ -35,7 +35,7 @@ section2:
       emergencies.
     two: 'We’ll make sure it’s easy to order extra coffee, or pause your deliveries.'
   button:
-    link: '#'
+    link: '.section-home-7'
     text: treat your team
   subtitle: >-
     Here’s how we’ll make it easy for you to provide your office with
@@ -43,7 +43,7 @@ section2:
   title: 'Hassle-free, end-to-end service'
 section4:
   button:
-    link: '#'
+    link: '../how_it_works#coffee-tasting-visit'
     text: free coffee tasting
   image: ../assets/img/icons/plus.png
   subtitle: >-

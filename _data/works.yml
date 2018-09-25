@@ -8,7 +8,7 @@ header:
 section1:
   step1:
     button:
-      link: '#'
+      link: '../contact'
       text: get in touch
     image: ../assets/img/illustration/step_1.png
     text: >-
@@ -18,7 +18,7 @@ section1:
     top_title: Step.1
   step2:
     button:
-      link: '#'
+      link: '#coffee-tasting-visit'
       text: free coffee tasting
     image: ../assets/img/illustration/step_2.png
     text: >-
@@ -28,7 +28,7 @@ section1:
     top_title: Step.2
   step3:
     button:
-      link: '#'
+      link: .section-home-7
       text: get started
     image: ../assets/img/illustration/step_3.png
     text: >-
@@ -39,7 +39,7 @@ section1:
     top_title: Step.3
 section3:
   button:
-    link: '#'
+    link: '../contact'
     text: treat your team
   stage01:
     above_title: stage 01

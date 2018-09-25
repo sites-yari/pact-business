@@ -172,8 +172,10 @@ permalink: /machines
 
     <div class="row animate slide-in-from-top">
       <div class="col-md-12 text-center more-margin-top">
-        <a href="{{site.data.machines.section1.button.link}}" 
-        class="btn btn-primary-no-arrow-r center-mobile">{{site.data.machines.section1.button.text}}</a>
+        <button data-scroll="{{site.data.machines.section1.button.link}}" 
+          class="btn btn-primary-no-arrow-r center-mobile scroll-to">
+          {{site.data.machines.section1.button.text}}
+      </button>
       </div>
     </div>
 
@@ -192,7 +194,8 @@ permalink: /machines
           <p class="text-white bold">{{site.data.machines.section2.text}}</p>
         </div>
         <div class="col-sm-2 col-lg-4">
-          <a href="{{site.data.machines.section2.button.link}}" class="btn btn-primary-only-arrow "></a>
+          <button data-scroll="{{site.data.machines.section2.button.link}}" 
+            class="btn btn-primary-only-arrow scroll-to"></button>
         </div>
       </div>
     </div>

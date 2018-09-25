@@ -5,6 +5,7 @@ top:
   subtitle: We're already fuelling hundreds of offices with some of the world's most incredible coffee
   button:
     link: ../our_story
+    our_story_link: ../contact
     text: Our sustainable approach
 
 home_machines_and_pricing: 
