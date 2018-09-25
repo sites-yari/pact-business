@@ -7,12 +7,12 @@ header:
     white: World-class coffee that
 section1:
   button:
-    link: '../contact'
+    link: ../contact
     text: get in touch
   text:
     bottom: >-
       We’ll find a world-class coffee solution that suits your team and your
-      budget. Get in touch for a no-strings-attached free coffee tasting and a
+      budget. Get in touch for a free coffee tasting, no strings attached, and a
       hand-tailored quote for your office.
     top: >-
       They say ‘you get what you pay for’. Why settle for that? We’re offering
@@ -35,7 +35,7 @@ section2:
       emergencies.
     two: 'We’ll make sure it’s easy to order extra coffee, or pause your deliveries.'
   button:
-    link: '.section-home-7'
+    link: .section-home-7
     text: treat your team
   subtitle: >-
     Here’s how we’ll make it easy for you to provide your office with
