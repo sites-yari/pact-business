@@ -983,3 +983,32 @@ collections:
           - { label: "Illustration", name: "image_illust", widget: "image" }
           - { label: "Top Text", name: "text_one", widget: "string" }
           - { label: "Bottom Text", name: "text_two", widget: "string" }
+      #---| contact |---
+      - name: "contact"
+        label: "Contact us"
+        file: "_data/contact.yml"
+        description: Everything only used in the Contact us page
+        fields:
+          - label: Header #------- Header
+            name: header
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: object
+                fields:
+                  - { label: "White Text", name: "white", widget: "string" }
+                  - { label: "Light Blue Text", name: "blue_light", widget: "string" } 
+              - { label: "Subtitle", name: "subtitle", widget: "string" }   
+          - label: Section 2 #------- sect2
+            name: section2
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: object
+                fields:
+                  - { label: "Top Text", name: "top", widget: "string" }
+                  - { label: "Bottom Text", name: "bottom", widget: "string" } 
+
+

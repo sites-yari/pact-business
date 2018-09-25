@@ -27,7 +27,7 @@
 </div>
 {% else %}
 {% endif %}
-<div class="box-blog more-25-padding-top">
+<div class="box-blog more-25-padding-top mobile-remove">
   <h4 class="text-secondary-darker">Most Popular</h4>
   {% for post in blog offset:0 limit:5 %}
   <a href="{{ post.url }}" class="popular-posts">
