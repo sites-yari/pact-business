@@ -5,21 +5,21 @@ section1:
   image: ../assets/img/avatars/header_story.png
   img01:
     cta: how it works
-    link: '../how_it_works'
+    link: ../how_it_works
     text: >-
       We’ll make it easy for you to set up your account, hand-tailored to your
       needs. You can manage orders online or with our Customer Champions.
     title: Hassle-free service.
   img02:
     cta: machines
-    link: '../machines'
+    link: ../machines
     text: >-
       Choose from a range of different coffee machines: whether you’re a filter
       fanatic or espresso enthusiast, we’ll find the right choice for you.
     title: Using the best machines.
   img03:
     cta: pricing
-    link: '../pricing'
+    link: ../pricing
     text: >-
       Our rates are low for coffee that’s <i>this</i> good. Customers typically
       pay £1-£5 per employee each month… that would hardly buy them a coffee out
@@ -33,12 +33,12 @@ section1:
   title: Where it all began
 section2:
   button:
-    link: '.section-home-7'
+    link: .section-home-7
     text: treat your team
   text: >-
     In a phrase: to make coffee a force for good. We do this through Direct
     Trade - going straight to the source to find the world’s most incredible
-    coffees. Paying fairer than Fair trade rates, we help good farmers become
+    coffees. Paying fairer than Fairtrade rates, we help good farmers become
     great farmers with our personalised training and small investments. This
     means we can keep bringing back your favourite speciality coffees, year
     after year.
